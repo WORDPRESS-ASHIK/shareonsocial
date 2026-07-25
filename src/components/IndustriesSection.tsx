@@ -10,48 +10,56 @@ const industries = [
     title: "Restaurants",
     desc: "Menus, packaging, delivery ads",
     tag: "F&B",
+    slug: "restaurants",
   },
   {
     num: "02",
     title: "Healthcare",
     desc: "Clinics, wellness, dental",
     tag: "Care",
+    slug: "healthcare",
   },
   {
     num: "03",
     title: "Retail",
     desc: "DTC, boutique, marketplaces",
     tag: "Retail",
+    slug: "retail",
   },
   {
     num: "04",
     title: "Education",
     desc: "Schools, tutors, courses",
     tag: "EDU",
+    slug: "education",
   },
   {
     num: "05",
     title: "Professional Services",
     desc: "Law, finance, consulting",
     tag: "Pro",
+    slug: "professional-services",
   },
   {
     num: "06",
     title: "Real Estate",
     desc: "Developers, brokers, PropTech",
     tag: "RE",
+    slug: "real-estate",
   },
   {
     num: "07",
     title: "Startups",
     desc: "Seed to Series B",
     tag: "New",
+    slug: "startups",
   },
   {
     num: "08",
     title: "Events",
     desc: "Weddings, festivals, launches",
     tag: "Live",
+    slug: "events",
   },
 ];
 
@@ -69,7 +77,7 @@ export function IndustriesSection() {
       </div>
       <div className="mt-14 divide-y divide-foreground/10 border-y border-foreground/10">
         {industries.map((industry, index) => (
-          <Link href="/industries" key={industry.num} className="block">
+          <Link href={`/industries/${industry.slug}`} key={industry.num} className="block">
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
