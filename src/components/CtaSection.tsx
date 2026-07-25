@@ -1,0 +1,63 @@
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+
+export function CtaSection() {
+  return (
+    <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
+      <div className="grain relative overflow-hidden rounded-[2.5rem] bg-foreground p-10 text-background md:p-20">
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+          <div
+            className="absolute -left-20 -top-20 h-96 w-96 rounded-full opacity-60 blur-3xl"
+            style={{
+              background:
+                "radial-gradient(closest-side, oklch(0.62 0.24 25 / 0.7), transparent)",
+            }}
+          ></div>
+          <div
+            className="absolute -bottom-24 right-0 h-[520px] w-[520px] rounded-full opacity-60 blur-3xl"
+            style={{
+              background:
+                "radial-gradient(closest-side, oklch(0.56 0.2 255 / 0.7), transparent)",
+            }}
+          ></div>
+          <div
+            className="absolute left-1/3 top-1/2 h-72 w-72 rounded-full opacity-40 blur-3xl"
+            style={{
+              background:
+                "radial-gradient(closest-side, oklch(0.72 0.18 55 / 0.8), transparent)",
+            }}
+          ></div>
+        </div>
+        <div className="relative">
+          <div className="text-xs uppercase tracking-[0.3em] opacity-70">
+            The next chapter
+          </div>
+          <h2 className="mt-4 max-w-[16ch] font-display text-[clamp(3rem,9vw,9rem)] leading-[0.9] tracking-[-0.04em] text-balance">
+            Your next stage of growth{" "}
+            <span className="bg-gradient-to-r from-[color:var(--brand-orange)] via-[color:var(--brand-pink)] to-[color:var(--brand-cyan)] bg-clip-text text-transparent">
+              starts here
+            </span>
+            .
+          </h2>
+          <div className="mt-10 flex flex-wrap items-center gap-3">
+            <Link
+              href="/book"
+              className="group inline-flex items-center gap-2 rounded-full bg-background px-7 py-4 text-sm font-medium text-foreground transition hover:bg-background/90"
+            >
+              Let&#x27;s grow
+              <ArrowUpRight className="h-4 w-4 transition group-hover:rotate-45" />
+            </Link>
+            <a
+              href="https://wa.me/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-background/25 px-7 py-4 text-sm font-medium hover:bg-background/10"
+            >
+              WhatsApp us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
