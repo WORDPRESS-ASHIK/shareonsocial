@@ -84,7 +84,7 @@ export default function SolutionsPage() {
               </div>
               <ul className="grid grid-cols-2 gap-3 md:grid-cols-3">
                 <li className="rounded-2xl border border-foreground/10 bg-background/40 px-4 py-4 text-sm font-medium">
-                  Websites
+                  Website
                 </li>
                 <li className="rounded-2xl border border-foreground/10 bg-background/40 px-4 py-4 text-sm font-medium">
                   Ecommerce

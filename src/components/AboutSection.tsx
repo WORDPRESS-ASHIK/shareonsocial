@@ -21,7 +21,7 @@ export function AboutSection() {
             <p>
               We sit at the intersection of strategy, design, and technology.
               One team, one plan, every lever you need to move — from your first
-              customer to your hundred-thousandth.
+              customer to your Hundreds And Thousands .
             </p>
             <p>
               We're not a checklist agency. We're the people businesses call

@@ -41,24 +41,7 @@ export function IndustryProcess({ data }: { data: IndustryData['process'] }) {
         </div>
 
         <div className="relative">
-          {/* Animated Connected Line Background */}
-          {/* Desktop: Horizontal, Mobile: Vertical */}
-          <div className="absolute left-8 top-0 bottom-0 w-[2px] bg-foreground/5 lg:left-0 lg:right-0 lg:top-[60px] lg:bottom-auto lg:h-[2px] lg:w-full" />
 
-          {/* Animated Glow Line */}
-          <motion.div
-            initial={{ height: 0, width: "2px" }}
-            whileInView={{ height: "100%", width: "2px" }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 2, ease: "easeInOut" }}
-            className="absolute left-8 top-0 bg-gradient-to-b from-[color:var(--color-brand-cyan)] via-[color:var(--color-brand-blue)] to-[color:var(--color-brand-pink)] lg:left-0 lg:top-[60px] lg:bottom-auto lg:h-[2px] lg:bg-gradient-to-r"
-            style={{ originY: 0, originX: 0 }}
-            onViewportEnter={(entry) => {
-              if (window.innerWidth >= 1024) {
-                entry?.target.setAttribute("style", "width: 100%; height: 2px; transition: width 2s ease-in-out;");
-              }
-            }}
-          />
 
           <div className="grid gap-12 lg:grid-cols-5 lg:gap-8 relative z-10">
             {data.steps.map((step, index) => {

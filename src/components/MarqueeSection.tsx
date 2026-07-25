@@ -2,7 +2,7 @@ export function MarqueeSection() {
   const items = [
     "Strategy",
     "Branding",
-    "Websites",
+    "Website",
     "SEO",
     "AEO",
     "Advertising",

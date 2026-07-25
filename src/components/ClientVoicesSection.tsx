@@ -7,7 +7,7 @@ export function ClientVoicesSection() {
   const testimonials = [
     {
       quote:
-        "They rebuilt our brand, our website and our funnel in eight weeks. Revenue followed.",
+        "They rebuilt our brand, our website and our funnel in 4 weeks. Revenue followed.",
       author: "Amelia R.",
       role: "Founder, Casa Nova",
       bgColor: "bg-[color:var(--brand-orange)]",

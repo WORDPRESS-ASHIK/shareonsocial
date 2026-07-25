@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
@@ -16,6 +18,7 @@ const navLinks = [
 ];
 
 export function Header() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -70,7 +73,9 @@ export function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="rounded-full px-4 py-2 text-sm font-medium text-foreground/70 transition-all duration-200 hover:bg-foreground/5 hover:text-foreground active:scale-95"
+                className={`rounded-full px-4 py-2 text-sm font-medium transition-all duration-200 hover:bg-foreground/5 hover:text-foreground active:scale-95 ${
+                  pathname.startsWith(link.href) ? "text-foreground bg-foreground/5" : "text-foreground/70"
+                }`}
               >
                 {link.name}
               </Link>
@@ -119,7 +124,9 @@ export function Header() {
                     key={link.name}
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="text-2xl font-display tracking-tight text-foreground/80 hover:text-[color:var(--color-brand-orange)] transition-colors hover:translate-x-1 transform duration-200"
+                    className={`text-2xl font-display tracking-tight hover:text-[color:var(--color-brand-orange)] transition-colors hover:translate-x-1 transform duration-200 ${
+                      pathname.startsWith(link.href) ? "text-[color:var(--color-brand-orange)]" : "text-foreground/80"
+                    }`}
                   >
                     {link.name}
                   </Link>

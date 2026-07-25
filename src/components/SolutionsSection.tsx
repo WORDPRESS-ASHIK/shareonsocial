@@ -93,7 +93,7 @@ export function SolutionsSection() {
                   </h3>
                   <ul className="mt-6 flex flex-wrap gap-2">
                     <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
-                      Websites
+                      Website
                     </li>
                     <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
                       Ecommerce

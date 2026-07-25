@@ -49,8 +49,6 @@ export function CtaSection() {
             </Link>
             <a
               href="https://wa.me/"
-              target="_blank"
-              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-background/25 px-7 py-4 text-sm font-medium hover:bg-background/10"
             >
               WhatsApp us

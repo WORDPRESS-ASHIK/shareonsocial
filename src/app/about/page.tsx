@@ -58,7 +58,7 @@ export default function AboutPage() {
               </h2>
               <div className="mt-10 grid gap-8 text-lg text-foreground/75 md:grid-cols-2">
                 <p>
-                  We sit at the intersection of strategy, design, and technology. One team, one plan, every lever you need to move — from your first customer to your hundred-thousandth.
+                  We sit at the intersection of strategy, design, and technology. One team, one plan, every lever you need to move — from your first customer to your Hundreds And Thousands .
                 </p>
                 <p>
                   We&#x27;re not a checklist agency. We&#x27;re the people businesses call when they want a partner who cares about their P&amp;L as much as their pixel grid.
