@@ -88,13 +88,30 @@ export function ContactForm({ title = "New enquiry" }: { title?: string }) {
     }
   };
 
-  const submitForm = () => {
+  const submitForm = async () => {
     setIsSubmitting(true);
-    // Simulate API delay
-    setTimeout(() => {
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+      } else {
+        console.error('Failed to submit form');
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred. Please try again later.');
+    } finally {
       setIsSubmitting(false);
-      setIsSuccess(true);
-    }, 1500);
+    }
   };
 
   if (isSuccess) {
