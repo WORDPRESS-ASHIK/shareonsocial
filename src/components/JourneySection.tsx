@@ -1,199 +1,97 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Compass, PenTool, Share2, TrendingUp } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
-export function JourneySection() {
+interface JourneySectionProps {
+  className?: string;
+  hideHeader?: boolean;
+}
+
+const stages = [
+  {
+    num: "01",
+    eyebrow: "Stage 01",
+    title: "Discover",
+    desc: "Audits, positioning, opportunity mapping.",
+  },
+  {
+    num: "02",
+    eyebrow: "Stage 02",
+    title: "Create",
+    desc: "Brand, product, content and website.",
+  },
+  {
+    num: "03",
+    eyebrow: "Stage 03",
+    title: "Activate",
+    desc: "Go-to-market, paid media, organic social.",
+  },
+  {
+    num: "04",
+    eyebrow: "Stage 04",
+    title: "Optimize",
+    desc: "Data-driven scaling and performance tuning.",
+  },
+];
+
+export function JourneySection({ className = "", hideHeader = false }: JourneySectionProps) {
   return (
-    <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
-      <div className="max-w-3xl">
-        <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/50">
-          <span className="inline-block h-px w-8 bg-foreground/40"></span>
-          Growth Journey
+    <section className={`mx-auto max-w-[1400px] px-6 md:px-10 ${className}`}>
+      {!hideHeader && (
+        <div className="max-w-3xl mb-12 md:mb-16">
+          <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/50">
+            <span className="inline-block h-px w-8 bg-foreground/40"></span>
+            Growth Journey
+          </div>
+          <h2 className="mt-6 font-display text-[clamp(2.25rem,5.5vw,5rem)] leading-[0.95] tracking-[-0.03em] text-balance">
+            Four stages. One trajectory.
+          </h2>
         </div>
-        <h2 className="mt-6 font-display text-[clamp(2.25rem,5.5vw,5rem)] leading-[0.95] tracking-[-0.03em] text-balance">
-          Four stages. One trajectory.
-        </h2>
-      </div>
-      <div className="relative mt-16">
-        <div
-          aria-hidden="true"
-          className="absolute left-6 top-6 hidden h-[calc(100%-3rem)] w-px bg-foreground/10 md:left-1/2 md:block"
-        ></div>
-        <div className="space-y-10 md:space-y-24">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="grid gap-8 md:grid-cols-2 md:items-center"
-          >
-            <div className="md:pr-16 md:text-right">
-              <div className="text-xs uppercase tracking-[0.3em] text-foreground/40">
-                Stage 01
-              </div>
-              <h3 className="mt-2 font-display text-6xl tracking-[-0.03em] md:text-7xl">
-                Discover
-              </h3>
-              <p className="mt-4 max-w-sm text-lg text-foreground/70 md:ml-auto">
-                Audits, positioning, opportunity mapping.
-              </p>
-            </div>
-            <div className="relative">
-              <div
-                className="mx-auto flex h-56 w-56 items-center justify-center rounded-full md:h-72 md:w-72"
-                style={{
-                  background:
-                    "radial-gradient(closest-side, oklch(0.78 0.14 210 / 0.25), transparent)",
-                }}
-              >
-                <div
-                  className="group flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl md:h-40 md:w-40"
-                  style={{
-                    borderColor: "oklch(0.78 0.14 210)",
-                    borderWidth: "1px",
-                  }}
-                >
-                  <Compass
-                    strokeWidth={1.3}
-                    className="h-10 w-10 transition-transform duration-300 ease-out group-hover:rotate-12"
-                    aria-hidden="true"
-                  />
-                </div>
-              </div>
-            </div>
-          </motion.div>
+      )}
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="grid gap-8 md:grid-cols-2 md:items-center md:[&>*:first-child]:order-2"
-          >
-            <div className="md:pl-16 md:text-left">
-              <div className="text-xs uppercase tracking-[0.3em] text-foreground/40">
-                Stage 02
-              </div>
-              <h3 className="mt-2 font-display text-6xl tracking-[-0.03em] md:text-7xl">
-                Create
-              </h3>
-              <p className="mt-4 max-w-sm text-lg text-foreground/70">
-                Brand, product, content and website.
-              </p>
-            </div>
-            <div className="relative">
-              <div
-                className="mx-auto flex h-56 w-56 items-center justify-center rounded-full md:h-72 md:w-72"
-                style={{
-                  background:
-                    "radial-gradient(closest-side, oklch(0.70 0.20 350 / 0.25), transparent)",
-                }}
-              >
-                <div
-                  className="group flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl md:h-40 md:w-40"
-                  style={{
-                    borderColor: "oklch(0.70 0.20 350)",
-                    borderWidth: "1px",
-                  }}
-                >
-                  <PenTool
-                    strokeWidth={1.3}
-                    className="h-10 w-10 transition-transform duration-300 ease-out group-hover:rotate-12"
-                    aria-hidden="true"
-                  />
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -50px 0px" }}
+        transition={{ duration: 0.6 }}
+        className="relative overflow-hidden rounded-[2rem] border border-foreground/10 bg-background shadow-sm"
+      >
+        {/* Subtle glow background */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-[var(--color-brand-blue)]/5 via-transparent to-[var(--color-brand-orange)]/5 opacity-60"></div>
+        
+        <div className="relative z-10 grid md:grid-cols-2">
+          {stages.map((stage, i) => (
+            <div 
+              key={stage.num}
+              className={`
+                group relative p-8 md:p-12 transition-colors duration-500 hover:bg-foreground/[0.03]
+                ${i === 0 ? "border-b border-foreground/10 md:border-r" : ""}
+                ${i === 1 ? "border-b border-foreground/10" : ""}
+                ${i === 2 ? "border-b border-foreground/10 md:border-b-0 md:border-r" : ""}
+              `}
+            >
+              <div className="flex justify-between items-start">
+                <div className="font-display text-5xl md:text-6xl text-foreground/20 transition-all duration-300 group-hover:text-foreground/40 group-hover:scale-105 origin-top-left">
+                  {stage.num}
                 </div>
+                <ArrowUpRight className="h-6 w-6 text-foreground/30 transition-all duration-300 group-hover:text-foreground group-hover:-translate-y-1 group-hover:translate-x-1" />
               </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="grid gap-8 md:grid-cols-2 md:items-center"
-          >
-            <div className="md:pr-16 md:text-right">
-              <div className="text-xs uppercase tracking-[0.3em] text-foreground/40">
-                Stage 03
-              </div>
-              <h3 className="mt-2 font-display text-6xl tracking-[-0.03em] md:text-7xl">
-                Connect
-              </h3>
-              <p className="mt-4 max-w-sm text-lg text-foreground/70 md:ml-auto">
-                Ads, SEO, CRM and automation wired.
-              </p>
-            </div>
-            <div className="relative">
-              <div
-                className="mx-auto flex h-56 w-56 items-center justify-center rounded-full md:h-72 md:w-72"
-                style={{
-                  background:
-                    "radial-gradient(closest-side, oklch(0.72 0.18 55 / 0.25), transparent)",
-                }}
-              >
-                <div
-                  className="group flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl md:h-40 md:w-40"
-                  style={{
-                    borderColor: "oklch(0.72 0.18 55)",
-                    borderWidth: "1px",
-                  }}
-                >
-                  <Share2
-                    strokeWidth={1.3}
-                    className="h-10 w-10 transition-transform duration-300 ease-out group-hover:rotate-12"
-                    aria-hidden="true"
-                  />
+              <div className="mt-20 md:mt-32">
+                <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-foreground/50 mb-3">
+                  {stage.eyebrow}
                 </div>
+                <h3 className="font-display text-3xl md:text-4xl mb-3">
+                  {stage.title}
+                </h3>
+                <p className="text-lg text-foreground/70 max-w-xs">
+                  {stage.desc}
+                </p>
               </div>
             </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="grid gap-8 md:grid-cols-2 md:items-center md:[&>*:first-child]:order-2"
-          >
-            <div className="md:pl-16 md:text-left">
-              <div className="text-xs uppercase tracking-[0.3em] text-foreground/40">
-                Stage 04
-              </div>
-              <h3 className="mt-2 font-display text-6xl tracking-[-0.03em] md:text-7xl">
-                Grow
-              </h3>
-              <p className="mt-4 max-w-sm text-lg text-foreground/70">
-                Compound results, measured monthly.
-              </p>
-            </div>
-            <div className="relative">
-              <div
-                className="mx-auto flex h-56 w-56 items-center justify-center rounded-full md:h-72 md:w-72"
-                style={{
-                  background:
-                    "radial-gradient(closest-side, oklch(0.56 0.20 255 / 0.25), transparent)",
-                }}
-              >
-                <div
-                  className="group flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl md:h-40 md:w-40"
-                  style={{
-                    borderColor: "oklch(0.56 0.20 255)",
-                    borderWidth: "1px",
-                  }}
-                >
-                  <TrendingUp
-                    strokeWidth={1.3}
-                    className="h-10 w-10 transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:rotate-6"
-                    aria-hidden="true"
-                  />
-                </div>
-              </div>
-            </div>
-          </motion.div>
+          ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -3,35 +3,10 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import { insights } from "@/data/insights";
 
 export function InsightsSection() {
-  const insights = [
-    {
-      category: "Search",
-      readTime: "6 min",
-      title: "Why AEO is the new SEO — and what to do this quarter.",
-      link: "/insights",
-      gradient:
-        "conic-gradient(from 210deg at 50% 50%, oklch(0.56 0.2 255), oklch(0.7 0.2 350), oklch(0.72 0.18 55), oklch(0.56 0.2 255))",
-    },
-    {
-      category: "Advertising",
-      readTime: "8 min",
-      title: "Ad creative that converts: the four-hook framework.",
-      link: "/insights",
-      gradient:
-        "radial-gradient(circle at 30% 30%, oklch(0.72 0.18 55) 0, oklch(0.62 0.24 25) 60%, oklch(0.18 0.02 260) 100%)",
-    },
-    {
-      category: "Ecommerce",
-      readTime: "12 min",
-      title: "Ecom growth loops: from first click to lifetime value.",
-      link: "/insights",
-      gradient:
-        "linear-gradient(135deg, oklch(0.78 0.14 210), oklch(0.56 0.2 255))",
-    },
-  ];
-
   return (
     <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
       <div className="flex items-end justify-between gap-6">
@@ -63,25 +38,32 @@ export function InsightsSection() {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             style={{ willChange: "transform, opacity" }}
-            className="group relative flex min-h-[380px] flex-col overflow-hidden rounded-[1.75rem] border border-foreground/10 bg-card p-8 transition hover:-translate-y-1 hover:shadow-2xl"
+            className={`group relative flex min-h-[380px] flex-col overflow-hidden rounded-[1.75rem] border border-black/5 p-8 transition hover:-translate-y-1 hover:shadow-2xl ${insight.bgColor}`}
           >
-            <div className="mb-6 aspect-[4/3] w-full overflow-hidden rounded-2xl">
-              <div
-                className="h-full w-full"
-                style={{ background: insight.gradient }}
-              ></div>
+            <div className="relative mb-6 aspect-[4/3] w-full overflow-hidden rounded-2xl bg-foreground/5">
+              <Image
+                src={insight.image}
+                alt={insight.title}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
             </div>
-            <div className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-foreground/50">
+            <div className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] opacity-70">
               <span>{insight.category}</span>
               <span>·</span>
               <span>{insight.readTime}</span>
             </div>
             <h3 className="mt-3 font-display text-2xl leading-tight tracking-tight md:text-[26px]">
-              {insight.title}
+              <Link href={`/insights/${insight.slug}`} className="before:absolute before:inset-0 z-10">
+                {insight.title}
+              </Link>
             </h3>
-            <div className="mt-auto flex items-center justify-between pt-6 text-sm">
+            <div className="mt-auto flex items-center justify-between pt-6 text-sm font-medium">
               <span>Read essay</span>
-              <ArrowUpRight className="h-4 w-4 transition group-hover:rotate-45" />
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
+                <ArrowUpRight className="h-4 w-4" />
+              </div>
             </div>
           </motion.article>
         ))}

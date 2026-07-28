@@ -17,12 +17,12 @@ export function MarqueeSection() {
   const marqueeItems = [...items, ...items];
 
   return (
-    <section className="relative mt-24 overflow-hidden border-y border-foreground/10 bg-foreground py-6 text-background md:py-8">
+    <section className="relative mt-24 overflow-hidden border-y border-foreground/10 bg-foreground py-4 text-background md:py-5">
       <div className="marquee-track flex whitespace-nowrap">
         {marqueeItems.map((item, index) => (
           <span
             key={index}
-            className="flex items-center gap-8 pr-8 font-display text-3xl font-light tracking-wide md:text-4xl"
+            className="flex items-center gap-8 pr-8 font-display text-2xl font-light tracking-wide md:text-3xl"
           >
             {item}
             <span className="text-[color:var(--color-brand-orange)]">✦</span>

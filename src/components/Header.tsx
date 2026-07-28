@@ -59,16 +59,16 @@ export function Header() {
             : "bg-background/40 border-foreground/5 shadow-none"
         }`}
       >
-        <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between px-6 md:h-20 md:px-10 relative z-50">
+        <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between px-6 md:h-20 md:px-12 relative z-50">
           <Link
             className="group flex items-center gap-2 active transition-transform hover:scale-[1.02] active:scale-[0.98]"
             href="/"
             onClick={() => setIsMenuOpen(false)}
           >
-            <Image src="/logo.png" alt="ShareOnSocial Logo" width={160} height={40} className="h-8 w-auto" priority />
+            <Image src="/logo.png" alt="ShareOnSocial Logo" width={180} height={45} className="h-8 md:h-9 w-auto" priority />
           </Link>
 
-          <nav className="hidden items-center gap-1 lg:flex">
+          <nav className="hidden items-center gap-4 lg:flex">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -82,7 +82,7 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-6">
             <Link
               href="/book"
               className="hidden rounded-full bg-foreground px-6 py-2.5 text-sm font-medium text-background transition-all duration-200 hover:bg-foreground/85 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-95 md:inline-flex"
@@ -92,9 +92,9 @@ export function Header() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Menu"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-foreground/10 bg-background/50 backdrop-blur-sm transition-all duration-200 hover:bg-foreground/5 hover:scale-105 active:scale-95 lg:hidden"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-foreground/10 bg-background/50 backdrop-blur-sm transition-all duration-200 hover:bg-foreground/5 hover:scale-105 active:scale-95 lg:hidden"
             >
-              {isMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
           </div>
         </div>

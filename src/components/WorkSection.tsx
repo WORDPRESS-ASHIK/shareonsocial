@@ -35,26 +35,26 @@ export function WorkSection() {
           transition={{ duration: 0.5 }}
           className="group relative overflow-hidden rounded-[1.75rem] bg-[color:var(--color-brand-orange)] text-[oklch(0.18_0.02_260)] md:row-span-2 min-h-[320px] md:min-h-[380px]"
         >
-          <div className="absolute inset-0 flex items-center justify-center opacity-90">
-            <div className="font-display text-[clamp(3rem,10vw,8rem)] leading-none tracking-[-0.05em]">
-              Casa
-            </div>
-          </div>
           <div className="relative flex h-full flex-col justify-between p-6 md:p-8">
             <div className="text-xs uppercase tracking-[0.25em] opacity-70">
-              Case study
+              SOCIAL
             </div>
-            <div className="flex items-end justify-between">
-              <div>
-                <div className="font-display text-2xl tracking-tight md:text-3xl">
-                  Casa Nova
-                </div>
-                <div className="mt-1 text-sm opacity-70">
-                  Restaurant · Brand + Website
-                </div>
+            
+            <div className="mt-auto pt-8">
+              <div className="font-display text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.03em] mb-4">
+                Social Media<br />Management
               </div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+              <p className="mt-1 text-sm opacity-80 max-w-[90%] leading-relaxed">
+                Build a consistent social presence with strategic content, smart scheduling, and ongoing management.
+              </p>
+              
+              <div className="mt-6 flex items-end justify-between">
+                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
+                  Strategy • Content • Scheduling
+                </div>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
+                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+                </div>
               </div>
             </div>
           </div>
@@ -68,26 +68,26 @@ export function WorkSection() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="group relative overflow-hidden rounded-[1.75rem] bg-[color:var(--color-brand-blue)] text-background min-h-[320px] md:min-h-[380px]"
         >
-          <div className="absolute inset-0 flex items-center justify-center opacity-90">
-            <div className="font-display text-[clamp(3rem,10vw,8rem)] leading-none tracking-[-0.05em]">
-              Vertex
-            </div>
-          </div>
           <div className="relative flex h-full flex-col justify-between p-6 md:p-8">
             <div className="text-xs uppercase tracking-[0.25em] opacity-70">
-              Case study
+              CONTENT
             </div>
-            <div className="flex items-end justify-between">
-              <div>
-                <div className="font-display text-2xl tracking-tight md:text-3xl">
-                  Vertex Health
-                </div>
-                <div className="mt-1 text-sm opacity-70">
-                  Healthcare · Digital System
-                </div>
+            
+            <div className="mt-auto pt-8">
+              <div className="font-display text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.03em] mb-4">
+                Content<br />Creation
               </div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+              <p className="mt-1 text-sm opacity-80 max-w-[90%] leading-relaxed">
+                Creative, on-brand content designed to capture attention, engage audiences, and keep your brand memorable.
+              </p>
+              
+              <div className="mt-6 flex items-end justify-between">
+                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
+                  Copywriting • Graphics • Engagement
+                </div>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
+                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+                </div>
               </div>
             </div>
           </div>
@@ -101,26 +101,26 @@ export function WorkSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="group relative overflow-hidden rounded-[1.75rem] bg-[color:var(--color-brand-pink)] text-[oklch(0.18_0.02_260)] min-h-[320px] md:min-h-[380px]"
         >
-          <div className="absolute inset-0 flex items-center justify-center opacity-90">
-            <div className="font-display text-[clamp(3rem,10vw,8rem)] leading-none tracking-[-0.05em]">
-              Fjord
-            </div>
-          </div>
           <div className="relative flex h-full flex-col justify-between p-6 md:p-8">
             <div className="text-xs uppercase tracking-[0.25em] opacity-70">
-              Case study
+              PAID ADS
             </div>
-            <div className="flex items-end justify-between">
-              <div>
-                <div className="font-display text-2xl tracking-tight md:text-3xl">
-                  Fjord Skin
-                </div>
-                <div className="mt-1 text-sm opacity-70">
-                  DTC · Ecommerce + Ads
-                </div>
+            
+            <div className="mt-auto pt-8">
+              <div className="font-display text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.03em] mb-4">
+                Paid<br />Advertising
               </div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+              <p className="mt-1 text-sm opacity-80 max-w-[90%] leading-relaxed">
+                Targeted campaigns built to reach the right audience, generate quality leads, and drive more conversions.
+              </p>
+              
+              <div className="mt-6 flex items-end justify-between">
+                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
+                  Targeting • Campaigns • Optimization
+                </div>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
+                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+                </div>
               </div>
             </div>
           </div>
@@ -134,26 +134,26 @@ export function WorkSection() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="group relative overflow-hidden rounded-[1.75rem] bg-[oklch(0.92_0.03_80)] text-foreground md:row-span-2 min-h-[320px] md:min-h-[380px]"
         >
-          <div className="absolute inset-0 flex items-center justify-center opacity-90">
-            <div className="font-display text-[clamp(3rem,10vw,8rem)] leading-none tracking-[-0.05em]">
-              Northline
-            </div>
-          </div>
           <div className="relative flex h-full flex-col justify-between p-6 md:p-8">
             <div className="text-xs uppercase tracking-[0.25em] opacity-70">
-              Case study
+              GROWTH
             </div>
-            <div className="flex items-end justify-between">
-              <div>
-                <div className="font-display text-2xl tracking-tight md:text-3xl">
-                  Northline
-                </div>
-                <div className="mt-1 text-sm opacity-70">
-                  Real Estate · Positioning
-                </div>
+            
+            <div className="mt-auto pt-8">
+              <div className="font-display text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.03em] mb-4">
+                Social Media<br />Growth
               </div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+              <p className="mt-1 text-sm opacity-80 max-w-[90%] leading-relaxed">
+                Turn your social presence into a powerful growth channel with strategies focused on reach and engagement.
+              </p>
+              
+              <div className="mt-6 flex items-end justify-between">
+                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
+                  Strategy • Reach • Engagement
+                </div>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
+                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+                </div>
               </div>
             </div>
           </div>
@@ -167,26 +167,26 @@ export function WorkSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="group relative overflow-hidden rounded-[1.75rem] bg-[color:var(--color-brand-cyan)] text-[oklch(0.18_0.02_260)] min-h-[320px] md:min-h-[380px]"
         >
-          <div className="absolute inset-0 flex items-center justify-center opacity-90">
-            <div className="font-display text-[clamp(3rem,10vw,8rem)] leading-none tracking-[-0.05em]">
-              Halo
-            </div>
-          </div>
           <div className="relative flex h-full flex-col justify-between p-6 md:p-8">
             <div className="text-xs uppercase tracking-[0.25em] opacity-70">
-              Case study
+              BRAND
             </div>
-            <div className="flex items-end justify-between">
-              <div>
-                <div className="font-display text-2xl tracking-tight md:text-3xl">
-                  Halo Tutors
-                </div>
-                <div className="mt-1 text-sm opacity-70">
-                  Education · Reels + CRM
-                </div>
+            
+            <div className="mt-auto pt-8">
+              <div className="font-display text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.03em] mb-4">
+                Brand<br />Presence
               </div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+              <p className="mt-1 text-sm opacity-80 max-w-[90%] leading-relaxed">
+                Create a stronger and more consistent digital presence that keeps your business visible and recognizable.
+              </p>
+              
+              <div className="mt-6 flex items-end justify-between">
+                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
+                  Content • Consistency • Visibility
+                </div>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
+                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+                </div>
               </div>
             </div>
           </div>
@@ -200,26 +200,26 @@ export function WorkSection() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="group relative overflow-hidden rounded-[1.75rem] bg-[oklch(0.14_0.02_260)] text-background min-h-[320px] md:min-h-[380px]"
         >
-          <div className="absolute inset-0 flex items-center justify-center opacity-90">
-            <div className="font-display text-[clamp(3rem,10vw,8rem)] leading-none tracking-[-0.05em]">
-              Kite
-            </div>
-          </div>
           <div className="relative flex h-full flex-col justify-between p-6 md:p-8">
             <div className="text-xs uppercase tracking-[0.25em] opacity-70">
-              Case study
+              RETARGET
             </div>
-            <div className="flex items-end justify-between">
-              <div>
-                <div className="font-display text-2xl tracking-tight md:text-3xl">
-                  Kite &amp; Co.
-                </div>
-                <div className="mt-1 text-sm opacity-70">
-                  Retail · Packaging + Store
-                </div>
+            
+            <div className="mt-auto pt-8">
+              <div className="font-display text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.03em] mb-4">
+                Retargeting<br />Campaigns
               </div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+              <p className="mt-1 text-sm opacity-80 max-w-[90%] leading-relaxed">
+                Reconnect with people who already know your brand and turn their interest into meaningful action.
+              </p>
+              
+              <div className="mt-6 flex items-end justify-between">
+                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
+                  Audiences • Ads • Conversions
+                </div>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
+                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
+                </div>
               </div>
             </div>
           </div>

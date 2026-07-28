@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Activity, CheckCircle2, Heart, MessageCircle, Share2, TrendingUp, Users } from "lucide-react";
+import { Activity, Bot, CheckCircle2, Heart, MessageCircle, Share2, TrendingUp, Users } from "lucide-react";
 
 export function SolutionsSection() {
   return (
@@ -25,17 +25,9 @@ export function SolutionsSection() {
           className="grain group relative overflow-hidden rounded-[2rem] bg-[color:var(--color-brand-orange)] text-[oklch(0.18_0.02_260)] md:min-h-[520px] p-8 md:p-12"
         >
           <div className="grid gap-8 md:grid-cols-2">
-            <div className="flex flex-col justify-between">
-              <div className="flex items-baseline gap-4">
-                <span className="text-xs uppercase tracking-[0.3em] opacity-60">
-                  01
-                </span>
-                <span className="text-xs uppercase tracking-[0.3em] opacity-60">
-                  Practice
-                </span>
-              </div>
+            <div className="flex flex-col justify-end">
               <div>
-                <h3 className="mt-6 font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
+                <h3 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
                   Branding
                 </h3>
                 <ul className="mt-6 flex flex-wrap gap-2">
@@ -118,17 +110,9 @@ export function SolutionsSection() {
             className="grain group relative overflow-hidden rounded-[2rem] bg-[oklch(0.14_0.02_260)] text-background md:min-h-[440px] p-8 md:p-12"
           >
             <div className="grid gap-8">
-              <div className="flex flex-col justify-between">
-                <div className="flex items-baseline gap-4">
-                  <span className="text-xs uppercase tracking-[0.3em] opacity-60">
-                    02
-                  </span>
-                  <span className="text-xs uppercase tracking-[0.3em] opacity-60">
-                    Practice
-                  </span>
-                </div>
+              <div className="flex flex-col justify-end">
                 <div>
-                  <h3 className="mt-6 font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
+                  <h3 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
                     Digital
                   </h3>
                   <ul className="mt-6 flex flex-wrap gap-2">
@@ -233,17 +217,9 @@ export function SolutionsSection() {
             className="grain group relative overflow-hidden rounded-[2rem] bg-[color:var(--color-brand-pink)] text-[oklch(0.18_0.02_260)] md:min-h-[440px] p-8 md:p-12"
           >
             <div className="grid gap-8">
-              <div className="flex flex-col justify-between">
-                <div className="flex items-baseline gap-4">
-                  <span className="text-xs uppercase tracking-[0.3em] opacity-60">
-                    03
-                  </span>
-                  <span className="text-xs uppercase tracking-[0.3em] opacity-60">
-                    Practice
-                  </span>
-                </div>
+              <div className="flex flex-col justify-end">
                 <div>
-                  <h3 className="mt-6 font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
+                  <h3 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
                     Content
                   </h3>
                   <ul className="mt-6 flex flex-wrap gap-2">
@@ -387,17 +363,9 @@ export function SolutionsSection() {
             className="grain group relative overflow-hidden rounded-[2rem] bg-[oklch(0.96_0.01_90)] text-foreground md:min-h-[340px] p-8 md:p-12"
           >
             <div className="grid gap-8">
-              <div className="flex flex-col justify-between">
-                <div className="flex items-baseline gap-4">
-                  <span className="text-xs uppercase tracking-[0.3em] opacity-60">
-                    04
-                  </span>
-                  <span className="text-xs uppercase tracking-[0.3em] opacity-60">
-                    Practice
-                  </span>
-                </div>
+              <div className="flex flex-col justify-end">
                 <div>
-                  <h3 className="mt-6 font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
+                  <h3 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
                     Marketing
                   </h3>
                   <ul className="mt-6 flex flex-wrap gap-2">
@@ -494,17 +462,9 @@ export function SolutionsSection() {
             className="grain group relative overflow-hidden rounded-[2rem] bg-[color:var(--color-brand-blue)] text-background md:min-h-[440px] p-8 md:p-12"
           >
             <div className="grid gap-8">
-              <div className="flex flex-col justify-between">
-                <div className="flex items-baseline gap-4">
-                  <span className="text-xs uppercase tracking-[0.3em] opacity-60">
-                    05
-                  </span>
-                  <span className="text-xs uppercase tracking-[0.3em] opacity-60">
-                    Practice
-                  </span>
-                </div>
+              <div className="flex flex-col justify-end">
                 <div>
-                  <h3 className="mt-6 font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
+                  <h3 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
                     Technology
                   </h3>
                   <ul className="mt-6 flex flex-wrap gap-2">
@@ -513,6 +473,9 @@ export function SolutionsSection() {
                     </li>
                     <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
                       Business automation
+                    </li>
+                    <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
+                      AI
                     </li>
                     <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
                       WhatsApp
@@ -538,7 +501,14 @@ export function SolutionsSection() {
                       <div className="flex-1 rounded-xl bg-white/10 px-4 py-2.5 backdrop-blur-sm border border-white/5 transition-colors group-hover:bg-white/20">
                         <div className="flex items-center justify-between">
                           <span className="text-sm font-medium opacity-90">Lead Capture</span>
-                          <span className="text-[10px] uppercase tracking-wider opacity-50 text-green-300">Active</span>
+                          <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-wider opacity-70 text-green-300">
+                            <motion.span
+                              animate={{ opacity: [0.3, 1, 0.3] }}
+                              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                              className="h-1.5 w-1.5 rounded-full bg-green-400"
+                            />
+                            Active
+                          </span>
                         </div>
                         <div className="mt-0.5 text-xs opacity-60">Syncs to main CRM database</div>
                       </div>
@@ -553,11 +523,38 @@ export function SolutionsSection() {
                         <div className="flex items-center justify-between">
                           <span className="text-sm font-medium opacity-80">Smart Routing</span>
                         </div>
-                        <div className="mt-0.5 text-xs opacity-50">Tags & assigns to sales rep</div>
+                        <div className="mt-0.5 flex items-center justify-between">
+                          <span className="text-xs opacity-50">Tags & assigns to sales rep</span>
+                          <div className="flex h-1 w-8 overflow-hidden rounded-full bg-white/10">
+                            <motion.div
+                              animate={{ x: ["-100%", "200%"] }}
+                              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                              className="h-full w-1/2 bg-white/40"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
 
                     {/* Node 3 */}
+                    <div className="group flex items-center gap-4">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 border border-white/20 text-white shadow-lg backdrop-blur-md transition-transform group-hover:scale-110">
+                        <motion.div
+                          animate={{ scale: [1, 1.1, 1], opacity: [0.7, 1, 0.7] }}
+                          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                        >
+                          <Bot className="h-5 w-5" />
+                        </motion.div>
+                      </div>
+                      <div className="flex-1 rounded-xl bg-white/5 px-4 py-2.5 backdrop-blur-sm border border-white/5 transition-colors group-hover:bg-white/10">
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm font-medium opacity-80">AI Assistant</span>
+                        </div>
+                        <div className="mt-0.5 text-xs opacity-50">Automates responses and qualifies leads.</div>
+                      </div>
+                    </div>
+
+                    {/* Node 4 */}
                     <div className="group flex items-center gap-4">
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 border border-white/20 text-white shadow-lg backdrop-blur-md transition-transform group-hover:scale-110">
                         <MessageCircle className="h-5 w-5 opacity-80" />

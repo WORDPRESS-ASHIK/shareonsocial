@@ -9,9 +9,10 @@ const nodesData = [
   { left: "12%", top: "20%", color: "oklch(0.56 0.20 255)", label: "Website", delay: 0 },
   { left: "78%", top: "14%", color: "oklch(0.70 0.20 350)", label: "Social", delay: 0.4 },
   { left: "88%", top: "62%", color: "oklch(0.62 0.24 25)", label: "Reels", delay: 0.8 },
-  { left: "8%", top: "70%", color: "oklch(0.78 0.14 210)", label: "CRM", delay: 1.2 },
+  { left: "14%", top: "68%", color: "oklch(0.78 0.14 210)", label: "CRM", delay: 1.2 },
   { left: "62%", top: "82%", color: "oklch(0.72 0.18 55)", label: "Ads", delay: 1.6 },
   { left: "34%", top: "86%", color: "oklch(0.56 0.20 255)", label: "Automation", delay: 2.0 },
+  { left: "48%", top: "10%", color: "oklch(0.70 0.20 350)", label: "AI", delay: 2.4 },
 ];
 
 function NetworkNode({
@@ -189,7 +190,7 @@ export function Hero() {
             <span className="relative inline-flex h-2 w-2 rounded-full bg-[color:var(--color-brand-orange)]"></span>
           </span>
           <span className="text-foreground/70">
-            Now booking Q3 growth partnerships
+            Not another marketing agency.
           </span>
         </motion.div>
         <h1 className="max-w-[16ch] font-display text-[clamp(3rem,9vw,10rem)] leading-[0.9] tracking-[-0.045em] text-balance">
