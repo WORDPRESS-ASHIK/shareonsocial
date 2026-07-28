@@ -121,7 +121,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     cta: {
-      headline: "Let's Build a Social Media Presence That Keeps Your Tables Full",
+      headline: "Let's keep your tables full.",
       description: "Whether you're opening a new restaurant or growing an established business, we're here to help you reach more local customers, increase engagement, and drive measurable growth.",
       closingText: "Ready to grow your restaurant? Let's create a strategy that delivers real results.",
       ctaButton: "Get Started Today • Book a Free Consultation"
@@ -206,7 +206,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     cta: {
-      headline: "Let's Help More Patients Discover Your Services",
+      headline: "Let's attract more patients.",
       description: "Whether you're launching a new clinic or growing an established healthcare practice, we'll help you build credibility, increase visibility, and attract more patients online.",
       closingText: "Ready to grow your practice? Let's build a strategy that delivers measurable results.",
       ctaButton: "Get Started Today • Book a Free Consultation"
@@ -291,7 +291,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     cta: {
-      headline: "Let's Turn More Browsers Into Buyers",
+      headline: "Let's turn browsers into buyers.",
       description: "Whether you run a local boutique or a growing online store, we'll help you build a stronger brand, reach more customers, and increase sales through strategic social media marketing.",
       closingText: "Ready to grow your retail business? Let's create a strategy that delivers real results.",
       ctaButton: "Get Started Today • Book a Free Consultation"
@@ -376,7 +376,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     cta: {
-      headline: "Let's Build a Digital Presence That Drives Enrollment",
+      headline: "Let's drive more enrollment.",
       description: "[CONTENT NEEDED: Please provide the exact text for this CTA description.]",
       closingText: "[CONTENT NEEDED: Closing text]",
       ctaButton: "Get Started Today • Book a Free Consultation"
@@ -461,7 +461,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     cta: {
-      headline: "Let's Build Authority That Generates Leads",
+      headline: "Let's generate more leads.",
       description: "[CONTENT NEEDED: Please provide the exact text for this CTA description.]",
       closingText: "[CONTENT NEEDED: Closing text]",
       ctaButton: "Get Started Today • Book a Free Consultation"
@@ -546,7 +546,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     cta: {
-      headline: "Let's Close More Deals Through Social Media",
+      headline: "Let's close more deals.",
       description: "[CONTENT NEEDED: Please provide the exact text for this CTA description.]",
       closingText: "[CONTENT NEEDED: Closing text]",
       ctaButton: "Get Started Today • Book a Free Consultation"
@@ -631,7 +631,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     cta: {
-      headline: "Let's Accelerate Your Growth",
+      headline: "Let's accelerate your growth.",
       description: "[CONTENT NEEDED: Please provide the exact text for this CTA description.]",
       closingText: "[CONTENT NEEDED: Closing text]",
       ctaButton: "Get Started Today • Book a Free Consultation"
@@ -716,7 +716,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     cta: {
-      headline: "Let's Make Your Next Event Unforgettable",
+      headline: "Make your event unforgettable.",
       description: "[CONTENT NEEDED: Please provide the exact text for this CTA description.]",
       closingText: "[CONTENT NEEDED: Closing text]",
       ctaButton: "Get Started Today • Book a Free Consultation"
