@@ -52,16 +52,16 @@ export function IndustryWhyUs({ data, slug }: { data: IndustryData['whyUs'], slu
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
-                  className="group relative flex min-h-[120px] items-start gap-6 rounded-3xl border border-foreground/10 bg-background p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[color:var(--color-brand-blue)]/5 z-10"
+                  className="group relative flex h-[160px] md:h-auto md:min-h-[120px] items-center md:items-start gap-4 md:gap-6 rounded-3xl border border-foreground/10 bg-background p-5 md:p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[color:var(--color-brand-blue)]/5 z-10"
                 >
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[color:var(--color-brand-cyan)]/0 to-[color:var(--color-brand-cyan)]/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   
-                  <div className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-foreground/[0.03] text-foreground/80 transition-colors group-hover:bg-[color:var(--color-brand-blue)]/10 group-hover:text-[color:var(--color-brand-blue)]">
-                    <Icon className="h-6 w-6" />
+                  <div className="relative flex h-10 w-10 md:h-12 md:w-12 shrink-0 items-center justify-center rounded-full bg-foreground/[0.03] text-foreground/80 transition-colors group-hover:bg-[color:var(--color-brand-blue)]/10 group-hover:text-[color:var(--color-brand-blue)]">
+                    <Icon className="h-5 w-5 md:h-6 md:w-6" />
                   </div>
                   
                   <div className="relative flex-1">
-                    <h3 className="text-xl font-medium leading-snug text-foreground/90 group-hover:text-foreground">
+                    <h3 className="text-base md:text-xl font-medium leading-snug text-foreground/90 group-hover:text-foreground">
                       {item}
                     </h3>
                   </div>

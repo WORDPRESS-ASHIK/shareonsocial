@@ -48,7 +48,7 @@ export function JourneySection() {
                 }}
               >
                 <div
-                  className="flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl md:h-40 md:w-40"
+                  className="group flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl md:h-40 md:w-40"
                   style={{
                     borderColor: "oklch(0.78 0.14 210)",
                     borderWidth: "1px",
@@ -56,7 +56,7 @@ export function JourneySection() {
                 >
                   <Compass
                     strokeWidth={1.3}
-                    className="h-10 w-10"
+                    className="h-10 w-10 transition-transform duration-300 ease-out group-hover:rotate-12"
                     aria-hidden="true"
                   />
                 </div>
@@ -91,7 +91,7 @@ export function JourneySection() {
                 }}
               >
                 <div
-                  className="flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl md:h-40 md:w-40"
+                  className="group flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl md:h-40 md:w-40"
                   style={{
                     borderColor: "oklch(0.70 0.20 350)",
                     borderWidth: "1px",
@@ -99,7 +99,7 @@ export function JourneySection() {
                 >
                   <PenTool
                     strokeWidth={1.3}
-                    className="h-10 w-10"
+                    className="h-10 w-10 transition-transform duration-300 ease-out group-hover:rotate-12"
                     aria-hidden="true"
                   />
                 </div>
@@ -134,7 +134,7 @@ export function JourneySection() {
                 }}
               >
                 <div
-                  className="flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl md:h-40 md:w-40"
+                  className="group flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl md:h-40 md:w-40"
                   style={{
                     borderColor: "oklch(0.72 0.18 55)",
                     borderWidth: "1px",
@@ -142,7 +142,7 @@ export function JourneySection() {
                 >
                   <Share2
                     strokeWidth={1.3}
-                    className="h-10 w-10"
+                    className="h-10 w-10 transition-transform duration-300 ease-out group-hover:rotate-12"
                     aria-hidden="true"
                   />
                 </div>
@@ -177,7 +177,7 @@ export function JourneySection() {
                 }}
               >
                 <div
-                  className="flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl md:h-40 md:w-40"
+                  className="group flex h-32 w-32 items-center justify-center rounded-full bg-background shadow-xl transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-2xl md:h-40 md:w-40"
                   style={{
                     borderColor: "oklch(0.56 0.20 255)",
                     borderWidth: "1px",
@@ -185,7 +185,7 @@ export function JourneySection() {
                 >
                   <TrendingUp
                     strokeWidth={1.3}
-                    className="h-10 w-10"
+                    className="h-10 w-10 transition-transform duration-300 ease-out group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:rotate-6"
                     aria-hidden="true"
                   />
                 </div>

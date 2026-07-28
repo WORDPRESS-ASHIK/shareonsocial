@@ -27,7 +27,7 @@ export default function AboutPage() {
                 Not another agency. <em className="italic text-[color:var(--brand-blue)]">A partner.</em>
               </h1>
               <p className="mt-8 max-w-2xl text-lg text-foreground/70 md:text-xl">
-                One team that thinks about your P&amp;L as much as your pixel grid.
+                One team that cares about your business growth as much as your brand&apos;s design.
               </p>
             </motion.div>
           </div>
@@ -35,7 +35,7 @@ export default function AboutPage() {
         
         <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
           <div className="grid gap-16 md:grid-cols-12">
-            <div className="md:col-span-5">
+            <div className="md:col-span-3">
               <div className="sticky top-32 text-xs uppercase tracking-[0.25em] text-foreground/50">
                 <span className="mr-3 inline-block h-px w-6 translate-y-[-3px] bg-foreground/40">
                 </span>
@@ -43,18 +43,17 @@ export default function AboutPage() {
               </div>
             </div>
             <motion.div 
-              className="md:col-span-7"
+              className="md:col-span-9"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="font-display text-[clamp(2.5rem,6vw,6rem)] leading-[0.95] tracking-[-0.03em] text-balance">
-                Not just marketing.<br/>A complete{/* */} 
-                <span className="italic text-[color:var(--brand-blue)]">
-                  growth
+              <h2 className="font-display text-[clamp(2.25rem,5.25vw,5.25rem)] leading-[0.95] tracking-[-0.03em]">
+                Not just marketing.<br/>
+                <span className="md:whitespace-nowrap">
+                  A complete <span className="italic text-[color:var(--brand-blue)]">growth</span> partner.
                 </span>
-                 partner.
               </h2>
               <div className="mt-10 grid gap-8 text-lg text-foreground/75 md:grid-cols-2">
                 <p>

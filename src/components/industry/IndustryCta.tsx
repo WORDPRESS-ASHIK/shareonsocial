@@ -6,10 +6,10 @@ import { ArrowUpRight } from "lucide-react";
 
 export function IndustryCta({ data }: { data: any }) {
   return (
-    <section className="relative px-6 py-24 md:px-10 lg:py-32">
+    <section className="relative px-6 py-16 md:px-10 md:py-24 lg:py-32">
       <div className="mx-auto max-w-[1400px]">
         {/* Massive Full-Width Banner */}
-        <div className="relative overflow-hidden rounded-[3rem] bg-foreground px-6 py-24 text-center text-background md:px-16 md:py-32 lg:px-24">
+        <div className="relative overflow-hidden rounded-3xl md:rounded-[3rem] bg-foreground px-6 py-16 text-center text-background md:px-16 md:py-32 lg:px-24">
           
           {/* Abstract Glowing Orbs & Background */}
           <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -40,7 +40,7 @@ export function IndustryCta({ data }: { data: any }) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="max-w-[20ch] font-display text-[clamp(40px,6vw,72px)] leading-[1.05] tracking-[-0.03em] text-balance text-background"
+              className="mx-auto max-w-[20ch] font-display text-3xl sm:text-4xl md:text-[clamp(40px,6vw,72px)] leading-[1.15] md:leading-[1.05] tracking-[-0.03em] text-balance text-background"
             >
               {data.headline}
             </motion.h2>
@@ -50,7 +50,7 @@ export function IndustryCta({ data }: { data: any }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="mt-8 max-w-[50ch] text-lg text-background/80 md:text-xl text-balance"
+              className="mt-4 md:mt-8 mx-auto max-w-[35ch] md:max-w-[50ch] text-base md:text-xl text-background/80 text-balance"
             >
               {data.description}
             </motion.p>
@@ -60,11 +60,11 @@ export function IndustryCta({ data }: { data: any }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="mt-12"
+              className="mt-8 md:mt-12"
             >
               <Link
                 href="/book"
-                className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-background px-10 py-5 text-base font-semibold text-foreground transition-all hover:scale-105 hover:shadow-2xl hover:shadow-[color:var(--color-brand-cyan)]/20"
+                className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-background px-8 py-4 md:px-10 md:py-5 text-sm md:text-base font-semibold text-foreground transition-all hover:scale-105 hover:shadow-2xl hover:shadow-[color:var(--color-brand-cyan)]/20"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-[color:var(--color-brand-cyan)]/10 to-[color:var(--color-brand-pink)]/10 opacity-0 transition-opacity group-hover:opacity-100" />
                 <span className="relative z-10">{data.buttonText}</span>

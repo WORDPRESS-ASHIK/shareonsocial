@@ -83,7 +83,7 @@ body {
 }
 
 .marquee-track {
-  animation: 40s linear infinite marquee;
+  animation: 15s linear infinite marquee;
 }
 
 .spin-slow {

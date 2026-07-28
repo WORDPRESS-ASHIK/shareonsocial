@@ -453,20 +453,31 @@ export function SolutionsSection() {
                           <stop offset="1" stopColor="oklch(0.62 0.24 25)" stopOpacity="0"></stop>
                         </linearGradient>
                       </defs>
+                      {/* Grid Lines */}
+                      <line x1="0" y1="10" x2="200" y2="10" stroke="oklch(0.62 0.24 25)" strokeOpacity="0.15" strokeDasharray="4 4" />
+                      <line x1="0" y1="36.6" x2="200" y2="36.6" stroke="oklch(0.62 0.24 25)" strokeOpacity="0.15" strokeDasharray="4 4" />
+                      <line x1="0" y1="63.3" x2="200" y2="63.3" stroke="oklch(0.62 0.24 25)" strokeOpacity="0.15" strokeDasharray="4 4" />
+                      <line x1="0" y1="90" x2="200" y2="90" stroke="oklch(0.62 0.24 25)" strokeOpacity="0.15" strokeDasharray="4 4" />
+                      
                       <path
-                        d="M0 80 Q 40 78, 60 60 T 120 40 T 200 10 L 200 100 L 0 100 Z"
+                        d="M0 90 C 12.5 90, 12.5 82, 25 82 C 37.5 82, 37.5 86, 50 86 C 62.5 86, 62.5 65, 75 65 C 87.5 65, 87.5 70, 100 70 C 112.5 70, 112.5 48, 125 48 C 137.5 48, 137.5 28, 150 28 C 162.5 28, 162.5 35, 175 35 C 187.5 35, 187.5 10, 200 10 L 200 100 L 0 100 Z"
                         fill="url(#s4)"
                       ></path>
                       <path
-                        d="M0 80 Q 40 78, 60 60 T 120 40 T 200 10"
+                        d="M0 90 C 12.5 90, 12.5 82, 25 82 C 37.5 82, 37.5 86, 50 86 C 62.5 86, 62.5 65, 75 65 C 87.5 65, 87.5 70, 100 70 C 112.5 70, 112.5 48, 125 48 C 137.5 48, 137.5 28, 150 28 C 162.5 28, 162.5 35, 175 35 C 187.5 35, 187.5 10, 200 10"
                         fill="none"
                         stroke="oklch(0.62 0.24 25)"
-                        strokeWidth="3"
+                        strokeWidth="2.5"
                         strokeLinecap="round"
                       ></path>
                       {/* Data points */}
-                      <circle cx="60" cy="60" r="4" fill="white" stroke="oklch(0.62 0.24 25)" strokeWidth="2" />
-                      <circle cx="120" cy="40" r="4" fill="white" stroke="oklch(0.62 0.24 25)" strokeWidth="2" />
+                      <circle cx="25" cy="82" r="2.5" fill="white" stroke="oklch(0.62 0.24 25)" strokeWidth="1.5" />
+                      <circle cx="50" cy="86" r="2.5" fill="white" stroke="oklch(0.62 0.24 25)" strokeWidth="1.5" />
+                      <circle cx="75" cy="65" r="2.5" fill="white" stroke="oklch(0.62 0.24 25)" strokeWidth="1.5" />
+                      <circle cx="100" cy="70" r="2.5" fill="white" stroke="oklch(0.62 0.24 25)" strokeWidth="1.5" />
+                      <circle cx="125" cy="48" r="2.5" fill="white" stroke="oklch(0.62 0.24 25)" strokeWidth="1.5" />
+                      <circle cx="150" cy="28" r="2.5" fill="white" stroke="oklch(0.62 0.24 25)" strokeWidth="1.5" />
+                      <circle cx="175" cy="35" r="2.5" fill="white" stroke="oklch(0.62 0.24 25)" strokeWidth="1.5" />
                       <circle cx="200" cy="10" r="5" fill="oklch(0.62 0.24 25)" className="shadow-lg" />
                     </svg>
                   </div>

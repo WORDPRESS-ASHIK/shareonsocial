@@ -8,7 +8,7 @@ const icons = [AlertCircle, Target, XOctagon, Search, TrendingDown, Users];
 
 export function IndustryChallenges({ data }: { data: IndustryData['challenges'] }) {
   return (
-    <section className="relative overflow-hidden bg-background py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-background py-16 md:py-24 lg:py-32">
       {/* Background Enhancements */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         {/* Subtle mesh gradient */}
@@ -36,7 +36,7 @@ export function IndustryChallenges({ data }: { data: IndustryData['challenges'] 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="mb-6 inline-flex items-center gap-2 rounded-full border border-[color:var(--color-brand-cyan)]/30 bg-[color:var(--color-brand-cyan)]/10 px-5 py-2 text-sm font-medium text-[color:var(--color-brand-cyan)] backdrop-blur-md"
+            className="mb-4 md:mb-6 inline-flex items-center gap-2 rounded-full border border-[color:var(--color-brand-cyan)]/30 bg-[color:var(--color-brand-cyan)]/10 px-5 py-2 text-sm font-medium text-[color:var(--color-brand-cyan)] backdrop-blur-md"
           >
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-current opacity-75"></span>
@@ -50,7 +50,7 @@ export function IndustryChallenges({ data }: { data: IndustryData['challenges'] 
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ delay: 0.1 }}
-            className="mx-auto font-display text-[clamp(32px,5vw,56px)] leading-[1.1] tracking-[-0.02em] text-balance text-foreground"
+            className="mx-auto font-display text-2xl leading-[1.2] md:text-[clamp(28px,4.5vw,48px)] md:leading-[1.1] tracking-[-0.02em] text-balance text-foreground"
           >
             {data.headline}
           </motion.h2>
@@ -60,14 +60,14 @@ export function IndustryChallenges({ data }: { data: IndustryData['challenges'] 
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ delay: 0.2 }}
-            className="mx-auto mt-6 max-w-[65ch] text-lg text-foreground/70 text-balance leading-relaxed"
+            className="mx-auto mt-4 md:mt-6 max-w-[40ch] md:max-w-[65ch] text-base md:text-lg text-foreground/70 text-balance leading-relaxed"
           >
             {data.description}
           </motion.p>
         </div>
 
         {/* 3-Column Feature Grid */}
-        <div className="mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 md:mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {data.items.map((item, index) => {
             const Icon = icons[index % icons.length];
             

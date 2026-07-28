@@ -38,7 +38,7 @@ export default function SolutionsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="grid gap-6 rounded-[2rem] border border-foreground/10 bg-card p-8 md:grid-cols-[280px_1fr] md:p-12"
+              className="grid gap-6 rounded-[2rem] border border-foreground/10 bg-card p-8 md:grid-cols-[320px_1fr] md:gap-16 md:p-12"
             >
               <div>
                 <div className="text-xs uppercase tracking-[0.25em] text-foreground/40">
@@ -72,7 +72,7 @@ export default function SolutionsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="grid gap-6 rounded-[2rem] border border-foreground/10 bg-card p-8 md:grid-cols-[280px_1fr] md:p-12"
+              className="grid gap-6 rounded-[2rem] border border-foreground/10 bg-card p-8 md:grid-cols-[320px_1fr] md:gap-16 md:p-12"
             >
               <div>
                 <div className="text-xs uppercase tracking-[0.25em] text-foreground/40">
@@ -106,7 +106,7 @@ export default function SolutionsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="grid gap-6 rounded-[2rem] border border-foreground/10 bg-card p-8 md:grid-cols-[280px_1fr] md:p-12"
+              className="grid gap-6 rounded-[2rem] border border-foreground/10 bg-card p-8 md:grid-cols-[320px_1fr] md:gap-16 md:p-12"
             >
               <div>
                 <div className="text-xs uppercase tracking-[0.25em] text-foreground/40">
@@ -140,7 +140,7 @@ export default function SolutionsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="grid gap-6 rounded-[2rem] border border-foreground/10 bg-card p-8 md:grid-cols-[280px_1fr] md:p-12"
+              className="grid gap-6 rounded-[2rem] border border-foreground/10 bg-card p-8 md:grid-cols-[320px_1fr] md:gap-16 md:p-12"
             >
               <div>
                 <div className="text-xs uppercase tracking-[0.25em] text-foreground/40">
@@ -174,7 +174,7 @@ export default function SolutionsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="grid gap-6 rounded-[2rem] border border-foreground/10 bg-card p-8 md:grid-cols-[280px_1fr] md:p-12"
+              className="grid gap-6 rounded-[2rem] border border-foreground/10 bg-card p-8 md:grid-cols-[320px_1fr] md:gap-16 md:p-12"
             >
               <div>
                 <div className="text-xs uppercase tracking-[0.25em] text-foreground/40">

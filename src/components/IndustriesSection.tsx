@@ -66,13 +66,13 @@ const industries = [
 export function IndustriesSection() {
   return (
     <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
-      <div className="max-w-3xl">
+      <div className="max-w-5xl">
         <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/50">
           <span className="inline-block h-px w-8 bg-foreground/40"></span>
           Industries
         </div>
-        <h2 className="mt-6 font-display text-[clamp(2.25rem,5.5vw,5rem)] leading-[0.95] tracking-[-0.03em] text-balance">
-          We speak your customer&apos;s language.
+        <h2 className="mt-6 font-display text-[clamp(2rem,4.5vw,4.5rem)] leading-[0.95] tracking-[-0.03em]">
+          Tailored growth strategies for your industry.
         </h2>
       </div>
       <div className="mt-14 divide-y divide-foreground/10 border-y border-foreground/10">

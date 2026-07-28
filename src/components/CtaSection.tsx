@@ -32,7 +32,7 @@ export function CtaSection() {
           <div className="text-xs uppercase tracking-[0.3em] opacity-70">
             The next chapter
           </div>
-          <h2 className="mt-4 max-w-[16ch] font-display text-[clamp(3rem,9vw,9rem)] leading-[0.9] tracking-[-0.04em] text-balance">
+          <h2 className="mt-4 max-w-[16ch] font-display text-[clamp(2.5rem,7.5vw,7.5rem)] leading-[1.05] tracking-[-0.04em] text-balance pb-4">
             Your next stage of growth{" "}
             <span className="bg-gradient-to-r from-[color:var(--brand-orange)] via-[color:var(--brand-pink)] to-[color:var(--brand-cyan)] bg-clip-text text-transparent">
               starts here

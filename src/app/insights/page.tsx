@@ -22,9 +22,12 @@ export default function InsightsPage() {
               <div className="text-xs uppercase tracking-[0.25em] text-foreground/50">
                 Insights
               </div>
-              <h1 className="mt-6 max-w-[16ch] font-display text-[clamp(2.75rem,8vw,8rem)] leading-[0.9] tracking-[-0.04em] text-balance">
+              <h1 className="mt-6 max-w-[16ch] font-display text-[clamp(2.75rem,8vw,8rem)] leading-[1.05] tracking-[-0.04em] text-balance pb-4">
                 Field notes from the <em className="italic text-[color:var(--brand-red)]">growth desk</em>.
               </h1>
+              <p className="mt-6 max-w-2xl text-lg text-foreground/70 md:text-xl">
+                Actionable insights, proven marketing tips, and practical growth strategies to help business owners scale smarter.
+              </p>
             </motion.div>
           </div>
         </section>

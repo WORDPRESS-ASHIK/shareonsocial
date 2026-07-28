@@ -40,9 +40,12 @@ export function InsightsSection() {
             <span className="inline-block h-px w-8 bg-foreground/40"></span>
             Insights
           </div>
-          <h2 className="mt-6 font-display text-[clamp(2.25rem,5.5vw,5rem)] leading-[0.95] tracking-[-0.03em] text-balance">
+          <h2 className="mt-6 font-display text-[clamp(2.25rem,5.5vw,5rem)] leading-[1.05] tracking-[-0.03em] text-balance pb-3">
             Field notes from the growth desk.
           </h2>
+          <p className="mt-4 max-w-2xl text-lg text-foreground/70 md:text-xl">
+            Actionable insights, proven marketing tips, and practical growth strategies to help business owners scale smarter.
+          </p>
         </div>
         <Link
           href="/insights"

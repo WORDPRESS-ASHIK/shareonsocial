@@ -47,13 +47,13 @@ export const industriesData: Record<string, IndustryData> = {
     hero: {
       headline: "Social Media Marketing for Restaurants That Brings More Customers Through Your Doors",
       subheadline: "Great food deserves great marketing.",
-      description: "At Share On Social, we help restaurants build a stronger online presence with professionally managed social media, creative content, and targeted advertising that attracts new customers and keeps regulars coming back. Whether you own a café, fast-food outlet, fine dining restaurant, cloud kitchen, or local eatery, our team creates content that showcases your brand and turns scrolling into bookings, orders, and loyal customers.",
+      description: "We help restaurants build a strong online presence. Our team creates engaging content and targeted ads that turn local scrollers into loyal, paying customers.",
       ctaPrimary: "Get Started",
       ctaSecondary: "Book a Free Consultation"
     },
     challenges: {
-      headline: "Marketing Challenges Restaurants Face Every Day",
-      description: "Running a restaurant leaves little time for marketing, but an empty dining room hurts your bottom line. We help you overcome common visibility challenges so you can focus on serving great food to a packed house.",
+      headline: "Solve Your Restaurant Marketing Challenges",
+      description: "We help restaurants overcome online visibility challenges to attract local diners and fill every table.",
       listHeadline: "We Help You Solve:",
       items: [
         "Low table reservations — Stop relying on foot traffic and start driving predictable bookings online.",
@@ -65,8 +65,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     included: {
-      headline: "Everything You Need to Grow Your Restaurant Online",
-      description: "We provide a comprehensive digital toolkit designed specifically for the hospitality industry. From mouth-watering visuals to targeted ads, you get everything needed to keep your tables full.",
+      headline: "Complete Restaurant Marketing Toolkit",
+      description: "Get everything you need to showcase your food, attract diners, and keep tables full.",
       listHeadline: "Included Services",
       items: [
         "Social Media Management — We handle your posting schedule so you can focus on running your kitchen.",
@@ -78,8 +78,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     whyUs: {
-      headline: "Your Dedicated Restaurant Marketing Partner",
-      description: "We understand that every restaurant has its own story, audience, and goals. That's why we create customized marketing strategies that reflect your brand and help you stand out in a competitive market.",
+      headline: "Your Restaurant Marketing Partner",
+      description: "We create customized marketing strategies that reflect your brand and help you stand out.",
       listHeadline: "Why Businesses Choose Us",
       items: [
         "Restaurant Marketing Expertise — Partner with a team that understands the unique rhythms of the hospitality industry.",
@@ -131,14 +131,14 @@ export const industriesData: Record<string, IndustryData> = {
     slug: 'healthcare',
     hero: {
       headline: "Social Media Marketing for Healthcare Providers That Builds Trust and Brings More Patients",
-      subheadline: "Healthcare is built on trust—and your online presence should reflect that.",
-      description: "At Share On Social, we help clinics, dental practices, medical centers, wellness providers, and healthcare professionals create a credible digital presence that educates, engages, and converts. From patient education to appointment-driven campaigns, we create strategic social media content that strengthens your reputation and helps more people discover your services.",
+      subheadline: "Build trust and attract patients.",
+      description: "We help clinics and medical practices establish a credible digital presence. Our strategic campaigns educate your community and consistently drive new appointment bookings.",
       ctaPrimary: "Get Started",
       ctaSecondary: "Book a Free Consultation"
     },
     challenges: {
-      headline: "Marketing Challenges Healthcare Providers Face Every Day",
-      description: "Patients today research providers online long before they book a consultation. We help you build a professional digital presence that establishes trust and consistently attracts new patients.",
+      headline: "Solve Your Healthcare Marketing Challenges",
+      description: "We build digital trust to help your medical practice consistently attract and book new patients.",
       listHeadline: "We Help You Solve:",
       items: [
         "Low patient enquiries — Drive more qualified leads by making it easy for patients to reach out directly.",
@@ -150,8 +150,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     included: {
-      headline: "Everything You Need to Grow Your Practice Online",
-      description: "We provide an end-to-end marketing solution built for modern medical practices. Our services ensure your clinic maintains a professional, compliant, and highly visible digital presence.",
+      headline: "Complete Healthcare Marketing Toolkit",
+      description: "Get an end-to-end marketing solution that builds trust and drives consistent patient appointments.",
       listHeadline: "Included Services",
       items: [
         "Healthcare Content Creation — Professionally designed graphics and videos that communicate your medical expertise.",
@@ -163,8 +163,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     whyUs: {
-      headline: "Your Trusted Healthcare Marketing Partner",
-      description: "Healthcare marketing requires accuracy, professionalism, and absolute trust. Our team creates content that reflects your expertise while helping you connect with your local community.",
+      headline: "Your Healthcare Marketing Partner",
+      description: "We create accurate, professional content that builds trust and connects you with your local community.",
       listHeadline: "Why Healthcare Providers Choose Us",
       items: [
         "Healthcare Marketing Specialists — Work with a team experienced in medical compliance, patient privacy, and care.",
@@ -176,7 +176,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     process: {
-      headline: "How We Help Healthcare Businesses Grow",
+      headline: "How We Help Medical Practices Grow",
       steps: [
         {
           number: "01",
@@ -216,14 +216,14 @@ export const industriesData: Record<string, IndustryData> = {
     slug: 'retail',
     hero: {
       headline: "Social Media Marketing for Retail Businesses That Drives More Sales",
-      subheadline: "In today's competitive market, customers discover products online before making a purchase.",
-      description: "At Share On Social, we help retail stores, boutiques, and eCommerce brands stand out with engaging content, strategic campaigns, and performance-driven advertising. From product launches to seasonal promotions, we create social media strategies that increase visibility, drive traffic, and turn followers into loyal customers.",
+      subheadline: "Turn more browsers into buyers.",
+      description: "We help retail stores and eCommerce brands stand out. Our engaging product content and targeted campaigns drive traffic, increase sales, and build customer loyalty.",
       ctaPrimary: "Get Started",
       ctaSecondary: "Book a Free Consultation"
     },
     challenges: {
-      headline: "Marketing Challenges Retail Businesses Face Every Day",
-      description: "In a crowded market, great products aren't enough if nobody knows they exist. We help retail brands stand out online to drive more foot traffic and increase eCommerce sales.",
+      headline: "Solve Your Retail Marketing Challenges",
+      description: "We help your retail business stand out online, driving foot traffic and increasing eCommerce sales.",
       listHeadline: "We Help You Solve:",
       items: [
         "Low product visibility — Get your best inventory in front of targeted shoppers actively looking to buy.",
@@ -235,8 +235,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     included: {
-      headline: "Everything You Need to Grow Your Retail Business Online",
-      description: "Our retail marketing suite provides everything required to move inventory faster. We combine stunning product visuals with data-driven advertising to maximize your daily sales volume.",
+      headline: "Complete Retail Marketing Toolkit",
+      description: "Combine stunning product visuals with data-driven advertising to move inventory and maximize daily sales.",
       listHeadline: "Included Services",
       items: [
         "Product Content Creation — High-end visuals and engaging videos that make your inventory highly desirable.",
@@ -248,8 +248,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     whyUs: {
-      headline: "Your Dedicated Retail Marketing Partner",
-      description: "Every retail business has a unique story and customer base. We create customized marketing strategies that help your products get noticed and your brand stay top of mind.",
+      headline: "Your Retail Marketing Partner",
+      description: "We create customized marketing strategies that help your products get noticed and drive immediate sales.",
       listHeadline: "Why Retail Businesses Choose Us",
       items: [
         "Retail Growth Strategies — Implement proven marketing funnels designed specifically to move physical and digital inventory.",
@@ -261,7 +261,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     process: {
-      headline: "How We Help Retail Businesses Grow",
+      headline: "How We Help Retail Brands Grow",
       steps: [
         {
           number: "01",
@@ -301,14 +301,14 @@ export const industriesData: Record<string, IndustryData> = {
     slug: 'education',
     hero: {
       headline: "Social Media Marketing for Education That Inspires and Enrolls",
-      subheadline: "[CONTENT NEEDED: Subheadline]",
-      description: "[CONTENT NEEDED: Please provide the exact text for the Education Hero description. Using this placeholder to ensure the page renders properly while maintaining your strict copy requirements.]",
+      subheadline: "Attract students and drive enrollments.",
+      description: "We help schools and universities build vibrant online communities. Our targeted campaigns showcase your academic excellence and turn prospective applicants into enrolled students.",
       ctaPrimary: "Get Started",
       ctaSecondary: "Book a Free Consultation"
     },
     challenges: {
-      headline: "Marketing Challenges Education Institutions Face Every Day",
-      description: "Standing out to prospective students requires more than just a traditional brochure. We help educational institutions build engaging digital footprints that attract applicants and drive enrollments.",
+      headline: "Solve Your Education Marketing Challenges",
+      description: "We build engaging digital footprints to help schools attract qualified applicants and drive campus enrollments.",
       listHeadline: "We Help You Solve:",
       items: [
         "Low student enrolments — Attract more qualified applicants by showcasing the true value of your programs.",
@@ -320,8 +320,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     included: {
-      headline: "Everything You Need to Grow Your Institution Online",
-      description: "We equip schools and universities with the digital tools needed to attract top-tier students. From campus tours to enrollment drives, we handle your entire social strategy.",
+      headline: "Complete Education Marketing Toolkit",
+      description: "Get the digital tools you need to attract top-tier students and drive consistent enrollments.",
       listHeadline: "Included Services",
       items: [
         "Course Promotion — Targeted advertising designed to fill seats in specific academic programs and certifications.",
@@ -333,8 +333,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     whyUs: {
-      headline: "Your Dedicated Education Marketing Partner",
-      description: "Choosing a school or educational program is a major life decision built on reputation. We help institutions communicate their academic excellence and vibrant campus life to future students.",
+      headline: "Your Education Marketing Partner",
+      description: "We help institutions communicate their academic excellence and vibrant campus life to attract future students.",
       listHeadline: "Why Institutions Choose Us",
       items: [
         "Education Industry Experience — Benefit from strategies tailored to enrollment cycles, semesters, and admissions.",
@@ -386,14 +386,14 @@ export const industriesData: Record<string, IndustryData> = {
     slug: 'professional-services',
     hero: {
       headline: "Social Media Marketing for Professional Services That Builds Authority",
-      subheadline: "[CONTENT NEEDED: Subheadline]",
-      description: "[CONTENT NEEDED: Please provide the exact text for the Professional Services Hero description.]",
+      subheadline: "Establish authority and generate leads.",
+      description: "We help consultants, lawyers, and advisors build industry authority. Our professional digital strategies naturally attract high-value clients and consistently book more consultation calls.",
       ctaPrimary: "Get Started",
       ctaSecondary: "Book a Free Consultation"
     },
     challenges: {
-      headline: "Marketing Challenges Professionals Face Every Day",
-      description: "Your expertise is your biggest asset, but growing a firm requires consistent lead generation. We help consultants, lawyers, and financial advisors build authority that naturally attracts high-value clients.",
+      headline: "Solve Your Firm's Marketing Challenges",
+      description: "We help you build online authority to attract high-value clients and generate consistent consultation requests.",
       listHeadline: "We Help You Solve:",
       items: [
         "Low lead generation — Implement targeted strategies that consistently bring qualified prospects to your inbox.",
@@ -405,8 +405,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     included: {
-      headline: "Everything You Need to Grow Your Firm Online",
-      description: "We provide consultants, lawyers, and advisors with a sophisticated digital marketing framework. Our services focus on establishing unquestionable authority and generating high-value B2B leads.",
+      headline: "Complete Professional Marketing Toolkit",
+      description: "Leverage a sophisticated digital framework to establish authority and generate high-value client leads.",
       listHeadline: "Included Services",
       items: [
         "LinkedIn Marketing — Professional network growth strategies designed to connect with high-net-worth clients.",
@@ -418,8 +418,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     whyUs: {
-      headline: "Your Dedicated Professional Services Marketing Partner",
-      description: "For consultants, lawyers, and financial advisors, reputation is everything. We build sophisticated digital marketing strategies that establish your firm as an undeniable industry authority.",
+      headline: "Your Professional Services Marketing Partner",
+      description: "We build sophisticated digital marketing strategies that establish your firm as an undeniable industry authority.",
       listHeadline: "Why Firms Choose Us",
       items: [
         "Authority Building — Position your partners and firm as the definitive experts in your specific service niche.",
@@ -431,7 +431,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     process: {
-      headline: "How We Help Firms Grow",
+      headline: "How We Help Professional Firms Grow",
       steps: [
         {
           number: "01",
@@ -471,14 +471,14 @@ export const industriesData: Record<string, IndustryData> = {
     slug: 'real-estate',
     hero: {
       headline: "Social Media Marketing for Real Estate That Sells",
-      subheadline: "[CONTENT NEEDED: Subheadline]",
-      description: "[CONTENT NEEDED: Please provide the exact text for the Real Estate Hero description.]",
+      subheadline: "Showcase properties and close deals.",
+      description: "We help agents and brokerages elevate their premium listings online. Our targeted marketing strategies generate highly qualified buyer leads and accelerate your property sales.",
       ctaPrimary: "Get Started",
       ctaSecondary: "Book a Free Consultation"
     },
     challenges: {
-      headline: "Marketing Challenges Real Estate Agents Face Every Day",
-      description: "Real estate is highly competitive, and buyers expect a premium online experience. We help agents and brokerages showcase properties effectively to generate more qualified leads and close more deals.",
+      headline: "Solve Real Estate Marketing Challenges",
+      description: "We elevate your online presence to generate highly qualified buyer leads and close deals faster.",
       listHeadline: "We Help You Solve:",
       items: [
         "Low property enquiries — Drive serious buyer interest with stunning property showcases and targeted reach.",
@@ -490,8 +490,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     included: {
-      headline: "Everything You Need to Grow Your Real Estate Business Online",
-      description: "We equip real estate professionals with premium marketing assets that sell properties faster. From listing promotion to personal branding, we handle your entire digital pipeline.",
+      headline: "Complete Real Estate Marketing Toolkit",
+      description: "Access premium marketing assets designed to generate qualified buyer leads and sell properties faster.",
       listHeadline: "Included Services",
       items: [
         "Property Listing Promotion — Stunning digital campaigns that ensure your properties are seen by motivated buyers.",
@@ -503,8 +503,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     whyUs: {
-      headline: "Your Dedicated Real Estate Marketing Partner",
-      description: "Real estate moves fast, and buyers expect a premium online experience. We help agents and brokerages elevate their listings, generate qualified leads, and close more deals.",
+      headline: "Your Real Estate Marketing Partner",
+      description: "We help you elevate your listings to generate highly qualified leads and close more deals.",
       listHeadline: "Why Agents Choose Us",
       items: [
         "Property Marketing Experts — Leverage strategies specifically designed to highlight luxury real estate and commercial spaces.",
@@ -556,14 +556,14 @@ export const industriesData: Record<string, IndustryData> = {
     slug: 'startups',
     hero: {
       headline: "Social Media Marketing for Startups That Drives Hyper-Growth",
-      subheadline: "[CONTENT NEEDED: Subheadline]",
-      description: "[CONTENT NEEDED: Please provide the exact text for the Startups Hero description.]",
+      subheadline: "Build buzz and acquire users.",
+      description: "We help early-stage companies disrupt the market. Our agile marketing strategies scale your brand awareness, attract early adopters, and drive rapid user acquisition.",
       ctaPrimary: "Get Started",
       ctaSecondary: "Book a Free Consultation"
     },
     challenges: {
-      headline: "Marketing Challenges Startups Face Every Day",
-      description: "Startups need to move fast and acquire users quickly before funding runs out. We help emerging tech companies build massive buzz, attract early adopters, and scale their growth rapidly.",
+      headline: "Solve Your Startup Marketing Challenges",
+      description: "We help tech startups build massive buzz, attract early adopters, and rapidly scale user growth.",
       listHeadline: "We Help You Solve:",
       items: [
         "Low brand awareness — Break through the noise and get your innovative product noticed by the right audience.",
@@ -575,8 +575,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     included: {
-      headline: "Everything You Need to Grow Your Startup Online",
-      description: "We provide an agile, scalable marketing engine designed for early-stage companies. Our services help you acquire users rapidly while keeping customer acquisition costs low.",
+      headline: "Complete Startup Marketing Toolkit",
+      description: "Deploy an agile marketing engine to acquire users rapidly while keeping acquisition costs low.",
       listHeadline: "Included Services",
       items: [
         "Brand Awareness Campaigns — Aggressive digital strategies that introduce your innovative product to the masses.",
@@ -588,8 +588,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     whyUs: {
-      headline: "Your Dedicated Startup Marketing Partner",
-      description: "Emerging companies need to build massive buzz and acquire users quickly before funding runs out. We act as your growth engine, delivering agile marketing that scales with your ambition.",
+      headline: "Your Startup Marketing Partner",
+      description: "We act as your growth engine, delivering agile marketing strategies that scale with your ambition.",
       listHeadline: "Why Startups Choose Us",
       items: [
         "Startup Growth Strategy — Deploy aggressive, innovative marketing tactics designed for rapid user acquisition.",
@@ -601,7 +601,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     process: {
-      headline: "How We Help Startups Scale",
+      headline: "How We Help Tech Startups Scale",
       steps: [
         {
           number: "01",
@@ -641,14 +641,14 @@ export const industriesData: Record<string, IndustryData> = {
     slug: 'events',
     hero: {
       headline: "Social Media Marketing for Events That Drives Attendance",
-      subheadline: "[CONTENT NEEDED: Subheadline]",
-      description: "[CONTENT NEEDED: Please provide the exact text for the Events Hero description.]",
+      subheadline: "Create hype and sell out.",
+      description: "We help organizers generate undeniable excitement for upcoming experiences. Our targeted digital campaigns reach massive audiences and drive urgent ticket sales for your event.",
       ctaPrimary: "Get Started",
       ctaSecondary: "Book a Free Consultation"
     },
     challenges: {
-      headline: "Marketing Challenges Event Organizers Face Every Day",
-      description: "An empty venue is every event organizer's worst nightmare. We help you create undeniable hype, reach massive audiences, and drive urgent ticket sales for your next big experience.",
+      headline: "Solve Your Event Marketing Challenges",
+      description: "We create undeniable digital hype to help your event reach massive audiences and sell out.",
       listHeadline: "We Help You Solve:",
       items: [
         "Low ticket sales — Implement urgency-driven campaigns that convert interested audiences into paying attendees.",
@@ -660,8 +660,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     included: {
-      headline: "Everything You Need to Grow Your Event Online",
-      description: "We provide a comprehensive promotional toolkit designed to sell out your next event. We handle the digital hype so you can focus entirely on creating an incredible experience.",
+      headline: "Complete Event Marketing Toolkit",
+      description: "Use our comprehensive promotional toolkit to generate digital hype and sell out your event.",
       listHeadline: "Included Services",
       items: [
         "Event Promotion — Urgency-driven digital campaigns designed to maximize ticket sales before the big day.",
@@ -673,8 +673,8 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     whyUs: {
-      headline: "Your Dedicated Event Marketing Partner",
-      description: "An incredible event means nothing if the venue is empty. We generate undeniable hype, reach massive audiences, and drive urgent ticket sales for your next big experience.",
+      headline: "Your Event Marketing Partner",
+      description: "We generate undeniable digital hype to reach massive audiences and drive urgent ticket sales.",
       listHeadline: "Why Event Organizers Choose Us",
       items: [
         "Event Promotion Specialists — Partner with a team that understands the timeline and urgency of event marketing.",
@@ -686,7 +686,7 @@ export const industriesData: Record<string, IndustryData> = {
       ]
     },
     process: {
-      headline: "How We Help Events Succeed",
+      headline: "How We Help Live Events Succeed",
       steps: [
         {
           number: "01",
