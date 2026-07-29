@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // Allow Ngrok for HMR and Next.js dev resources
-  // @ts-expect-error - allowedDevOrigins is relatively new and might not be fully typed depending on the exact version
+  // allowedDevOrigins is relatively new and might not be fully typed depending on the exact Next.js version
   allowedDevOrigins: [
     "noncollapsable-palacelike-junko.ngrok-free.dev",
     "localhost",

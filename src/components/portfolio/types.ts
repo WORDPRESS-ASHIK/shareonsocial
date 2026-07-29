@@ -14,7 +14,7 @@ export type Project = {
 
 export const MOCK_PROJECTS: Project[] = [
   {
-    "id": "1",
+    "id": "nova-restaurants-1",
     "title": "Restaurants Growth Strategy",
     "client": "Nova Restaurants",
     "industry": "Restaurants & Hospitality",
@@ -28,19 +28,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "2",
+    "id": "global-restaurants-2",
     "title": "Restaurants Growth Strategy",
     "client": "Global Restaurants",
     "industry": "Restaurants & Hospitality",
@@ -53,19 +61,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2874&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "3",
+    "id": "aura-restaurants-3",
     "title": "Restaurants Market Expansion",
     "client": "Aura Restaurants",
     "industry": "Restaurants & Hospitality",
@@ -78,19 +94,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "4",
+    "id": "prime-restaurants-4",
     "title": "Restaurants Acquisition Campaign",
     "client": "Prime Restaurants",
     "industry": "Restaurants & Hospitality",
@@ -103,19 +127,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1466978913421-bac2e10c05c8?q=80&w=2942&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "5",
+    "id": "next-restaurants-5",
     "title": "Restaurants Digital Transformation",
     "client": "Next Restaurants",
     "industry": "Restaurants & Hospitality",
@@ -128,19 +160,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "6",
+    "id": "aura-restaurants-6",
     "title": "Restaurants Growth Strategy",
     "client": "Aura Restaurants",
     "industry": "Restaurants & Hospitality",
@@ -155,19 +195,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2874&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "7",
+    "id": "core-healthcare-7",
     "title": "Healthcare Acquisition Campaign",
     "client": "Core Healthcare",
     "industry": "Healthcare & Wellness",
@@ -181,19 +229,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2960&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "8",
+    "id": "aura-healthcare-8",
     "title": "Healthcare Acquisition Campaign",
     "client": "Aura Healthcare",
     "industry": "Healthcare & Wellness",
@@ -206,19 +262,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2906&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "9",
+    "id": "aura-healthcare-9",
     "title": "Healthcare Acquisition Campaign",
     "client": "Aura Healthcare",
     "industry": "Healthcare & Wellness",
@@ -231,19 +295,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?q=80&w=2800&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "10",
+    "id": "global-healthcare-10",
     "title": "Healthcare Brand Refresh",
     "client": "Global Healthcare",
     "industry": "Healthcare & Wellness",
@@ -257,19 +329,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=2847&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "11",
+    "id": "nova-healthcare-11",
     "title": "Healthcare Growth Strategy",
     "client": "Nova Healthcare",
     "industry": "Healthcare & Wellness",
@@ -284,19 +364,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "12",
+    "id": "apex-healthcare-12",
     "title": "Healthcare Acquisition Campaign",
     "client": "Apex Healthcare",
     "industry": "Healthcare & Wellness",
@@ -310,19 +398,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2874&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "13",
+    "id": "next-retail-13",
     "title": "Retail Brand Refresh",
     "client": "Next Retail",
     "industry": "Retail & E-commerce",
@@ -335,19 +431,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "14",
+    "id": "global-retail-14",
     "title": "Retail Growth Strategy",
     "client": "Global Retail",
     "industry": "Retail & E-commerce",
@@ -361,19 +465,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "15",
+    "id": "prime-retail-15",
     "title": "Retail Omnichannel Launch",
     "client": "Prime Retail",
     "industry": "Retail & E-commerce",
@@ -388,19 +500,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "16",
+    "id": "elite-retail-16",
     "title": "Retail Growth Strategy",
     "client": "Elite Retail",
     "industry": "Retail & E-commerce",
@@ -414,19 +534,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=2872&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "17",
+    "id": "zenith-retail-17",
     "title": "Retail Growth Strategy",
     "client": "Zenith Retail",
     "industry": "Retail & E-commerce",
@@ -439,19 +567,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1555529733-0e670560f7e1?q=80&w=2874&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "18",
+    "id": "apex-retail-18",
     "title": "Retail Digital Transformation",
     "client": "Apex Retail",
     "industry": "Retail & E-commerce",
@@ -465,19 +601,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "19",
+    "id": "aura-real-19",
     "title": "Real Brand Refresh",
     "client": "Aura Real",
     "industry": "Real Estate & Property",
@@ -490,19 +634,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "20",
+    "id": "core-real-20",
     "title": "Real Acquisition Campaign",
     "client": "Core Real",
     "industry": "Real Estate & Property",
@@ -517,19 +669,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2950&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "21",
+    "id": "core-real-21",
     "title": "Real Brand Refresh",
     "client": "Core Real",
     "industry": "Real Estate & Property",
@@ -542,19 +702,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2953&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "22",
+    "id": "apex-real-22",
     "title": "Real Digital Transformation",
     "client": "Apex Real",
     "industry": "Real Estate & Property",
@@ -567,19 +735,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?q=80&w=2946&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "23",
+    "id": "next-real-23",
     "title": "Real Digital Transformation",
     "client": "Next Real",
     "industry": "Real Estate & Property",
@@ -594,19 +770,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "24",
+    "id": "nova-real-24",
     "title": "Real Acquisition Campaign",
     "client": "Nova Real",
     "industry": "Real Estate & Property",
@@ -621,19 +805,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "25",
+    "id": "zenith-education-25",
     "title": "Education Omnichannel Launch",
     "client": "Zenith Education",
     "industry": "Education & Training",
@@ -647,19 +839,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "26",
+    "id": "apex-education-26",
     "title": "Education Acquisition Campaign",
     "client": "Apex Education",
     "industry": "Education & Training",
@@ -673,19 +873,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2932&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "27",
+    "id": "apex-education-27",
     "title": "Education Market Expansion",
     "client": "Apex Education",
     "industry": "Education & Training",
@@ -699,19 +907,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "28",
+    "id": "next-education-28",
     "title": "Education Growth Strategy",
     "client": "Next Education",
     "industry": "Education & Training",
@@ -725,19 +941,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "29",
+    "id": "next-education-29",
     "title": "Education Market Expansion",
     "client": "Next Education",
     "industry": "Education & Training",
@@ -750,19 +974,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "30",
+    "id": "zenith-education-30",
     "title": "Education Acquisition Campaign",
     "client": "Zenith Education",
     "industry": "Education & Training",
@@ -776,19 +1008,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?q=80&w=2874&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "31",
+    "id": "elite-construction-31",
     "title": "Construction Brand Refresh",
     "client": "Elite Construction",
     "industry": "Construction & Trades",
@@ -801,19 +1041,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "32",
+    "id": "nova-construction-32",
     "title": "Construction Growth Strategy",
     "client": "Nova Construction",
     "industry": "Construction & Trades",
@@ -827,19 +1075,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "33",
+    "id": "urban-construction-33",
     "title": "Construction Digital Transformation",
     "client": "Urban Construction",
     "industry": "Construction & Trades",
@@ -852,19 +1108,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "34",
+    "id": "prime-construction-34",
     "title": "Construction Growth Strategy",
     "client": "Prime Construction",
     "industry": "Construction & Trades",
@@ -878,19 +1142,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "35",
+    "id": "urban-construction-35",
     "title": "Construction Growth Strategy",
     "client": "Urban Construction",
     "industry": "Construction & Trades",
@@ -903,19 +1175,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1536895058696-a69b1c7ba34d?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "36",
+    "id": "apex-construction-36",
     "title": "Construction Omnichannel Launch",
     "client": "Apex Construction",
     "industry": "Construction & Trades",
@@ -930,19 +1210,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=2944&auto=format&fit=crop",
     "color": "var(--brand-orange)"
   },
   {
-    "id": "37",
+    "id": "core-home-37",
     "title": "Home Omnichannel Launch",
     "client": "Core Home",
     "industry": "Home Services",
@@ -956,19 +1244,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "38",
+    "id": "next-home-38",
     "title": "Home Acquisition Campaign",
     "client": "Next Home",
     "industry": "Home Services",
@@ -981,19 +1277,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2938&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "39",
+    "id": "urban-home-39",
     "title": "Home Growth Strategy",
     "client": "Urban Home",
     "industry": "Home Services",
@@ -1008,19 +1312,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "40",
+    "id": "nova-home-40",
     "title": "Home Growth Strategy",
     "client": "Nova Home",
     "industry": "Home Services",
@@ -1034,19 +1346,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=2942&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "41",
+    "id": "prime-home-41",
     "title": "Home Omnichannel Launch",
     "client": "Prime Home",
     "industry": "Home Services",
@@ -1061,19 +1381,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=2874&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "42",
+    "id": "global-home-42",
     "title": "Home Digital Transformation",
     "client": "Global Home",
     "industry": "Home Services",
@@ -1086,19 +1414,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1613214149922-f1809c99b414?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "43",
+    "id": "aura-beauty-43",
     "title": "Beauty Growth Strategy",
     "client": "Aura Beauty",
     "industry": "Beauty & Personal Care",
@@ -1113,19 +1449,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2874&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "44",
+    "id": "global-beauty-44",
     "title": "Beauty Market Expansion",
     "client": "Global Beauty",
     "industry": "Beauty & Personal Care",
@@ -1140,19 +1484,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2938&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "45",
+    "id": "aura-beauty-45",
     "title": "Beauty Growth Strategy",
     "client": "Aura Beauty",
     "industry": "Beauty & Personal Care",
@@ -1167,19 +1519,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "46",
+    "id": "elite-beauty-46",
     "title": "Beauty Brand Refresh",
     "client": "Elite Beauty",
     "industry": "Beauty & Personal Care",
@@ -1193,19 +1553,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "47",
+    "id": "elite-beauty-47",
     "title": "Beauty Brand Refresh",
     "client": "Elite Beauty",
     "industry": "Beauty & Personal Care",
@@ -1218,19 +1586,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1512496015851-a1cbfb9fb95f?q=80&w=2942&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "48",
+    "id": "prime-beauty-48",
     "title": "Beauty Acquisition Campaign",
     "client": "Prime Beauty",
     "industry": "Beauty & Personal Care",
@@ -1245,19 +1621,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1521590832168-b3a4e5c7809c?q=80&w=2938&auto=format&fit=crop",
     "color": "var(--brand-pink)"
   },
   {
-    "id": "49",
+    "id": "next-professional-49",
     "title": "Professional Brand Refresh",
     "client": "Next Professional",
     "industry": "Professional Services",
@@ -1270,19 +1654,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2938&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "50",
+    "id": "aura-professional-50",
     "title": "Professional Omnichannel Launch",
     "client": "Aura Professional",
     "industry": "Professional Services",
@@ -1296,19 +1688,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=2874&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "51",
+    "id": "apex-professional-51",
     "title": "Professional Acquisition Campaign",
     "client": "Apex Professional",
     "industry": "Professional Services",
@@ -1323,19 +1723,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1450101499163-c8848c66cb85?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "52",
+    "id": "elite-professional-52",
     "title": "Professional Acquisition Campaign",
     "client": "Elite Professional",
     "industry": "Professional Services",
@@ -1348,19 +1756,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1554200876-56c2f25224fa?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "53",
+    "id": "urban-professional-53",
     "title": "Professional Omnichannel Launch",
     "client": "Urban Professional",
     "industry": "Professional Services",
@@ -1375,19 +1791,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2942&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "54",
+    "id": "elite-professional-54",
     "title": "Professional Brand Refresh",
     "client": "Elite Professional",
     "industry": "Professional Services",
@@ -1402,19 +1826,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-blue)"
   },
   {
-    "id": "55",
+    "id": "apex-technology-55",
     "title": "Technology Market Expansion",
     "client": "Apex Technology",
     "industry": "Technology & Startups",
@@ -1429,19 +1861,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "56",
+    "id": "nova-technology-56",
     "title": "Technology Digital Transformation",
     "client": "Nova Technology",
     "industry": "Technology & Startups",
@@ -1456,19 +1896,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2944&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "57",
+    "id": "global-technology-57",
     "title": "Technology Brand Refresh",
     "client": "Global Technology",
     "industry": "Technology & Startups",
@@ -1482,19 +1930,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "58",
+    "id": "elite-technology-58",
     "title": "Technology Growth Strategy",
     "client": "Elite Technology",
     "industry": "Technology & Startups",
@@ -1509,19 +1965,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "59",
+    "id": "next-technology-59",
     "title": "Technology Digital Transformation",
     "client": "Next Technology",
     "industry": "Technology & Startups",
@@ -1534,19 +1998,27 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
+        "label": "Revenue Growth",
         "value": "+45%"
       },
       {
-        "label": "Metric 2",
+        "label": "ROAS",
         "value": "3.2x"
+      },
+      {
+        "label": "New Leads",
+        "value": "1,200+"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "+18%"
       }
     ],
     "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2938&auto=format&fit=crop",
     "color": "var(--brand-cyan)"
   },
   {
-    "id": "60",
+    "id": "global-technology-60",
     "title": "Technology Growth Strategy",
     "client": "Global Technology",
     "industry": "Technology & Startups",
@@ -1560,12 +2032,20 @@ export const MOCK_PROJECTS: Project[] = [
     ],
     "outcomes": [
       {
-        "label": "Metric 1",
-        "value": "+45%"
+        "label": "Cost Per Lead",
+        "value": "-24%"
       },
       {
-        "label": "Metric 2",
-        "value": "3.2x"
+        "label": "Organic Traffic",
+        "value": "+125%"
+      },
+      {
+        "label": "Engagement",
+        "value": "5x"
+      },
+      {
+        "label": "Active Users",
+        "value": "10k+"
       }
     ],
     "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop",

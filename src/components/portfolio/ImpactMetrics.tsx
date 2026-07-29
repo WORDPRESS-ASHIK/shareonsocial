@@ -24,11 +24,11 @@ export function ImpactMetrics() {
         
         <div className="relative">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
-            <div className="max-w-xl">
+            <div className="max-w-2xl">
               <div className="text-xs uppercase tracking-[0.25em] opacity-70 mb-6">
                 The Impact
               </div>
-              <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
+              <h2 className="max-w-[18ch] font-display text-[clamp(2.5rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
                 Numbers that speak for themselves.
               </h2>
             </div>
