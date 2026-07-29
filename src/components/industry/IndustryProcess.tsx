@@ -7,6 +7,7 @@ import type { IndustryData } from "@/data/industries";
 const processIcons = [SearchIcon, PenTool, MessageSquare, Rocket, LineChart];
 
 // Reusing some lucide icons to act as search/discovery
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function SearchIcon(props: any) {
   return <Target {...props} />;
 }

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function IndustryCta({ data }: { data: any }) {
   // Split headline to highlight the last 2 words dynamically
   const words = data.headline.split(" ");

@@ -2,11 +2,20 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // Allow Ngrok for HMR and Next.js dev resources
-  // @ts-ignore - allowedDevOrigins is relatively new and might not be fully typed depending on the exact version
+  // @ts-expect-error - allowedDevOrigins is relatively new and might not be fully typed depending on the exact version
   allowedDevOrigins: [
     "noncollapsable-palacelike-junko.ngrok-free.dev",
     "localhost",
   ],
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+  },
 
   // Bypass ngrok interstitial warning for internal API/data fetches
   async headers() {

@@ -25,6 +25,7 @@ function NetworkNode({
   onHover,
   onLeave,
   hoveredNode
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
 }: any) {
   const prefersReducedMotion = useReducedMotion();
   const y = useMotionValue(0);

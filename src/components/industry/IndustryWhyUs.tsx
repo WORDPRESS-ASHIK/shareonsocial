@@ -52,7 +52,7 @@ export function IndustryWhyUs({ data, slug }: { data: IndustryData['whyUs'], slu
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
-                  className="group relative flex h-[160px] md:h-auto md:min-h-[120px] items-center md:items-start gap-4 md:gap-6 rounded-3xl border border-foreground/10 bg-background p-5 md:p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[color:var(--color-brand-blue)]/5 z-10"
+                  className="group relative flex min-h-[160px] md:h-auto md:min-h-[120px] items-center md:items-start gap-4 md:gap-6 rounded-3xl border border-foreground/10 bg-background p-5 md:p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[color:var(--color-brand-blue)]/5 z-10"
                 >
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[color:var(--color-brand-cyan)]/0 to-[color:var(--color-brand-cyan)]/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   

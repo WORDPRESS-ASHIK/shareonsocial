@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight, CheckCircle2, Check, Search } from "lucide-react";
+import Link from "next/link";
 
 type FieldConfig = {
   id: string;
@@ -196,6 +197,7 @@ export function ContactForm({ title = "New enquiry" }: { title?: string }) {
 
   // Hide error message when user makes changes
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (isValid) setShowError(false);
   }, [formData, currentStep, isValid]);
 
@@ -267,12 +269,12 @@ export function ContactForm({ title = "New enquiry" }: { title?: string }) {
           Thanks!
         </h2>
         <p className="mt-4 text-lg text-foreground/70 max-w-lg mx-auto">
-          We'll review your answers before the consultation so we can make the best use of our time together.
+          We&apos;ll review your answers before the consultation so we can make the best use of our time together.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="/" className="inline-flex items-center justify-center rounded-full bg-foreground px-8 py-4 text-sm font-medium text-background transition-opacity hover:opacity-90">
+          <Link href="/" className="inline-flex items-center justify-center rounded-full bg-foreground px-8 py-4 text-sm font-medium text-background transition-opacity hover:opacity-90">
             Back to Home
-          </a>
+          </Link>
           <button 
             type="button"
             onClick={() => {
