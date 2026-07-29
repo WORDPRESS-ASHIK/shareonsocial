@@ -1,76 +1,214 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, Check, Search } from "lucide-react";
 
 type FieldConfig = {
   id: string;
   question: string;
-  subtitle: string;
-  placeholder: string;
-  type: string;
+  subtitle?: string;
+  placeholder?: string;
+  type: "text" | "textarea" | "searchable-dropdown" | "multi-select" | "multi-field";
+  options?: string[];
+  fields?: { id: string; label: string; type: string; required?: boolean }[];
+  optional?: boolean;
 };
 
 const steps: FieldConfig[] = [
   {
     id: "location",
-    question: "Where's your business based?",
-    subtitle: "Country or city",
-    placeholder: "e.g. United Arab Emirates",
+    question: "Where is your business located?",
+    placeholder: "City, State, Country",
     type: "text",
   },
   {
-    id: "name",
-    question: "What is your full name?",
-    subtitle: "First and last name",
-    placeholder: "e.g. Jane Doe",
-    type: "text",
+    id: "industry",
+    question: "What industry are you in?",
+    type: "searchable-dropdown",
+    options: [
+      "Restaurants & Cafés",
+      "Hotels & Hospitality",
+      "Healthcare & Wellness",
+      "Dental & Medical Clinics",
+      "Retail & E-commerce",
+      "Education & Training",
+      "Real Estate & Property",
+      "Construction & Trades",
+      "Home Services",
+      "Professional Services",
+      "Finance & Accounting",
+      "Legal Services",
+      "Beauty & Personal Care",
+      "Fitness & Sports",
+      "Automotive",
+      "Travel & Tourism",
+      "Events & Entertainment",
+      "Nonprofits & Community Organisations",
+      "Manufacturing & Wholesale",
+      "Logistics & Transport",
+      "Technology & SaaS",
+      "Startups",
+      "Agriculture & Food Production",
+      "Franchises & Multi-location Businesses"
+    ]
   },
   {
-    id: "email",
-    question: "What is your email address?",
-    subtitle: "Work email preferred",
-    placeholder: "e.g. jane@company.com",
-    type: "email",
+    id: "goals",
+    question: "What are you looking to improve?",
+    type: "multi-select",
+    options: [
+      "Website",
+      "Marketing",
+      "Social Media",
+      "Leads",
+      "Branding",
+      "AI",
+      "CRM",
+      "Automation",
+      "Sales"
+    ]
   },
   {
-    id: "company",
-    question: "What is your company name?",
-    subtitle: "Your organization",
-    placeholder: "e.g. Acme Corp",
-    type: "text",
-  },
-  {
-    id: "services",
-    question: "What services are you looking for?",
-    subtitle: "e.g. Branding, Digital, Social",
-    placeholder: "e.g. A new website and branding",
-    type: "text",
-  },
-  {
-    id: "details",
-    question: "Any additional details?",
-    subtitle: "Project timeline, budget, or other notes",
-    placeholder: "Tell us more about your project...",
+    id: "challenge",
+    question: "What's your biggest challenge?",
+    placeholder: "Tell us about your biggest challenge...",
     type: "textarea",
   },
+  {
+    id: "website",
+    question: "What's your business website?",
+    placeholder: "https://yourwebsite.com",
+    type: "text",
+    optional: true,
+  },
+  {
+    id: "contact",
+    question: "How can we reach you?",
+    type: "multi-field",
+    fields: [
+      { id: "name", label: "Name *", type: "text", required: true },
+      { id: "email", label: "Email *", type: "email", required: true },
+      { id: "phone", label: "Phone *", type: "tel", required: true }
+    ]
+  }
 ];
+
+const SearchableDropdown = ({ options, value, onChange }: { options: string[], value: string, onChange: (v: string) => void }) => {
+  const [query, setQuery] = useState("");
+  const filtered = options.filter(o => o.toLowerCase().includes(query.toLowerCase()));
+  return (
+    <div className="flex flex-col gap-3">
+      <div className="relative">
+        <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-foreground/40" />
+        <input 
+          type="text" 
+          className="w-full rounded-2xl border border-foreground/15 bg-background pl-12 pr-5 py-4 text-lg outline-none placeholder:text-foreground/40 focus:border-foreground/40 mb-2" 
+          placeholder="Search industry..." 
+          value={query} 
+          onChange={(e) => setQuery(e.target.value)} 
+        />
+      </div>
+      <div className="max-h-[210px] overflow-y-auto rounded-2xl border border-foreground/10 bg-background/50 p-2 flex flex-col gap-1">
+        {filtered.map(opt => (
+          <button 
+            key={opt} 
+            type="button"
+            onClick={() => onChange(opt)}
+            className={`text-left px-4 py-3 rounded-xl transition-colors ${value === opt ? "bg-foreground text-background" : "hover:bg-foreground/5"}`}
+          >
+            {opt}
+          </button>
+        ))}
+        {filtered.length === 0 && <div className="px-4 py-3 text-foreground/50">No results found.</div>}
+      </div>
+    </div>
+  )
+}
+
+const MultiSelect = ({ options, value = [], onChange }: { options: string[], value: string[], onChange: (v: string[]) => void }) => {
+  const toggle = (opt: string) => {
+    if (value.includes(opt)) onChange(value.filter(v => v !== opt));
+    else onChange([...value, opt]);
+  }
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[300px] overflow-y-auto pr-2">
+      {options.map(opt => (
+        <button 
+          key={opt} 
+          type="button"
+          onClick={() => toggle(opt)}
+          className={`text-left px-5 py-4 rounded-2xl border transition-all ${value.includes(opt) ? "border-foreground bg-foreground text-background" : "border-foreground/15 hover:border-foreground/40"}`}
+        >
+          <div className="flex items-center gap-3">
+            <div className={`w-5 h-5 rounded-md border flex items-center justify-center ${value.includes(opt) ? "border-background bg-background text-foreground" : "border-foreground/30"}`}>
+               {value.includes(opt) && <Check className="w-3.5 h-3.5" />}
+            </div>
+            {opt}
+          </div>
+        </button>
+      ))}
+    </div>
+  )
+}
+
+const MultiField = ({ fields, formData, setFormData }: { fields: any[], formData: any, setFormData: any }) => {
+  return (
+    <div className="flex flex-col gap-4">
+      {fields.map(f => (
+        <div key={f.id}>
+          <input
+            type={f.type}
+            placeholder={f.label}
+            className="w-full rounded-2xl border border-foreground/15 bg-background px-5 py-4 text-lg outline-none placeholder:text-foreground/40 focus:border-foreground/40"
+            value={formData[f.id] || ""}
+            onChange={(e) => setFormData({ ...formData, [f.id]: e.target.value })}
+          />
+        </div>
+      ))}
+    </div>
+  )
+}
 
 export function ContactForm({ title = "New enquiry" }: { title?: string }) {
   const [currentStep, setCurrentStep] = useState(0);
-  const [formData, setFormData] = useState<Record<string, string>>({});
+  const [formData, setFormData] = useState<Record<string, any>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [showError, setShowError] = useState(false);
 
   const currentField = steps[currentStep];
-  const currentValue = formData[currentField?.id] || "";
-  const isValid = currentValue.trim().length > 0;
+  const isLastStep = currentStep === steps.length - 1;
+  
+  let isValid = false;
+  if (currentField) {
+    const currentValue = formData[currentField.id];
+    if (currentField.type === "text" || currentField.type === "textarea") {
+      isValid = currentField.optional ? true : (typeof currentValue === "string" && currentValue.trim().length > 0);
+    } else if (currentField.type === "searchable-dropdown") {
+      isValid = typeof currentValue === "string" && currentValue.length > 0;
+    } else if (currentField.type === "multi-select") {
+      isValid = Array.isArray(currentValue) && currentValue.length > 0;
+    } else if (currentField.type === "multi-field") {
+      isValid = currentField.fields?.every(f => !f.required || (typeof formData[f.id] === "string" && formData[f.id].trim().length > 0)) ?? false;
+    }
+  }
+
+  // Hide error message when user makes changes
+  useEffect(() => {
+    if (isValid) setShowError(false);
+  }, [formData, currentStep, isValid]);
 
   const handleNext = () => {
-    if (isValid && currentStep < steps.length - 1) {
+    if (!isValid) {
+      setShowError(true);
+      return;
+    }
+    
+    setShowError(false);
+    if (currentStep < steps.length - 1) {
       setCurrentStep((prev) => prev + 1);
-    } else if (isValid && currentStep === steps.length - 1) {
+    } else if (isLastStep) {
       submitForm();
     }
   };
@@ -78,11 +216,12 @@ export function ContactForm({ title = "New enquiry" }: { title?: string }) {
   const handleBack = () => {
     if (currentStep > 0) {
       setCurrentStep((prev) => prev - 1);
+      setShowError(false);
     }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter" && currentField.type !== "textarea") {
+    if (e.key === "Enter" && currentField?.type !== "textarea") {
       e.preventDefault();
       handleNext();
     }
@@ -125,14 +264,32 @@ export function ContactForm({ title = "New enquiry" }: { title?: string }) {
           <CheckCircle2 className="h-10 w-10" />
         </div>
         <h2 className="mt-8 font-display text-4xl tracking-tight">
-          Request Received
+          Thanks!
         </h2>
-        <p className="mt-4 text-lg text-foreground/70">
-          Thank you for reaching out. We will get back to you within one business day.
+        <p className="mt-4 text-lg text-foreground/70 max-w-lg mx-auto">
+          We'll review your answers before the consultation so we can make the best use of our time together.
         </p>
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="/" className="inline-flex items-center justify-center rounded-full bg-foreground px-8 py-4 text-sm font-medium text-background transition-opacity hover:opacity-90">
+            Back to Home
+          </a>
+          <button 
+            type="button"
+            onClick={() => {
+              setIsSuccess(false);
+              setCurrentStep(0);
+              setFormData({});
+            }}
+            className="inline-flex items-center justify-center rounded-full border border-foreground/15 px-8 py-4 text-sm font-medium transition-colors hover:bg-foreground/5"
+          >
+            Book Another Consultation
+          </button>
+        </div>
       </motion.div>
     );
   }
+
+  const progressPercent = ((currentStep + 1) / steps.length) * 100;
 
   return (
     <motion.div
@@ -152,54 +309,86 @@ export function ContactForm({ title = "New enquiry" }: { title?: string }) {
         <motion.div
           className="h-full bg-[color:var(--brand-blue)]"
           initial={{ width: "0%" }}
-          animate={{ width: `${((currentStep + 1) / steps.length) * 100}%` }}
+          animate={{ width: `${progressPercent}%` }}
           transition={{ duration: 0.3 }}
         />
       </div>
 
-      <div className="min-h-[300px]">
+      <div className="min-h-[350px]">
         <AnimatePresence mode="wait">
-          <motion.div
-            key={currentStep}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
-            transition={{ duration: 0.3 }}
-          >
-            <div>
-              <div className="font-display text-3xl leading-tight tracking-tight md:text-4xl">
-                {currentField.question}
-              </div>
-              <div className="mt-2 text-sm text-foreground/50">
-                {currentField.subtitle}
-              </div>
-              <div className="mt-6">
-                {currentField.type === "textarea" ? (
-                  <textarea
-                    autoFocus
-                    className="w-full resize-none rounded-2xl border border-foreground/15 bg-background px-5 py-4 text-lg outline-none placeholder:text-foreground/40 focus:border-foreground/40 min-h-[120px]"
-                    placeholder={currentField.placeholder}
-                    value={currentValue}
-                    onChange={(e) =>
-                      setFormData({ ...formData, [currentField.id]: e.target.value })
-                    }
-                  />
-                ) : (
-                  <input
-                    type={currentField.type}
-                    autoFocus
-                    className="w-full rounded-2xl border border-foreground/15 bg-background px-5 py-4 text-lg outline-none placeholder:text-foreground/40 focus:border-foreground/40"
-                    placeholder={currentField.placeholder}
-                    value={currentValue}
-                    onChange={(e) =>
-                      setFormData({ ...formData, [currentField.id]: e.target.value })
-                    }
-                    onKeyDown={handleKeyDown}
-                  />
+          {currentField && (
+            <motion.div
+              key={currentStep}
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div>
+                <div className="font-display text-3xl leading-tight tracking-tight md:text-4xl">
+                  {currentField.question}
+                </div>
+                {currentField.subtitle && (
+                  <div className="mt-2 text-sm text-foreground/50">
+                    {currentField.subtitle}
+                  </div>
                 )}
+                <div className="mt-6">
+                  {currentField.type === "textarea" ? (
+                    <textarea
+                      autoFocus
+                      className={`w-full resize-none rounded-2xl border bg-background px-5 py-4 text-lg outline-none transition-colors min-h-[120px] ${showError ? "border-red-500/50 focus:border-red-500" : "border-foreground/15 placeholder:text-foreground/40 focus:border-foreground/40"}`}
+                      placeholder={currentField.placeholder}
+                      value={formData[currentField.id] || ""}
+                      onChange={(e) =>
+                        setFormData({ ...formData, [currentField.id]: e.target.value })
+                      }
+                    />
+                  ) : currentField.type === "searchable-dropdown" ? (
+                    <SearchableDropdown 
+                      options={currentField.options || []} 
+                      value={formData[currentField.id] || ""} 
+                      onChange={(v) => setFormData({ ...formData, [currentField.id]: v })} 
+                    />
+                  ) : currentField.type === "multi-select" ? (
+                    <MultiSelect 
+                      options={currentField.options || []} 
+                      value={formData[currentField.id] || []} 
+                      onChange={(v) => setFormData({ ...formData, [currentField.id]: v })} 
+                    />
+                  ) : currentField.type === "multi-field" ? (
+                    <MultiField 
+                      fields={currentField.fields || []} 
+                      formData={formData} 
+                      setFormData={setFormData} 
+                    />
+                  ) : (
+                    <input
+                      type={currentField.type}
+                      autoFocus
+                      className={`w-full rounded-2xl border bg-background px-5 py-4 text-lg outline-none transition-colors ${showError ? "border-red-500/50 focus:border-red-500" : "border-foreground/15 placeholder:text-foreground/40 focus:border-foreground/40"}`}
+                      placeholder={currentField.placeholder}
+                      value={formData[currentField.id] || ""}
+                      onChange={(e) =>
+                        setFormData({ ...formData, [currentField.id]: e.target.value })
+                      }
+                      onKeyDown={handleKeyDown}
+                    />
+                  )}
+                  
+                  {showError && (
+                    <motion.div 
+                      initial={{ opacity: 0, y: -10 }} 
+                      animate={{ opacity: 1, y: 0 }} 
+                      className="mt-3 text-sm text-red-500 font-medium"
+                    >
+                      Please complete this step before continuing.
+                    </motion.div>
+                  )}
+                </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          )}
         </AnimatePresence>
       </div>
 
@@ -216,11 +405,11 @@ export function ContactForm({ title = "New enquiry" }: { title?: string }) {
         <button
           type="button"
           onClick={handleNext}
-          disabled={!isValid || isSubmitting}
+          disabled={isSubmitting}
           className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm text-background disabled:opacity-40 transition-opacity"
         >
-          {isSubmitting ? "Submitting..." : currentStep === steps.length - 1 ? "Submit" : "Continue"}
-          {!isSubmitting && <ArrowRight className="h-4 w-4" aria-hidden="true" />}
+          {isSubmitting ? "Submitting..." : isLastStep ? "Submit Your Request" : "Continue"}
+          {!isSubmitting && !isLastStep && <ArrowRight className="h-4 w-4" aria-hidden="true" />}
         </button>
       </div>
     </motion.div>
