@@ -28,6 +28,10 @@ import { Startups } from "./illustrations/Startups";
 import { AgricultureFoodProduction } from "./illustrations/AgricultureFoodProduction";
 import { FranchisesMultiLocation } from "./illustrations/FranchisesMultiLocation";
 
+import { RestaurantsHospitality } from "./illustrations/RestaurantsHospitality";
+import { RealEstate } from "./illustrations/RealEstate";
+import { TechnologyStartups } from "./illustrations/TechnologyStartups";
+
 type Props = {
   slug: string;
 };
@@ -38,6 +42,13 @@ const cardClass = "relative z-10 w-full max-w-md rounded-2xl border border-white
 export function IndustryIllustration({ slug }: Props) {
   const renderMockup = () => {
     switch (slug) {
+      case "restaurants-hospitality":
+        return <RestaurantsHospitality />;
+      case "real-estate":
+        return <RealEstate />;
+      case "technology-startups":
+        return <TechnologyStartups />;
+        
       case "restaurants-cafes":
         return <RestaurantsCafes />;
       case "hotels-hospitality":
