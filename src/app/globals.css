@@ -69,9 +69,9 @@ body {
   50% { transform: translateY(-12px); }
 }
 
-@keyframes marquee {
-  0% { transform: translate(0); }
-  100% { transform: translate(-50%); }
+@keyframes marquee-infinite {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
 @keyframes spin-slow {
@@ -82,8 +82,8 @@ body {
   animation: 6s ease-in-out infinite float-y;
 }
 
-.marquee-track {
-  animation: 15s linear infinite marquee;
+.animate-marquee-infinite {
+  animation: 48s linear infinite marquee-infinite;
 }
 
 .spin-slow {
