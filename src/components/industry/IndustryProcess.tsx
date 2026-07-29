@@ -12,6 +12,13 @@ function SearchIcon(props: any) {
   return <Target {...props} />;
 }
 
+const staticSteps = [
+  { title: "Discover", description: "Audits, positioning, opportunity mapping." },
+  { title: "Create", description: "Brand, product, content and website." },
+  { title: "Connect", description: "Ads, SEO, CRM and automation wired." },
+  { title: "Grow", description: "Compound results, measured monthly." }
+];
+
 export function IndustryProcess({ data }: { data: IndustryData['process'] }) {
   return (
     <section className="relative overflow-hidden bg-background py-24 lg:py-32">
@@ -44,8 +51,8 @@ export function IndustryProcess({ data }: { data: IndustryData['process'] }) {
         <div className="relative">
 
 
-          <div className="grid gap-8 md:gap-6 lg:grid-cols-5 lg:gap-8 relative z-10">
-            {data.steps.map((step, index) => {
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 relative z-10">
+            {staticSteps.map((step, index) => {
               const Icon = processIcons[index % processIcons.length];
 
               return (
