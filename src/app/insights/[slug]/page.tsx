@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { insights } from "@/data/insights";
+import { allInsights } from "@/data/insights-extended";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ArticleHero } from "@/components/ArticleHero";
@@ -10,21 +10,33 @@ import { ArticleCTA } from "@/components/ArticleCTA";
 import { ArticleEnd } from "@/components/ArticleEnd";
 
 export async function generateStaticParams() {
-  return insights.map((insight) => ({
+  return allInsights.map((insight) => ({
     slug: insight.slug,
   }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const insight = allInsights.find((i) => i.slug === resolvedParams.slug);
+
+  if (!insight) return {};
+
+  return {
+    title: insight.seoTitle || insight.title,
+    description: insight.seoDescription || insight.introduction,
+  };
+}
+
 export default async function InsightPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
-  const insight = insights.find((i) => i.slug === resolvedParams.slug);
+  const insight = allInsights.find((i) => i.slug === resolvedParams.slug);
 
   if (!insight) {
     notFound();
   }
 
   // Get exactly 2 related insights for the asymmetric layout
-  const relatedInsights = insights.filter((i) => i.slug !== resolvedParams.slug).slice(0, 2);
+  const relatedInsights = allInsights.filter((i) => i.slug !== resolvedParams.slug).slice(0, 2);
 
   return (
     <div className="min-h-dvh">

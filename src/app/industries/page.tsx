@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { CtaSection } from "@/components/CtaSection";
 import * as motion from "framer-motion/client";
 import { industries24Data } from "@/data/industries24";
 import Link from "next/link";
@@ -68,6 +69,14 @@ export default function IndustriesPage() {
             ))}
           </div>
         </section>
+
+        <div className="pb-32">
+          <CtaSection 
+            heading={<>Every business is different. Our strategy is tailored to your goals, customers and stage of growth regardless of industry.</>}
+            primaryBtnText="Discuss Your Industry"
+            smallHeading={true}
+          />
+        </div>
       </main>
       <Footer />
     </div>

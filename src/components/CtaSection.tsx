@@ -1,7 +1,23 @@
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-export function CtaSection() {
+type Props = {
+  heading?: React.ReactNode;
+  primaryBtnText?: string;
+  smallHeading?: boolean;
+};
+
+export function CtaSection({ heading, primaryBtnText = "Let's grow", smallHeading = false }: Props) {
+  const defaultHeading = (
+    <>
+      Your next stage of growth{" "}
+      <span className="bg-gradient-to-r from-[color:var(--brand-orange)] via-[color:var(--brand-pink)] to-[color:var(--brand-cyan)] bg-clip-text text-transparent">
+        starts here
+      </span>
+      .
+    </>
+  );
+
   return (
     <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
       <div className="grain relative overflow-hidden rounded-[2.5rem] bg-foreground p-10 text-background md:p-20">
@@ -32,19 +48,17 @@ export function CtaSection() {
           <div className="text-xs uppercase tracking-[0.3em] opacity-70">
             The next chapter
           </div>
-          <h2 className="mt-4 max-w-[16ch] font-display text-[clamp(2.5rem,7.5vw,7.5rem)] leading-[1.05] tracking-[-0.04em] text-balance pb-4">
-            Your next stage of growth{" "}
-            <span className="bg-gradient-to-r from-[color:var(--brand-orange)] via-[color:var(--brand-pink)] to-[color:var(--brand-cyan)] bg-clip-text text-transparent">
-              starts here
-            </span>
-            .
+          <h2 
+            className={`mt-4 ${smallHeading ? 'md:w-[85%] text-[clamp(1.5rem,3.5vw,3.5rem)]' : 'max-w-[16ch] text-[clamp(2.5rem,7.5vw,7.5rem)]'} font-display leading-[1.05] tracking-[-0.04em] text-balance pb-4`}
+          >
+            {heading || defaultHeading}
           </h2>
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <Link
               href="/book"
               className="group inline-flex items-center gap-2 rounded-full bg-background px-7 py-4 text-sm font-medium text-foreground transition hover:bg-background/90"
             >
-              Let&#x27;s grow
+              {primaryBtnText}
               <ArrowUpRight className="h-4 w-4 transition group-hover:rotate-45" />
             </Link>
             <a

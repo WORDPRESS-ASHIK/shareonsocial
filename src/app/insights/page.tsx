@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { InsightsSection } from "@/components/InsightsSection";
+import { allInsights } from "@/data/insights-extended";
 import * as motion from "framer-motion/client";
 
 export default function InsightsPage() {
@@ -32,7 +33,7 @@ export default function InsightsPage() {
           </div>
         </section>
 
-        <InsightsSection />
+        <InsightsSection insightsData={allInsights} />
       </main>
       <Footer />
     </div>

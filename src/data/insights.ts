@@ -7,6 +7,8 @@ export interface Insight {
   bgColor: string;
   introduction: string;
   content: string;
+  seoTitle?: string;
+  seoDescription?: string;
 }
 
 export const insights: Insight[] = [
@@ -15,7 +17,7 @@ export const insights: Insight[] = [
     category: "Search",
     readTime: "6 min",
     title: "Why AEO is the new SEO — and what to do this quarter.",
-    image: "/insights-aeo.png",
+    image: "/insights-aeo-editorial.png",
     bgColor: "bg-[color:var(--color-brand-blue)] text-background",
     introduction:
       "Search is evolving rapidly. With AI-generated summaries pushing traditional blue links further down the page, traditional Search Engine Optimization (SEO) is no longer enough. Enter Answer Engine Optimization (AEO).",
@@ -48,7 +50,7 @@ export const insights: Insight[] = [
         </div>
 
         <!-- Card 02 -->
-        <div class="group relative flex flex-col justify-between rounded-[2rem] bg-[color:var(--color-brand-orange)] text-foreground p-8 md:p-12 transition-all duration-500 hover:-translate-y-2 border border-transparent shadow-sm hover:shadow-xl hover:brightness-[1.03]">
+        <div class="group relative flex flex-col justify-between rounded-[2rem] bg-[color:var(--color-brand-orange)] text-white p-8 md:p-12 transition-all duration-500 hover:-translate-y-2 border border-transparent shadow-sm hover:shadow-xl hover:brightness-[1.03]">
           <div class="flex items-start justify-between">
             <div class="font-display text-5xl md:text-6xl opacity-40 transition-all duration-500 group-hover:opacity-60 group-hover:scale-105 origin-top-left">02</div>
             <svg class="h-6 w-6 opacity-40 transition-all duration-500 group-hover:opacity-100 group-hover:-translate-y-2 group-hover:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -112,7 +114,7 @@ export const insights: Insight[] = [
     category: "Advertising",
     readTime: "8 min",
     title: "Ad creative that converts: the four-hook framework.",
-    image: "/insights-ads.png",
+    image: "/insights-ad-creative-editorial.png",
     bgColor: "bg-[color:var(--color-brand-orange)] text-[oklch(0.18_0.02_260)]",
     introduction:
       "In a crowded feed, you have less than three seconds to capture attention. If your ad creative doesn't hook the user immediately, your targeting and bidding strategies are irrelevant. We use the four-hook framework to guarantee performance.",
@@ -145,7 +147,7 @@ export const insights: Insight[] = [
         </div>
 
         <!-- Card 02 -->
-        <div class="group relative flex flex-col justify-between rounded-[2rem] bg-[color:var(--color-brand-orange)] text-foreground p-8 md:p-12 transition-all duration-500 hover:-translate-y-2 border border-transparent shadow-sm hover:shadow-xl hover:brightness-[1.03]">
+        <div class="group relative flex flex-col justify-between rounded-[2rem] bg-[color:var(--color-brand-orange)] text-white p-8 md:p-12 transition-all duration-500 hover:-translate-y-2 border border-transparent shadow-sm hover:shadow-xl hover:brightness-[1.03]">
           <div class="flex items-start justify-between">
             <div class="font-display text-5xl md:text-6xl opacity-40 transition-all duration-500 group-hover:opacity-60 group-hover:scale-105 origin-top-left">02</div>
             <svg class="h-6 w-6 opacity-40 transition-all duration-500 group-hover:opacity-100 group-hover:-translate-y-2 group-hover:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -208,7 +210,7 @@ export const insights: Insight[] = [
     category: "Ecommerce",
     readTime: "12 min",
     title: "Ecom growth loops: from first click to lifetime value.",
-    image: "/insights-ecom.png",
+    image: "/insights-ecommerce-growth-editorial.png",
     bgColor: "bg-[color:var(--color-brand-cyan)] text-[oklch(0.18_0.02_260)]",
     introduction:
       "Traditional ecommerce funnels are linear: you pay for traffic, convert a percentage, and hope they come back. A growth loop, however, is a closed system where the inputs generate outputs that can be reinvested to acquire more users automatically.",
@@ -241,7 +243,7 @@ export const insights: Insight[] = [
         </div>
 
         <!-- Card 02 -->
-        <div class="group relative flex flex-col justify-between rounded-[2rem] bg-[color:var(--color-brand-orange)] text-foreground p-8 md:p-12 transition-all duration-500 hover:-translate-y-2 border border-transparent shadow-sm hover:shadow-xl hover:brightness-[1.03]">
+        <div class="group relative flex flex-col justify-between rounded-[2rem] bg-[color:var(--color-brand-orange)] text-white p-8 md:p-12 transition-all duration-500 hover:-translate-y-2 border border-transparent shadow-sm hover:shadow-xl hover:brightness-[1.03]">
           <div class="flex items-start justify-between">
             <div class="font-display text-5xl md:text-6xl opacity-40 transition-all duration-500 group-hover:opacity-60 group-hover:scale-105 origin-top-left">02</div>
             <svg class="h-6 w-6 opacity-40 transition-all duration-500 group-hover:opacity-100 group-hover:-translate-y-2 group-hover:translate-x-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
