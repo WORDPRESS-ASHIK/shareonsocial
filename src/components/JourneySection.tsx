@@ -64,28 +64,30 @@ export function JourneySection({ className = "" }: JourneySectionProps) {
       {/* Main content container */}
       <div className="relative w-full">
         
-        {/* Central Vertical Divider */}
-        <div className="absolute left-1/2 top-0 bottom-0 w-px bg-foreground/10 -translate-x-1/2"></div>
+        {/* Central Vertical Divider - Hidden on mobile, visible on md+ */}
+        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-foreground/10 -translate-x-1/2"></div>
+        {/* Left Vertical Divider - Visible only on mobile */}
+        <div className="md:hidden absolute left-[39px] top-0 bottom-0 w-px bg-foreground/10"></div>
 
         {/* Large vertical spacing between rows */}
-        <div className="flex flex-col gap-32 md:gap-48 relative z-10">
+        <div className="flex flex-col gap-16 md:gap-48 relative z-10">
           {stages.map((stage, i) => {
             const isContentLeft = i % 2 === 0;
             const Icon = stage.icon;
             
             return (
-              <div key={stage.num} className="grid grid-cols-2 gap-8 md:gap-24 items-center group">
+              <div key={stage.num} className="flex flex-row md:grid md:grid-cols-2 gap-8 md:gap-24 items-center group relative">
                 
                 {/* LEFT COLUMN */}
-                <div className="flex w-full justify-center">
+                <div className={`flex w-full justify-start ${isContentLeft ? 'md:justify-end' : 'md:justify-center'}`}>
                   {isContentLeft ? (
-                    /* Content on Left */
+                    /* Content on Left (Desktop) / Always Right (Mobile) */
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true, margin: "-100px" }}
                       transition={{ duration: 0.7 }}
-                      className="w-full flex flex-col items-start text-left pl-0 md:pl-12"
+                      className="hidden md:flex flex-col items-start text-left pr-0 md:pr-12 md:max-w-[320px]"
                     >
                       <div className="text-xs font-bold uppercase tracking-[0.2em] text-foreground/40 mb-4">
                         {stage.eyebrow}
@@ -94,10 +96,10 @@ export function JourneySection({ className = "" }: JourneySectionProps) {
                       <p className="text-lg md:text-xl text-foreground/60 max-w-[280px] leading-relaxed">{stage.desc}</p>
                     </motion.div>
                   ) : (
-                    /* Icon on Left */
+                    /* Icon on Left (Desktop) / Always Left (Mobile) */
                     <motion.div 
                       whileHover={{ scale: 1.05, y: -5 }}
-                      className="relative flex h-24 w-24 md:h-32 md:w-32 items-center justify-center rounded-full border-[1.5px] bg-background transition-all duration-500"
+                      className="relative z-10 flex shrink-0 h-20 w-20 md:h-32 md:w-32 items-center justify-center rounded-full border-[1.5px] bg-background transition-all duration-500"
                       style={{ 
                         borderColor: stage.color, 
                         boxShadow: `0 0 60px 10px ${stage.glow}`,
@@ -106,37 +108,66 @@ export function JourneySection({ className = "" }: JourneySectionProps) {
                       <Icon className="h-8 w-8 md:h-10 md:w-10 text-foreground" strokeWidth={1.5} />
                     </motion.div>
                   )}
-                </div>
-
-                {/* RIGHT COLUMN */}
-                <div className="flex w-full justify-center">
-                  {!isContentLeft ? (
-                    /* Content on Right */
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true, margin: "-100px" }}
-                      transition={{ duration: 0.7 }}
-                      className="w-full flex flex-col items-start text-left pl-4 md:pl-12"
-                    >
-                      <div className="text-xs font-bold uppercase tracking-[0.2em] text-foreground/40 mb-4">
-                        {stage.eyebrow}
-                      </div>
-                      <h3 className="font-display text-4xl md:text-5xl lg:text-6xl mb-4 text-foreground/90">{stage.title}</h3>
-                      <p className="text-lg md:text-xl text-foreground/60 max-w-[280px] leading-relaxed">{stage.desc}</p>
-                    </motion.div>
-                  ) : (
-                    /* Icon on Right */
+                  {/* On Mobile: Always show Icon first (if isContentLeft, we manually render icon here for mobile) */}
+                  {isContentLeft && (
                     <motion.div 
                       whileHover={{ scale: 1.05, y: -5 }}
-                      className="relative flex h-24 w-24 md:h-32 md:w-32 items-center justify-center rounded-full border-[1.5px] bg-background transition-all duration-500"
+                      className="md:hidden relative z-10 flex shrink-0 h-20 w-20 items-center justify-center rounded-full border-[1.5px] bg-background transition-all duration-500"
                       style={{ 
                         borderColor: stage.color, 
                         boxShadow: `0 0 60px 10px ${stage.glow}`,
                       }}
                     >
-                      <Icon className="h-8 w-8 md:h-10 md:w-10 text-foreground" strokeWidth={1.5} />
+                      <Icon className="h-8 w-8 text-foreground" strokeWidth={1.5} />
                     </motion.div>
+                  )}
+                </div>
+
+                {/* RIGHT COLUMN */}
+                <div className={`flex w-full justify-start ${!isContentLeft ? 'md:justify-start' : 'md:justify-center'}`}>
+                  {!isContentLeft ? (
+                    /* Content on Right (Desktop) / Always Right (Mobile) */
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-100px" }}
+                      transition={{ duration: 0.7 }}
+                      className="w-full md:w-auto flex flex-col items-start text-left pl-0 md:pl-12 md:max-w-[320px]"
+                    >
+                      <div className="text-xs font-bold uppercase tracking-[0.2em] text-foreground/40 mb-2 md:mb-4">
+                        {stage.eyebrow}
+                      </div>
+                      <h3 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-2 md:mb-4 text-foreground/90">{stage.title}</h3>
+                      <p className="text-base sm:text-lg md:text-xl text-foreground/60 max-w-[280px] leading-relaxed">{stage.desc}</p>
+                    </motion.div>
+                  ) : (
+                    /* Icon on Right (Desktop) / Hidden on Mobile (already rendered on left) */
+                    <>
+                      <motion.div 
+                        whileHover={{ scale: 1.05, y: -5 }}
+                        className="hidden md:flex relative z-10 shrink-0 h-24 w-24 md:h-32 md:w-32 items-center justify-center rounded-full border-[1.5px] bg-background transition-all duration-500"
+                        style={{ 
+                          borderColor: stage.color, 
+                          boxShadow: `0 0 60px 10px ${stage.glow}`,
+                        }}
+                      >
+                        <Icon className="h-8 w-8 md:h-10 md:w-10 text-foreground" strokeWidth={1.5} />
+                      </motion.div>
+                      {/* Mobile Content (Since Desktop Content was on the left) */}
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.7 }}
+                        className="md:hidden w-full flex flex-col items-start text-left pl-0"
+                      >
+                        <div className="text-xs font-bold uppercase tracking-[0.2em] text-foreground/40 mb-2">
+                          {stage.eyebrow}
+                        </div>
+                        <h3 className="font-display text-3xl sm:text-4xl mb-2 text-foreground/90">{stage.title}</h3>
+                        <p className="text-base sm:text-lg text-foreground/60 max-w-[280px] leading-relaxed">{stage.desc}</p>
+                      </motion.div>
+                    </>
                   )}
                 </div>
 

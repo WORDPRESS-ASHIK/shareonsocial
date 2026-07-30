@@ -104,7 +104,7 @@ export function CaseStudyResults({
           <div className="text-xs uppercase tracking-[0.25em] text-[rgba(255,255,255,0.55)] mb-10 text-center">
             03. Growth Results
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {project.outcomes.map((outcome, index) => (
               <motion.div
                 key={index}

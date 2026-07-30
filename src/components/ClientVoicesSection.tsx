@@ -46,7 +46,7 @@ export function ClientVoicesSection() {
     if (scrollRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
       // Calculate how much to scroll based on responsive width (approximate card width)
-      const cardWidth = clientWidth > 768 ? clientWidth / 3 : clientWidth > 640 ? clientWidth / 2 : clientWidth;
+      const cardWidth = clientWidth >= 1024 ? clientWidth / 3 : clientWidth >= 768 ? clientWidth / 2 : clientWidth;
       
       let newScroll = scrollLeft + (direction === "right" ? cardWidth : -cardWidth);
       
@@ -125,7 +125,7 @@ export function ClientVoicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: (index % 3) * 0.1 }}
               viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-              className={`snap-start shrink-0 w-[calc(100vw-3rem)] sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] grain relative flex min-h-[360px] flex-col justify-between rounded-[1.75rem] p-8 ${testimonial.bgColor} ${testimonial.textColor} ${testimonial.translateY}`}
+              className={`snap-start shrink-0 w-[calc(100vw-3rem)] md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] grain relative flex min-h-[360px] flex-col justify-between rounded-[1.75rem] p-8 ${testimonial.bgColor} ${testimonial.textColor} ${testimonial.translateY}`}
             >
               <div className="font-display text-5xl leading-[0.85] tracking-tight opacity-30">
                 &quot;

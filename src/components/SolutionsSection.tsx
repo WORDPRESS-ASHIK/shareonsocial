@@ -39,7 +39,7 @@ export function SolutionsSection() {
           className="grain group relative overflow-hidden rounded-[2rem] bg-[color:var(--color-brand-orange)] text-[oklch(0.18_0.02_260)] md:min-h-[520px] p-8 md:p-12"
         >
           <div className="font-mono text-xs opacity-40 mb-6 md:mb-8">01</div>
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 lg:grid-cols-2">
             <div className="flex flex-col justify-end">
               <div>
                 <h3 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
@@ -115,7 +115,7 @@ export function SolutionsSection() {
             </div>
           </div>
         </motion.article>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 lg:grid-cols-2">
           <motion.article
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -674,7 +674,7 @@ export function SolutionsSection() {
             </div>
           </motion.article>
         </div>
-        <div className="grid gap-6 md:grid-cols-[1.4fr_1fr]">
+        <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
           <motion.article
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -50,14 +50,14 @@ export function WorkSection() {
           View all <ArrowRight className="h-4 w-4" aria-hidden="true" />
         </Link>
       </div>
-      <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 md:grid-rows-[repeat(3,minmax(0,1fr))]">
+      <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:grid-rows-[repeat(3,minmax(0,1fr))]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "0px 0px -50px 0px" }}
           style={{ willChange: "transform, opacity" }}
           transition={{ duration: 0.5 }}
-          className="group relative overflow-hidden rounded-[1.75rem] bg-[color:var(--color-brand-orange)] text-white md:row-span-2 min-h-[320px] md:min-h-[380px]"
+          className="group relative overflow-hidden rounded-[1.75rem] bg-[color:var(--color-brand-orange)] text-white lg:row-span-2 min-h-[500px] md:min-h-[580px]"
         >
           <div className="relative flex h-full flex-col justify-between md:justify-start p-6 md:p-8">
             <div className="text-xs uppercase tracking-[0.25em] opacity-70">
@@ -249,7 +249,7 @@ export function WorkSection() {
           viewport={{ once: true, margin: "0px 0px -50px 0px" }}
           style={{ willChange: "transform, opacity" }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="group relative overflow-hidden rounded-[1.75rem] bg-[oklch(0.92_0.03_80)] text-foreground md:row-span-2 min-h-[320px] md:min-h-[380px]"
+          className="group relative overflow-hidden rounded-[1.75rem] bg-[oklch(0.96_0.01_90)] text-foreground lg:row-span-2 min-h-[500px] md:min-h-[580px]"
         >
           <div className="relative flex h-full flex-col justify-between md:justify-start p-6 md:p-8">
             <div className="text-xs uppercase tracking-[0.25em] opacity-70">
