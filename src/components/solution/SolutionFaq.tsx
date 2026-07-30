@@ -1,68 +1,65 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ArrowRight } from "lucide-react";
-import Link from "next/link";
-import type { SolutionData } from "@/data/solutions";
+import * as motion from "framer-motion/client";
+import { Plus, Minus } from "lucide-react";
+import { SolutionData } from "@/data/solutions";
 
 export function SolutionFaq({ data }: { data: SolutionData['faq'] }) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="mx-auto max-w-[1400px] px-6 md:px-10 mb-[72px]">
-      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12">
-        <div className="md:w-1/3 shrink-0">
-          <h2 className="font-display text-3xl font-medium tracking-tight text-foreground md:text-4xl">
-            {data.headline || "Frequently asked questions"}
-          </h2>
-        </div>
+    <section className="py-24 md:py-32 bg-background relative border-t border-foreground/5">
+      <div className="mx-auto max-w-[1000px] px-6 md:px-10">
         
-        <div className="w-full md:w-2/3">
-          <div className="flex justify-end mb-6">
-             <Link href="/faqs" className="flex items-center gap-2 text-sm font-medium text-[#FF8A00] transition-colors hover:text-[#38BDF8] group">
-                View all FAQs
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-             </Link>
-          </div>
-          <div className="flex flex-col gap-4">
-            {data.items.map((faq, index) => {
-              const isOpen = openIndex === index;
-              
-              return (
-                <div 
-                  key={index} 
-                  className="rounded-2xl border border-[rgba(0,0,0,0.08)] bg-white overflow-hidden transition-colors hover:border-[rgba(0,0,0,0.12)]"
-                >
-                  <button
-                    onClick={() => setOpenIndex(isOpen ? null : index)}
-                    className="flex w-full items-center justify-between p-6 text-left transition-colors focus:outline-none"
-                    aria-expanded={isOpen}
-                  >
-                    <span className="font-medium text-foreground/90">{faq.question}</span>
-                    <ChevronDown 
-                      className={`h-5 w-5 shrink-0 text-[#FF8A00] transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} 
-                    />
-                  </button>
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                      >
-                        <div className="px-6 pb-6 text-foreground/70 leading-relaxed">
-                          {faq.answer}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              );
-            })}
-          </div>
+        <div className="text-center mb-16 md:mb-24">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="font-display text-4xl md:text-5xl lg:text-6xl tracking-tight text-foreground"
+          >
+            {data.heading}
+          </motion.h2>
         </div>
+
+        <div className="space-y-4">
+          {data.questions.map((item, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="border border-foreground/10 rounded-2xl overflow-hidden bg-foreground/[0.01] transition-colors hover:bg-foreground/[0.03]"
+              >
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                  className="w-full text-left px-6 py-6 md:px-8 md:py-8 flex items-center justify-between gap-4"
+                >
+                  <span className="font-display text-xl md:text-2xl text-foreground pr-8">
+                    {item.question}
+                  </span>
+                  <div className={`shrink-0 h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300 ${isOpen ? 'bg-foreground text-background rotate-180' : 'bg-foreground/5 text-foreground'}`}>
+                    {isOpen ? <Minus className="h-5 w-5" /> : <Plus className="h-5 w-5" />}
+                  </div>
+                </button>
+                
+                <div 
+                  className="overflow-hidden transition-all duration-500 ease-in-out"
+                  style={{ maxHeight: isOpen ? '500px' : '0' }}
+                >
+                  <p className="px-6 pb-6 md:px-8 md:pb-8 text-foreground/60 leading-relaxed text-base md:text-lg">
+                    {item.answer}
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+
       </div>
     </section>
   );

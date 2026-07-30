@@ -1,97 +1,81 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { AlertCircle, Target, XOctagon, Search, TrendingDown, Users } from "lucide-react";
-import type { SolutionData } from "@/data/solutions";
+import * as motion from "framer-motion/client";
+import { SolutionData } from "@/data/solutions";
 
-const icons = [AlertCircle, Target, XOctagon, Search, TrendingDown, Users];
-
-export function SolutionProblem({ data }: { data: SolutionData['challenges'] }) {
+export function SolutionProblem({ data }: { data: SolutionData['problem'] }) {
   return (
-    <section className="relative overflow-hidden bg-background py-16 md:py-24 lg:py-32">
-      {/* Background Enhancements */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[color:var(--color-brand-blue)]/10 via-background to-background" />
-        <motion.div
-          animate={{ x: [0, 50, 0], y: [0, -50, 0] }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute -left-32 top-32 h-[500px] w-[500px] rounded-full bg-[color:var(--color-brand-cyan)]/20 blur-[120px]"
-        />
-        <motion.div
-          animate={{ x: [0, -50, 0], y: [0, 50, 0] }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="absolute right-0 top-1/2 h-[600px] w-[600px] rounded-full bg-[color:var(--color-brand-pink)]/15 blur-[150px]"
-        />
-      </div>
+    <section className="py-24 md:py-32 bg-foreground text-background overflow-hidden relative">
+      {/* Decorative gradient */}
+      <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[800px] h-[800px] bg-gradient-to-bl from-[color:var(--color-brand-orange)]/10 via-[color:var(--color-brand-pink)]/5 to-transparent rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="mx-auto max-w-[1400px] px-6 relative z-10 md:px-10">
-        
-        {/* Centered Header */}
-        <div className="mx-auto max-w-3xl text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            className="mb-4 md:mb-6 inline-flex items-center gap-2 rounded-full border border-[color:var(--color-brand-cyan)]/30 bg-[color:var(--color-brand-cyan)]/10 px-5 py-2 text-sm font-medium text-[color:var(--color-brand-cyan)] backdrop-blur-md"
-          >
-            The Challenge
-          </motion.div>
-          
+      <div className="mx-auto max-w-[1400px] px-6 md:px-10 relative z-10">
+        <div className="max-w-3xl mx-auto text-center mb-20 md:mb-28">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ delay: 0.1 }}
-            className="mx-auto font-display text-2xl leading-[1.2] md:text-[clamp(28px,4.5vw,48px)] md:leading-[1.1] tracking-[-0.02em] text-balance text-foreground"
+            viewport={{ once: true }}
+            className="font-display text-4xl md:text-5xl lg:text-6xl tracking-tight mb-6"
           >
-            {data.headline}
+            {data.heading}
           </motion.h2>
-          
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ delay: 0.2 }}
-            className="mx-auto mt-4 md:mt-6 max-w-[40ch] md:max-w-[65ch] text-base md:text-lg text-foreground/70 text-balance leading-relaxed"
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-lg md:text-xl text-background/60 leading-relaxed"
           >
             {data.description}
           </motion.p>
         </div>
 
-        {/* 3-Column Feature Grid */}
-        <div className="mt-12 md:mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {data.items.map((item, index) => {
-            const Icon = icons[index % icons.length];
-            
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="group relative"
-              >
-                <div className="absolute -inset-[1px] rounded-[24px] bg-gradient-to-br from-[color:var(--color-brand-cyan)]/40 via-transparent to-[color:var(--color-brand-pink)]/40 opacity-0 blur-[2px] transition-opacity duration-500 group-hover:opacity-100" />
-                <div className="absolute -inset-[1px] rounded-[24px] bg-gradient-to-br from-foreground/10 to-foreground/5" />
-                
-                <div className="relative flex h-full min-h-[140px] flex-col justify-center rounded-[24px] bg-background/60 p-8 shadow-sm backdrop-blur-xl transition-all duration-500 group-hover:-translate-y-2 group-hover:bg-background/80 group-hover:shadow-2xl group-hover:shadow-[color:var(--color-brand-blue)]/10">
-                  <div className="absolute inset-0 rounded-[24px] bg-gradient-to-br from-white/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+        {/* Timeline Style Pain Points */}
+        <div className="max-w-4xl mx-auto relative">
+          {/* Vertical Line */}
+          <div className="absolute left-[23px] md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-background/0 via-background/20 to-background/0 md:-translate-x-1/2" />
+
+          <div className="space-y-12 md:space-y-24">
+            {data.painPoints.map((point, i) => {
+              const isEven = i % 2 === 0;
+              
+              return (
+                <div key={i} className={`relative flex flex-col md:flex-row items-start ${isEven ? 'md:flex-row-reverse' : ''} gap-8 md:gap-16`}>
                   
-                  <div className="relative mb-5 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-foreground/5 to-foreground/10 transition-transform duration-500 group-hover:scale-110">
-                    <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[color:var(--color-brand-blue)]/20 to-[color:var(--color-brand-pink)]/20 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                    <Icon className="relative z-10 h-6 w-6 text-foreground/70 transition-colors duration-500 group-hover:text-foreground" />
+                  {/* Timeline Dot */}
+                  <div className="absolute left-[24px] md:left-1/2 top-6 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+                    <motion.div 
+                      initial={{ scale: 0 }}
+                      whileInView={{ scale: 1 }}
+                      viewport={{ once: true, margin: "-100px" }}
+                      className="w-12 h-12 rounded-full bg-background/5 border border-background/20 flex items-center justify-center backdrop-blur-sm z-10"
+                    >
+                      <div className="w-3 h-3 rounded-full bg-gradient-to-r from-[color:var(--color-brand-orange)] to-[color:var(--color-brand-pink)]" />
+                    </motion.div>
                   </div>
-                  
-                  <div className="relative z-10">
-                    <h3 className="text-lg font-medium leading-snug text-foreground/90 transition-colors group-hover:text-foreground">
-                      {item}
-                    </h3>
+
+                  {/* Content Card */}
+                  <div className={`w-full md:w-1/2 pl-16 md:pl-0 ${isEven ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'}`}>
+                    <motion.div
+                      initial={{ opacity: 0, x: isEven ? -30 : 30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true, margin: "-100px" }}
+                      transition={{ duration: 0.6 }}
+                      className="bg-background/5 border border-background/10 rounded-3xl p-8 md:p-10 hover:bg-background/10 transition-colors backdrop-blur-sm"
+                    >
+                      <h3 className="font-display text-2xl mb-4 text-background">
+                        {point.title}
+                      </h3>
+                      <p className="text-background/60 leading-relaxed text-base md:text-lg">
+                        {point.description}
+                      </p>
+                    </motion.div>
                   </div>
+
                 </div>
-              </motion.div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

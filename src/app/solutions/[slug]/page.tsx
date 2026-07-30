@@ -3,15 +3,15 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { solutionsData } from "@/data/solutions";
 
-import { SolutionHeroNew } from "@/components/solution/SolutionHeroNew";
-import { SolutionWhoForNew } from "@/components/solution/SolutionWhoForNew";
-import { SolutionProblemNew } from "@/components/solution/SolutionProblemNew";
+import { SolutionHero } from "@/components/solution/SolutionHero";
+import { SolutionWhoFor } from "@/components/solution/SolutionWhoFor";
+import { SolutionProblem } from "@/components/solution/SolutionProblem";
 import { SolutionMethodology } from "@/components/solution/SolutionMethodology";
 import { SolutionFeatures } from "@/components/solution/SolutionFeatures";
 import { SolutionProcessTimeline } from "@/components/solution/SolutionProcessTimeline";
 import { SolutionMetrics } from "@/components/solution/SolutionMetrics";
 import { SolutionRelatedWork } from "@/components/solution/SolutionRelatedWork";
-import { SolutionFaqNew } from "@/components/solution/SolutionFaqNew";
+import { SolutionFaq } from "@/components/solution/SolutionFaq";
 import { SolutionFinalCta } from "@/components/solution/SolutionFinalCta";
 
 export async function generateStaticParams() {
@@ -51,15 +51,15 @@ export default async function SolutionPage({ params }: { params: Promise<{ slug:
     <div className="min-h-dvh">
       <Header />
       <main className="min-h-dvh">
-        <SolutionHeroNew data={data.hero} />
-        <SolutionWhoForNew data={data.whoFor} />
-        <SolutionProblemNew data={data.problem} />
+        <SolutionHero data={data.hero} />
+        <SolutionWhoFor data={data.whoFor} />
+        <SolutionProblem data={data.problem} />
         <SolutionMethodology data={data.ourSolution} />
         <SolutionFeatures data={data.included} />
         <SolutionProcessTimeline data={data.process} />
         <SolutionMetrics data={data.outcomes} />
         <SolutionRelatedWork slug={slug} />
-        <SolutionFaqNew data={data.faq} />
+        <SolutionFaq data={data.faq} />
         <SolutionFinalCta data={data.cta} />
       </main>
       <Footer />
