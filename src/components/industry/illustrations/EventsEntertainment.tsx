@@ -49,10 +49,10 @@ export function EventsEntertainment() {
           >
             <div className="flex items-center justify-between mb-2">
               <div className="text-xs font-medium text-[#6B7280]">Live Scans</div>
-              <Activity className="h-4 w-4 text-emerald-500" />
+              <Activity className="h-4 w-4 text-[color:var(--color-brand-cyan)]" />
             </div>
             <div className="text-xl font-bold text-[#111827]">1,420</div>
-            <div className="mt-2 text-[10px] text-emerald-600 font-medium">Entering now</div>
+            <div className="mt-2 text-[10px] text-[color:var(--color-brand-cyan)] font-medium">Entering now</div>
           </motion.div>
         </div>
       </motion.div>

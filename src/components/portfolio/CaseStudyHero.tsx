@@ -27,24 +27,41 @@ export function CaseStudyHero({ project }: { project: Project }) {
               <span>{project.client}</span>
             </div>
             
-            <h1 className="font-display text-[clamp(3rem,6vw,5.5rem)] leading-[0.95] tracking-tight text-balance">
+            <h1 className="font-display text-[clamp(2rem,3.5vw,3rem)] leading-[0.9] tracking-tight text-balance max-w-3xl">
               {project.title}
             </h1>
             
-            <p className="mt-8 max-w-lg text-lg text-foreground/70 md:text-xl">
+            <p className="mt-8 max-w-lg text-lg text-foreground/70 md:text-xl mb-12">
               {project.summary}
             </p>
 
-            <div className="mt-12">
-              <h3 className="text-xs uppercase tracking-[0.25em] text-foreground/50 mb-4">Services Provided</h3>
-              <div className="flex flex-wrap gap-2">
-                {project.services.map((service, i) => (
-                  <span key={i} className="px-4 py-2 text-xs font-medium uppercase tracking-wider rounded-lg border border-foreground/10 text-foreground/70 bg-foreground/[0.02]">
-                    {service}
-                  </span>
-                ))}
+            <hr className="border-foreground/10 mb-8" />
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm md:text-base">
+              <div>
+                <div className="font-semibold text-foreground mb-1">Client:</div>
+                <div className="text-foreground/70">{project.client}</div>
               </div>
+              
+              <div>
+                <div className="font-semibold text-foreground mb-1">Industry:</div>
+                <div className="text-foreground/70">{project.industry}</div>
+              </div>
+              
+              <div className={!project.privacyNote ? "md:col-span-2" : ""}>
+                <div className="font-semibold text-foreground mb-1">Services:</div>
+                <div className="text-foreground/70">{project.services.join(', ')}</div>
+              </div>
+              
+              {project.privacyNote && (
+                <div>
+                  <div className="font-semibold text-foreground mb-1">Privacy Note:</div>
+                  <div className="text-foreground/70">{project.privacyNote}</div>
+                </div>
+              )}
             </div>
+            
+            <hr className="border-foreground/10 mt-8" />
           </motion.div>
 
           <motion.div

@@ -1,21 +1,14 @@
 import { notFound } from 'next/navigation';
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { solutionsData } from "@/data/solutions";
+import { solutionsData } from "@/data/solutions_data";
 
-import { SolutionHero } from "@/components/solution/SolutionHero";
-import { SolutionWhoFor } from "@/components/solution/SolutionWhoFor";
-import { SolutionProblem } from "@/components/solution/SolutionProblem";
-import { SolutionMethodology } from "@/components/solution/SolutionMethodology";
-import { SolutionFeatures } from "@/components/solution/SolutionFeatures";
-import { SolutionProcessTimeline } from "@/components/solution/SolutionProcessTimeline";
-import { SolutionMetrics } from "@/components/solution/SolutionMetrics";
+import { ContentBlockRenderer } from "@/components/solutions/ContentBlockRenderer";
 import { SolutionRelatedWork } from "@/components/solution/SolutionRelatedWork";
-import { SolutionFaq } from "@/components/solution/SolutionFaq";
-import { SolutionFinalCta } from "@/components/solution/SolutionFinalCta";
+import { ContentBlock } from "@/data/solutions_types";
 
 export async function generateStaticParams() {
-  const slugs = Object.keys(solutionsData);
+  const slugs = solutionsData.map(s => s.slug);
   return slugs.map((slug) => ({
     slug,
   }));
@@ -24,9 +17,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
-  const data = solutionsData[slug];
+  const data = solutionsData.find(s => s.slug === slug);
 
-  if (!data) {
+  if (!data || !data.seo) {
     return {
       title: 'Solution Not Found',
     };
@@ -41,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function SolutionPage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
-  const data = solutionsData[slug];
+  const data = solutionsData.find(s => s.slug === slug);
 
   if (!data) {
     notFound();
@@ -51,18 +44,13 @@ export default async function SolutionPage({ params }: { params: Promise<{ slug:
     <div className="min-h-dvh">
       <Header />
       <main className="min-h-dvh">
-        <SolutionHero data={data.hero} />
-        <SolutionWhoFor data={data.whoFor} />
-        <SolutionProblem data={data.problem} />
-        <SolutionMethodology data={data.ourSolution} />
-        <SolutionFeatures data={data.included} />
-        <SolutionProcessTimeline data={data.process} />
-        <SolutionMetrics data={data.outcomes} />
+        {data.blocks.map((block: ContentBlock, i: number) => (
+          <ContentBlockRenderer key={i} block={block} featuredImage={data.featuredImage} index={i} />
+        ))}
         <SolutionRelatedWork slug={slug} />
-        <SolutionFaq data={data.faq} />
-        <SolutionFinalCta data={data.cta} />
       </main>
       <Footer />
     </div>
   );
 }
+

@@ -40,7 +40,7 @@ export function HomeServices() {
               className="relative pl-8 flex items-center justify-between"
             >
               <div className={`absolute left-0 h-6 w-6 rounded-full border-4 border-white flex items-center justify-center ${
-                item.status === 'completed' ? 'bg-emerald-500' :
+                item.status === 'completed' ? 'bg-[color:var(--color-brand-cyan)]' :
                 item.status === 'active' ? 'bg-[color:var(--color-brand-orange)]' :
                 'bg-gray-300'
               }`}>
@@ -60,7 +60,7 @@ export function HomeServices() {
                   <div className="text-xs font-medium text-[#6B7280]">{item.time}</div>
                 </div>
                 {item.status === 'completed' && (
-                  <div className="mt-1 flex items-center gap-1 text-[10px] text-emerald-600 font-medium">
+                  <div className="mt-1 flex items-center gap-1 text-[10px] text-[color:var(--color-brand-cyan)] font-medium">
                     <CheckCircle2 className="h-3 w-3" /> Job Done
                   </div>
                 )}

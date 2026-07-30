@@ -47,7 +47,7 @@ export function HotelsHospitality() {
               <Key className="h-4 w-4" /> Check-ins
             </div>
             <div className="text-xl font-bold text-[#111827]">24</div>
-            <div className="text-xs font-medium text-emerald-600 mt-1">Pending 8</div>
+            <div className="text-xs font-medium text-[color:var(--color-brand-cyan)] mt-1">Pending 8</div>
           </motion.div>
           
           <motion.div 
@@ -58,13 +58,13 @@ export function HotelsHospitality() {
               <Calendar className="h-4 w-4" /> Bookings
             </div>
             <div className="text-xl font-bold text-[#111827]">156</div>
-            <div className="text-xs font-medium text-emerald-600 mt-1">+12 today</div>
+            <div className="text-xs font-medium text-[color:var(--color-brand-cyan)] mt-1">+12 today</div>
           </motion.div>
         </div>
 
         <div className="rounded-xl bg-gray-50 border border-gray-100 p-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="rounded-full bg-emerald-100 p-2 text-emerald-600">
+            <div className="rounded-full bg-[color:var(--color-brand-cyan)] p-2 text-[color:var(--color-brand-cyan)]">
               <DollarSign className="h-4 w-4" />
             </div>
             <div>
@@ -75,7 +75,7 @@ export function HotelsHospitality() {
           <motion.div 
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="flex items-center gap-1 text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-1 rounded"
+            className="flex items-center gap-1 text-xs font-semibold text-[color:var(--color-brand-cyan)] bg-[color:var(--color-brand-cyan)]/5 px-2 py-1 rounded"
           >
             <TrendingUp className="h-3 w-3" /> 8%
           </motion.div>

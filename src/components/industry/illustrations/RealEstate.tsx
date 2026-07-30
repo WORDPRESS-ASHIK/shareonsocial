@@ -51,12 +51,12 @@ export function RealEstate() {
         <div className="space-y-3">
           <div className="text-xs font-bold uppercase tracking-wider text-[#6B7280] mb-2 flex items-center justify-between">
              <span>Pipeline Status</span>
-             <TrendingUp className="h-4 w-4 text-emerald-500" />
+             <TrendingUp className="h-4 w-4 text-[color:var(--color-brand-cyan)]" />
           </div>
           {[
-            { stage: "Viewings Scheduled", count: "12", progress: "80%", color: "bg-blue-500" },
+            { stage: "Viewings Scheduled", count: "12", progress: "80%", color: "bg-[color:var(--color-brand-blue)]" },
             { stage: "Offers Pending", count: "5", progress: "40%", color: "bg-[color:var(--color-brand-orange)]" },
-            { stage: "Contracts Out", count: "3", progress: "25%", color: "bg-emerald-500" }
+            { stage: "Contracts Out", count: "3", progress: "25%", color: "bg-[color:var(--color-brand-cyan)]" }
           ].map((item, i) => (
              <div key={i} className="bg-gray-50 rounded-xl p-3 border border-gray-100">
                <div className="flex justify-between items-center mb-2">

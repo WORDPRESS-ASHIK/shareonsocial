@@ -44,7 +44,7 @@ export function TechnologyStartups() {
                <div className="text-xs font-medium">Active Users</div>
              </div>
              <div className="text-2xl font-bold font-display text-[#111827]">14.2k</div>
-             <div className="text-[10px] font-medium text-emerald-600 mt-1 bg-emerald-50 px-1.5 py-0.5 rounded inline-block">
+             <div className="text-[10px] font-medium text-[color:var(--color-brand-cyan)] mt-1 bg-[color:var(--color-brand-cyan)]/5 px-1.5 py-0.5 rounded inline-block">
                +280 today
              </div>
           </motion.div>
@@ -57,7 +57,7 @@ export function TechnologyStartups() {
                <div className="text-xs font-medium">MRR</div>
              </div>
              <div className="text-2xl font-bold font-display text-[#111827]">$84.5k</div>
-             <div className="text-[10px] font-medium text-blue-600 mt-1 bg-blue-50 px-1.5 py-0.5 rounded inline-block">
+             <div className="text-[10px] font-medium text-[color:var(--color-brand-blue)] mt-1 bg-[color:var(--color-brand-blue)]/5 px-1.5 py-0.5 rounded inline-block">
                +15% MoM
              </div>
           </motion.div>
@@ -81,7 +81,7 @@ export function TechnologyStartups() {
         
         <div className="mt-4 flex items-center justify-between bg-white rounded-xl p-3 border border-gray-100 shadow-sm relative z-10">
            <div className="flex items-center gap-3">
-              <div className="bg-amber-100 text-amber-600 p-2 rounded-lg">
+              <div className="bg-[color:var(--color-brand-orange)] text-[color:var(--color-brand-orange)] p-2 rounded-lg">
                  <Target className="h-4 w-4" />
               </div>
               <div>

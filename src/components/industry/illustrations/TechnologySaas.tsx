@@ -19,7 +19,7 @@ export function TechnologySaas() {
             <div className="text-[10px] font-bold text-[#6B7280] uppercase tracking-wider mb-1">Monthly Recurring Revenue</div>
             <div className="text-4xl font-bold font-display text-[#111827]">$124.5k</div>
           </div>
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[color:var(--color-brand-purple)] text-[color:var(--color-brand-purple)]">
              <Rocket className="h-5 w-5" />
           </div>
         </div>
@@ -47,7 +47,7 @@ export function TechnologySaas() {
 
         <div className="grid grid-cols-2 gap-4">
           <div className="bg-white border border-gray-100 rounded-xl p-4 shadow-sm text-center">
-            <div className="mx-auto mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-50 text-emerald-600">
+            <div className="mx-auto mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-[color:var(--color-brand-cyan)]/5 text-[color:var(--color-brand-cyan)]">
                <Users className="h-4 w-4" />
             </div>
             <div className="text-xl font-bold text-[#111827]">14.2k</div>
@@ -57,9 +57,9 @@ export function TechnologySaas() {
             <motion.div 
               animate={{ opacity: [1, 0.5, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="absolute top-2 right-2 h-2 w-2 rounded-full bg-emerald-500" 
+              className="absolute top-2 right-2 h-2 w-2 rounded-full bg-[color:var(--color-brand-cyan)]" 
             />
-            <div className="mx-auto mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50 text-blue-600">
+            <div className="mx-auto mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-[color:var(--color-brand-blue)]/5 text-[color:var(--color-brand-blue)]">
                <Server className="h-4 w-4" />
             </div>
             <div className="text-xl font-bold text-[#111827]">99.9%</div>

@@ -67,7 +67,7 @@ export function ProfessionalServices() {
           <motion.div 
             animate={{ opacity: [1, 0.5, 1] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="h-2 w-2 bg-emerald-500 rounded-full relative z-10" 
+            className="h-2 w-2 bg-[color:var(--color-brand-cyan)] rounded-full relative z-10" 
           />
         </div>
       </motion.div>

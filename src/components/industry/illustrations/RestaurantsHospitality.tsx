@@ -33,11 +33,11 @@ export function RestaurantsHospitality() {
           >
              <div className="flex justify-between items-center mb-2">
                <div className="text-xs font-medium text-[#6B7280]">Reservations</div>
-               <CalendarClock className="h-4 w-4 text-blue-500" />
+               <CalendarClock className="h-4 w-4 text-[color:var(--color-brand-blue)]" />
              </div>
              <div className="text-2xl font-bold font-display text-[#111827]">142</div>
-             <div className="text-[10px] font-medium text-emerald-600 mt-1 flex items-center gap-1">
-               <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 1.5, repeat: Infinity }} className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+             <div className="text-[10px] font-medium text-[color:var(--color-brand-cyan)] mt-1 flex items-center gap-1">
+               <motion.div animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 1.5, repeat: Infinity }} className="h-1.5 w-1.5 rounded-full bg-[color:var(--color-brand-cyan)]" />
                3 incoming
              </div>
           </motion.div>
@@ -67,7 +67,7 @@ export function RestaurantsHospitality() {
                initial={{ width: 0 }}
                animate={{ width: "85%" }}
                transition={{ duration: 1.5, ease: "easeOut" }}
-               className="h-full bg-gradient-to-r from-emerald-400 to-emerald-500 rounded-full"
+               className="h-full bg-gradient-to-r from-[color:var(--color-brand-cyan)] to-[color:var(--color-brand-cyan)] rounded-full"
              />
           </div>
 
@@ -82,7 +82,7 @@ export function RestaurantsHospitality() {
              >
                 <div className="flex items-center gap-3">
                    <div className="bg-white p-2 rounded-lg border border-gray-200 shadow-sm text-gray-500">
-                     <item.icon className={`h-4 w-4 ${item.icon === Star ? 'text-amber-400 fill-amber-400' : ''}`} />
+                     <item.icon className={`h-4 w-4 ${item.icon === Star ? 'text-[color:var(--color-brand-orange)] fill-amber-400' : ''}`} />
                    </div>
                    <div className="text-sm font-semibold text-[#111827]">{item.metric}</div>
                 </div>

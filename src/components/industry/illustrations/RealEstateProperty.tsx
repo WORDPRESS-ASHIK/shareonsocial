@@ -28,7 +28,7 @@ export function RealEstateProperty() {
              <motion.div 
                animate={{ scale: [1, 1.05, 1] }}
                transition={{ duration: 2, repeat: Infinity }}
-               className="bg-emerald-500 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-sm flex items-center gap-1"
+               className="bg-[color:var(--color-brand-cyan)] text-white text-xs font-semibold px-2 py-1 rounded-md shadow-sm flex items-center gap-1"
              >
                <Home className="h-3 w-3" /> New Listing
              </motion.div>
@@ -57,8 +57,8 @@ export function RealEstateProperty() {
           </div>
           
           <div className="rounded-lg border border-gray-100 bg-white p-3 flex items-center gap-3">
-             <div className="rounded-full bg-emerald-100 p-2">
-               <CheckCircle className="h-4 w-4 text-emerald-600" />
+             <div className="rounded-full bg-[color:var(--color-brand-cyan)] p-2">
+               <CheckCircle className="h-4 w-4 text-[color:var(--color-brand-cyan)]" />
              </div>
              <div>
                <div className="text-xs font-semibold text-[#111827]">Offer Accepted</div>

@@ -339,7 +339,7 @@ export function ContactForm({ title = "New enquiry" }: { title?: string }) {
                   {currentField.type === "textarea" ? (
                     <textarea
                       autoFocus
-                      className={`w-full resize-none rounded-2xl border bg-background px-5 py-4 text-lg outline-none transition-colors min-h-[120px] ${showError ? "border-red-500/50 focus:border-red-500" : "border-foreground/15 placeholder:text-foreground/40 focus:border-foreground/40"}`}
+                      className={`w-full resize-none rounded-2xl border bg-background px-5 py-4 text-lg outline-none transition-colors min-h-[120px] ${showError ? "border-[color:var(--color-brand-pink)]/50 focus:border-[color:var(--color-brand-pink)]" : "border-foreground/15 placeholder:text-foreground/40 focus:border-foreground/40"}`}
                       placeholder={currentField.placeholder}
                       value={formData[currentField.id] || ""}
                       onChange={(e) =>
@@ -368,7 +368,7 @@ export function ContactForm({ title = "New enquiry" }: { title?: string }) {
                     <input
                       type={currentField.type}
                       autoFocus
-                      className={`w-full rounded-2xl border bg-background px-5 py-4 text-lg outline-none transition-colors ${showError ? "border-red-500/50 focus:border-red-500" : "border-foreground/15 placeholder:text-foreground/40 focus:border-foreground/40"}`}
+                      className={`w-full rounded-2xl border bg-background px-5 py-4 text-lg outline-none transition-colors ${showError ? "border-[color:var(--color-brand-pink)]/50 focus:border-[color:var(--color-brand-pink)]" : "border-foreground/15 placeholder:text-foreground/40 focus:border-foreground/40"}`}
                       placeholder={currentField.placeholder}
                       value={formData[currentField.id] || ""}
                       onChange={(e) =>
@@ -382,7 +382,7 @@ export function ContactForm({ title = "New enquiry" }: { title?: string }) {
                     <motion.div 
                       initial={{ opacity: 0, y: -10 }} 
                       animate={{ opacity: 1, y: 0 }} 
-                      className="mt-3 text-sm text-red-500 font-medium"
+                      className="mt-3 text-sm text-[color:var(--color-brand-pink)] font-medium"
                     >
                       Please complete this step before continuing.
                     </motion.div>

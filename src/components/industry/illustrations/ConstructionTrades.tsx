@@ -15,7 +15,7 @@ export function ConstructionTrades() {
         className={cardClass}
       >
         <div className="mb-6 flex items-center gap-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[color:var(--color-brand-orange)] text-[color:var(--color-brand-orange)]">
             <HardHat className="h-6 w-6" />
           </div>
           <div className="flex-1">
@@ -24,7 +24,7 @@ export function ConstructionTrades() {
           </div>
           <div className="text-right">
             <div className="text-xl font-bold text-[#111827]">14</div>
-            <div className="text-[10px] font-semibold uppercase tracking-wider text-amber-600">Active Jobs</div>
+            <div className="text-[10px] font-semibold uppercase tracking-wider text-[color:var(--color-brand-orange)]">Active Jobs</div>
           </div>
         </div>
 
@@ -42,7 +42,7 @@ export function ConstructionTrades() {
                   <div className="text-[10px] text-[#6B7280]">Kitchen Renovation • 2h ago</div>
                 </div>
              </div>
-             <div className="bg-amber-50 text-amber-600 text-xs font-medium px-2 py-1 rounded">Pending</div>
+             <div className="bg-[color:var(--color-brand-orange)]/5 text-[color:var(--color-brand-orange)] text-xs font-medium px-2 py-1 rounded">Pending</div>
           </motion.div>
           
           <motion.div 
@@ -58,7 +58,7 @@ export function ConstructionTrades() {
                   <div className="text-[10px] text-[#6B7280]">Roof Repair • Tomorrow, 8am</div>
                 </div>
              </div>
-             <div className="bg-blue-50 text-blue-600 text-xs font-medium px-2 py-1 rounded">Approved</div>
+             <div className="bg-[color:var(--color-brand-blue)]/5 text-[color:var(--color-brand-blue)] text-xs font-medium px-2 py-1 rounded">Approved</div>
           </motion.div>
         </div>
 

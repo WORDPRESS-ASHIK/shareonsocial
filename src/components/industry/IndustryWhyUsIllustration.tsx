@@ -180,9 +180,9 @@ export function IndustryWhyUsIllustration({ slug }: Props) {
             <div className="text-sm font-semibold text-[#111827]">{data.mainTitle}</div>
           </div>
           <div className="flex gap-1">
-            <div className="h-2 w-2 rounded-full bg-red-400" />
-            <div className="h-2 w-2 rounded-full bg-amber-400" />
-            <div className="h-2 w-2 rounded-full bg-emerald-400" />
+            <div className="h-2 w-2 rounded-full bg-[color:var(--color-brand-pink)]" />
+            <div className="h-2 w-2 rounded-full bg-[color:var(--color-brand-orange)]" />
+            <div className="h-2 w-2 rounded-full bg-[color:var(--color-brand-cyan)]" />
           </div>
         </div>
 
@@ -190,7 +190,7 @@ export function IndustryWhyUsIllustration({ slug }: Props) {
           <div className="text-xs font-medium text-[#6B7280] uppercase tracking-wider mb-1">{data.mainLabel}</div>
           <div className="flex items-end gap-3">
             <div className="text-4xl font-bold font-display text-[#111827]">{data.mainMetric}</div>
-            <div className="flex items-center text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-1 rounded-md mb-1">
+            <div className="flex items-center text-xs font-semibold text-[color:var(--color-brand-cyan)] bg-[color:var(--color-brand-cyan)]/5 px-2 py-1 rounded-md mb-1">
               <ArrowUpRight className="h-3 w-3 mr-0.5" /> 12.5%
             </div>
           </div>
@@ -282,10 +282,10 @@ export function IndustryWhyUsIllustration({ slug }: Props) {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.8 }}
-        className="absolute bottom-16 right-12 z-20 flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 shadow-lg shadow-emerald-500/10"
+        className="absolute bottom-16 right-12 z-20 flex items-center gap-2 rounded-full border border-[color:var(--color-brand-cyan)] bg-[color:var(--color-brand-cyan)]/5 px-4 py-2 shadow-lg shadow-[color:var(--color-brand-cyan)]/10"
       >
-        <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-        <span className="text-xs font-bold text-emerald-700">{data.badgeText}</span>
+        <CheckCircle2 className="h-4 w-4 text-[color:var(--color-brand-cyan)]" />
+        <span className="text-xs font-bold text-[color:var(--color-brand-cyan)]">{data.badgeText}</span>
       </motion.div>
 
     </div>

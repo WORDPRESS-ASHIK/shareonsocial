@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Project } from "./types";
-import { CaseStudyContent } from "./caseStudyData";
+import { Project, CaseStudyChallenge as ChallengeType } from "./types";
 import { Briefcase, Target, AlertCircle, Compass } from "lucide-react";
 
 export function CaseStudyChallenge({ 
@@ -10,7 +9,7 @@ export function CaseStudyChallenge({
   content 
 }: { 
   project: Project, 
-  content: CaseStudyContent['challenge'] 
+  content: ChallengeType 
 }) {
   const cards = [
     {
@@ -22,7 +21,7 @@ export function CaseStudyChallenge({
     {
       title: "Core Challenges",
       icon: Target,
-      description: content.challenges,
+      description: content.coreChallenges,
       bg: "bg-[#FF8A00]"
     },
     {
@@ -34,7 +33,7 @@ export function CaseStudyChallenge({
     {
       title: "Market Opportunity",
       icon: Compass,
-      description: content.opportunities,
+      description: content.opportunity,
       bg: "bg-[#1F73D8]"
     }
   ];
@@ -56,7 +55,7 @@ export function CaseStudyChallenge({
               <div className="text-xs uppercase tracking-[0.25em] text-foreground/50 mb-6">
                 The Challenge
               </div>
-              <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.05] tracking-tight mb-6 md:mb-8 text-foreground">
+              <h2 className="font-display text-[clamp(2.25rem,4vw,3.25rem)] leading-[0.95] tracking-tight mb-6 md:mb-8 text-foreground text-balance max-w-2xl">
                 Navigating a crowded <br className="hidden md:block" />
                 market for <em 
                   className="italic" 

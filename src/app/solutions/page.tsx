@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import * as motion from "framer-motion/client";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { solutionsData } from "@/data/solutions";
+import { solutionsData } from "@/data/solutions_data";
 
 const colors = [
   'oklch(0.72 0.18 55)',   // Orange/Red
@@ -26,7 +26,7 @@ const tagColors = [
 ];
 
 export default function SolutionsPage() {
-  const solutionsList = Object.values(solutionsData);
+  const solutionsList = solutionsData;
 
   return (
     <div className="min-h-dvh">
@@ -100,7 +100,7 @@ export default function SolutionsPage() {
                       
                       <div className="mt-auto flex items-center justify-between">
                         <div className="flex flex-wrap gap-2">
-                          {solution.tags?.slice(0, 3).map((tag, i) => {
+                          {solution.tags?.slice(0, 3).map((tag: string, i: number) => {
                             const tagBg = tagColors[i % tagColors.length];
                             return (
                               <span 

@@ -37,7 +37,7 @@ export function RestaurantsCafes() {
               <motion.div 
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="flex items-center gap-1 text-sm font-medium text-emerald-600 bg-emerald-50 px-2 py-1 rounded-md"
+                className="flex items-center gap-1 text-sm font-medium text-[color:var(--color-brand-cyan)] bg-[color:var(--color-brand-cyan)]/5 px-2 py-1 rounded-md"
               >
                 <TrendingUp className="h-4 w-4" /> +14%
               </motion.div>

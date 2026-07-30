@@ -14,7 +14,7 @@ export function LogisticsTransport() {
         transition={{ duration: 0.6 }}
         className={cardClass}
       >
-        <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-32 h-32 bg-[color:var(--color-brand-orange)]/5 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none" />
 
         <div className="mb-6 flex items-center justify-between relative z-10 border-b border-gray-100 pb-4">
            <div>
@@ -26,7 +26,7 @@ export function LogisticsTransport() {
            </div>
         </div>
 
-        <div className="relative h-24 w-full bg-blue-50/50 border border-blue-100 rounded-xl mb-6 overflow-hidden relative z-10 flex items-center justify-center">
+        <div className="relative h-24 w-full bg-[color:var(--color-brand-blue)]/5 border border-[color:var(--color-brand-blue)] rounded-xl mb-6 overflow-hidden relative z-10 flex items-center justify-center">
            <svg className="absolute inset-0 h-full w-full opacity-20" aria-hidden="true">
              <defs>
                <pattern id="logistics-grid" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -74,7 +74,7 @@ export function LogisticsTransport() {
                    </div>
                  </div>
                </div>
-               <div className={`text-[10px] font-bold px-2 py-1 rounded ${item.status === 'Delivered' ? 'bg-emerald-50 text-emerald-600' : 'bg-blue-50 text-blue-600'}`}>
+               <div className={`text-[10px] font-bold px-2 py-1 rounded ${item.status === 'Delivered' ? 'bg-[color:var(--color-brand-cyan)]/5 text-[color:var(--color-brand-cyan)]' : 'bg-[color:var(--color-brand-blue)]/5 text-[color:var(--color-brand-blue)]'}`}>
                  {item.status}
                </div>
             </motion.div>

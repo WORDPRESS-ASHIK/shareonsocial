@@ -57,7 +57,7 @@ export function TravelTourism() {
                  </div>
                </div>
                <div className={`text-[10px] font-bold px-2 py-1 rounded-md ${
-                 item.status === 'In Transit' ? 'bg-[color:var(--color-brand-blue)]/10 text-[color:var(--color-brand-blue)]' : 'bg-emerald-50 text-emerald-600'
+                 item.status === 'In Transit' ? 'bg-[color:var(--color-brand-blue)]/10 text-[color:var(--color-brand-blue)]' : 'bg-[color:var(--color-brand-cyan)]/5 text-[color:var(--color-brand-cyan)]'
                }`}>
                  {item.status}
                </div>

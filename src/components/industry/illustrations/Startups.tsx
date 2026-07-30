@@ -32,7 +32,7 @@ export function Startups() {
               <Users className="h-3 w-3" /> User Acquisition
             </div>
             <div className="text-3xl font-bold text-[#111827]">12.4k</div>
-            <div className="text-[10px] text-emerald-600 font-medium flex items-center gap-1 mt-1">
+            <div className="text-[10px] text-[color:var(--color-brand-cyan)] font-medium flex items-center gap-1 mt-1">
                <TrendingUp className="h-3 w-3" /> 24% MoM
             </div>
           </div>
@@ -41,7 +41,7 @@ export function Startups() {
               <Target className="h-3 w-3" /> Investor Pipeline
             </div>
             <div className="text-3xl font-bold text-[#111827]">8</div>
-            <div className="text-[10px] text-blue-600 font-medium mt-1">
+            <div className="text-[10px] text-[color:var(--color-brand-blue)] font-medium mt-1">
                Term sheets in review
             </div>
           </div>

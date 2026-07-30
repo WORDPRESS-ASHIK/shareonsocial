@@ -22,11 +22,11 @@ export function RetailEcommerce() {
               <motion.span 
                 animate={{ opacity: [1, 0.5, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="inline-flex h-2 w-2 rounded-full bg-emerald-500"
+                className="inline-flex h-2 w-2 rounded-full bg-[color:var(--color-brand-cyan)]"
               />
             </div>
           </div>
-          <div className="flex items-center gap-1 text-sm font-medium text-emerald-600 bg-emerald-50 px-2 py-1 rounded-md">
+          <div className="flex items-center gap-1 text-sm font-medium text-[color:var(--color-brand-cyan)] bg-[color:var(--color-brand-cyan)]/5 px-2 py-1 rounded-md">
             <TrendingUp className="h-4 w-4" /> +22%
           </div>
         </div>
@@ -47,7 +47,7 @@ export function RetailEcommerce() {
             <div className="text-xs font-medium text-[#6B7280]">Carts</div>
           </div>
           <div className="text-center">
-            <div className="mx-auto mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600">
+            <div className="mx-auto mb-2 flex h-8 w-8 items-center justify-center rounded-lg bg-[color:var(--color-brand-cyan)] text-[color:var(--color-brand-cyan)]">
               <DollarSign className="h-4 w-4" />
             </div>
             <div className="text-xl font-bold text-[#111827]">4.8%</div>

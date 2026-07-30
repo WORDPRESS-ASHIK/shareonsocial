@@ -18,11 +18,26 @@ html, body {
   --color-brand-blue: var(--brand-blue);
   --color-brand-cyan: var(--brand-cyan);
   --color-brand-orange: var(--brand-orange);
-  --color-brand-red: var(--brand-red);
   --color-brand-pink: var(--brand-pink);
+  --color-brand-purple: var(--brand-purple);
   
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
+  
+  /* Fluid Typography */
+  --text-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.75rem);
+  --text-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.875rem);
+  --text-base: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
+  --text-lg: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-xl: clamp(1.1rem, 1.05rem + 0.25vw, 1.25rem);
+  --text-2xl: clamp(1.2rem, 1.1rem + 0.5vw, 1.5rem);
+  --text-3xl: clamp(1.4rem, 1.2rem + 1vw, 1.875rem);
+  --text-4xl: clamp(1.6rem, 1.4rem + 1.5vw, 2.25rem);
+  --text-5xl: clamp(1.8rem, 1.6rem + 2.5vw, 3rem);
+  --text-6xl: clamp(2rem, 1.8rem + 3.5vw, 3.75rem);
+  --text-7xl: clamp(2.5rem, 2.2rem + 5vw, 4.5rem);
+  --text-8xl: clamp(3rem, 2.5rem + 6.5vw, 6rem);
+  --text-9xl: clamp(3.5rem, 3rem + 8vw, 8rem);
 }
 
 :root {
@@ -32,8 +47,8 @@ html, body {
   --brand-blue: oklch(56% .2 255);
   --brand-cyan: oklch(78% .14 210);
   --brand-orange: oklch(72% .18 55);
-  --brand-red: oklch(62% .24 25);
   --brand-pink: oklch(70% .2 350);
+  --brand-purple: oklch(60% .2 300);
   
   --background: var(--paper);
   --foreground: var(--ink);

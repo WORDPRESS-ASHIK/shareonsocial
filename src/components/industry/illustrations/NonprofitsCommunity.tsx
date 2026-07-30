@@ -58,12 +58,12 @@ export function NonprofitsCommunity() {
           </div>
         </div>
 
-        <div className="mt-4 rounded-xl bg-emerald-50 border border-emerald-100 p-3 flex items-center justify-between">
+        <div className="mt-4 rounded-xl bg-[color:var(--color-brand-cyan)]/5 border border-[color:var(--color-brand-cyan)] p-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-             <Activity className="h-4 w-4 text-emerald-600" />
-             <div className="text-xs font-medium text-emerald-800">Recent Donation: $500</div>
+             <Activity className="h-4 w-4 text-[color:var(--color-brand-cyan)]" />
+             <div className="text-xs font-medium text-[color:var(--color-brand-cyan)]">Recent Donation: $500</div>
           </div>
-          <div className="text-[10px] text-emerald-600 font-bold">Just now</div>
+          <div className="text-[10px] text-[color:var(--color-brand-cyan)] font-bold">Just now</div>
         </div>
       </motion.div>
     </div>

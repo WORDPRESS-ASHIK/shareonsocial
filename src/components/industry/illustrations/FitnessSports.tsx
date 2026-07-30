@@ -37,7 +37,7 @@ export function FitnessSports() {
                  <div className="text-[10px] font-medium text-[#6B7280]">Studio 1 • 5:30 PM</div>
                </div>
              </div>
-             <div className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">24/30 Booked</div>
+             <div className="text-xs font-bold text-[color:var(--color-brand-cyan)] bg-[color:var(--color-brand-cyan)]/5 px-2 py-1 rounded">24/30 Booked</div>
           </div>
           
           <div className="flex items-center justify-between rounded-xl border border-gray-100 bg-white p-3 shadow-sm">

@@ -28,7 +28,7 @@ export function BeautyPersonalCare() {
             animate={{ rotate: 360 }}
             transition={{ duration: 8, ease: "linear", repeat: Infinity }}
           >
-            <Sparkles className="h-5 w-5 text-amber-400" />
+            <Sparkles className="h-5 w-5 text-[color:var(--color-brand-orange)]" />
           </motion.div>
         </div>
 

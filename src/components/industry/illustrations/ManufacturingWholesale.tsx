@@ -35,7 +35,7 @@ export function ManufacturingWholesale() {
                  initial={{ width: 0 }}
                  animate={{ width: "84%" }}
                  transition={{ duration: 1 }}
-                 className="h-full bg-emerald-500" 
+                 className="h-full bg-[color:var(--color-brand-cyan)]" 
                />
             </div>
           </div>
@@ -46,7 +46,7 @@ export function ManufacturingWholesale() {
                <div className="text-xs font-semibold text-[#111827]">Units</div>
              </div>
              <div className="text-xl font-bold text-[#111827]">14,892</div>
-             <div className="text-[10px] text-emerald-600 font-medium flex items-center gap-1 mt-1">
+             <div className="text-[10px] text-[color:var(--color-brand-cyan)] font-medium flex items-center gap-1 mt-1">
                <TrendingUp className="h-3 w-3" /> +12% today
              </div>
           </div>
@@ -66,13 +66,13 @@ export function ManufacturingWholesale() {
                  <motion.div 
                    animate={item.active ? { rotate: 360 } : {}}
                    transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-                   className={`p-1.5 rounded-lg ${item.active ? 'bg-blue-100 text-blue-600' : 'bg-amber-100 text-amber-600'}`}
+                   className={`p-1.5 rounded-lg ${item.active ? 'bg-[color:var(--color-brand-blue)] text-[color:var(--color-brand-blue)]' : 'bg-[color:var(--color-brand-orange)] text-[color:var(--color-brand-orange)]'}`}
                  >
                    <Settings className="h-4 w-4" />
                  </motion.div>
                  <div className="text-sm font-semibold text-[#111827]">{item.line}</div>
                </div>
-               <div className={`text-[10px] font-bold px-2 py-1 rounded shadow-sm border border-gray-100 bg-white ${item.active ? 'text-emerald-600' : 'text-amber-600'}`}>
+               <div className={`text-[10px] font-bold px-2 py-1 rounded shadow-sm border border-gray-100 bg-white ${item.active ? 'text-[color:var(--color-brand-cyan)]' : 'text-[color:var(--color-brand-orange)]'}`}>
                  {item.status}
                </div>
             </motion.div>

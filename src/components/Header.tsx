@@ -115,7 +115,7 @@ export function Header() {
               animate={{ y: 0 }}
               exit={{ y: "-100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="absolute inset-x-0 top-0 bg-background/95 backdrop-blur-xl px-6 pb-12 pt-24 shadow-2xl border-b border-foreground/10"
+              className="absolute inset-x-0 top-0 max-h-[100dvh] overflow-y-auto bg-background/95 backdrop-blur-xl px-6 pb-12 pt-24 shadow-2xl border-b border-foreground/10"
               onClick={(e) => e.stopPropagation()}
             >
               <nav className="flex flex-col gap-6">

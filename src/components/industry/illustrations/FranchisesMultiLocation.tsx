@@ -46,7 +46,7 @@ export function FranchisesMultiLocation() {
               </div>
               <div className="flex items-center gap-4">
                  <div className="text-sm font-bold text-[#111827]">{item.rev}</div>
-                 <div className="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded flex items-center gap-1">
+                 <div className="text-[10px] font-bold text-[color:var(--color-brand-cyan)] bg-[color:var(--color-brand-cyan)]/5 px-1.5 py-0.5 rounded flex items-center gap-1">
                    <TrendingUp className="h-3 w-3" /> {item.growth}
                  </div>
               </div>
@@ -65,7 +65,7 @@ export function FranchisesMultiLocation() {
            <motion.div 
              animate={{ scale: [1, 1.1, 1] }}
              transition={{ duration: 2, repeat: Infinity }}
-             className="h-2 w-2 rounded-full bg-emerald-500"
+             className="h-2 w-2 rounded-full bg-[color:var(--color-brand-cyan)]"
            />
         </div>
       </motion.div>

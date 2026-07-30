@@ -2,8 +2,7 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CtaSection } from "@/components/CtaSection";
-import { MOCK_PROJECTS } from "@/components/portfolio/types";
-import { CASE_STUDY_DATA } from "@/components/portfolio/caseStudyData";
+import { PORTFOLIO_PROJECTS } from "@/data/portfolioData";
 import { CaseStudyHero } from "@/components/portfolio/CaseStudyHero";
 import { CaseStudyChallenge } from "@/components/portfolio/CaseStudyChallenge";
 import { CaseStudyResults } from "@/components/portfolio/CaseStudyResults";
@@ -11,7 +10,7 @@ import { CaseStudyResults } from "@/components/portfolio/CaseStudyResults";
 export async function generateMetadata({ params }: { params: { id: string } }) {
   // Handle async params in Next.js 15+ if applicable
   const resolvedParams = await Promise.resolve(params);
-  const project = MOCK_PROJECTS.find(p => p.id === resolvedParams.id);
+  const project = PORTFOLIO_PROJECTS.find(p => p.id === resolvedParams.id);
   
   if (!project) return { title: "Project Not Found" };
   
@@ -24,14 +23,9 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
 export default async function CaseStudyPage({ params }: { params: { id: string } }) {
   // Handle async params in Next.js 15+ if applicable
   const resolvedParams = await Promise.resolve(params);
-  const project = MOCK_PROJECTS.find(p => p.id === resolvedParams.id);
+  const project = PORTFOLIO_PROJECTS.find(p => p.id === resolvedParams.id);
   
   if (!project) {
-    notFound();
-  }
-
-  const industryData = CASE_STUDY_DATA[project.industry];
-  if (!industryData) {
     notFound();
   }
 
@@ -40,9 +34,16 @@ export default async function CaseStudyPage({ params }: { params: { id: string }
       <Header />
       <main className="min-h-dvh">
         <CaseStudyHero project={project} />
-        <CaseStudyChallenge project={project} content={industryData.challenge} />
-        <CaseStudyResults project={project} content={industryData.strategy} />
-        <CtaSection />
+        <CaseStudyChallenge project={project} content={project.challenge} />
+        <CaseStudyResults project={project} content={project.strategy} />
+        <CtaSection
+          heading={project.cta.heading}
+          description={project.cta.description}
+          primaryBtnText={project.cta.primaryBtn}
+          secondaryBtnText={project.cta.secondaryBtn}
+          smallHeading={true}
+          className="mx-auto mt-24 mb-16 max-w-[1400px] px-6 md:mt-32 md:px-10"
+        />
       </main>
       <Footer />
     </div>

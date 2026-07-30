@@ -117,7 +117,7 @@ export function WorkSection() {
                   
                   {/* Post 1 */}
                   <motion.div initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }} viewport={{ once: true }} className="flex items-center gap-2 bg-white border border-[#EAEAEA] p-1.5 rounded-lg shadow-sm">
-                    <div className="h-6 w-6 rounded-md bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center shrink-0">
+                    <div className="h-6 w-6 rounded-md bg-gradient-to-tr from-[color:var(--color-brand-purple)] to-[color:var(--color-brand-pink)] flex items-center justify-center shrink-0">
                       <Camera className="h-3 w-3 text-white" />
                     </div>
                     <div className="flex-1 min-w-0">
@@ -126,7 +126,7 @@ export function WorkSection() {
                         <Clock className="h-2 w-2" /> Today, 2:00 PM
                       </div>
                     </div>
-                    <div className="h-4 px-1.5 bg-green-100 text-green-700 rounded text-[8px] font-bold flex items-center gap-1 shrink-0">
+                    <div className="h-4 px-1.5 bg-[color:var(--color-brand-cyan)] text-[color:var(--color-brand-cyan)] rounded text-[8px] font-bold flex items-center gap-1 shrink-0">
                       <CheckCircle className="h-2 w-2" /> Ready
                     </div>
                   </motion.div>
@@ -142,7 +142,7 @@ export function WorkSection() {
                         <Clock className="h-2 w-2" /> Tomorrow, 9:00 AM
                       </div>
                     </div>
-                    <div className="h-4 px-1.5 bg-orange-100 text-orange-700 rounded text-[8px] font-bold flex items-center gap-1 shrink-0">
+                    <div className="h-4 px-1.5 bg-[color:var(--color-brand-orange)] text-[color:var(--color-brand-orange)] rounded text-[8px] font-bold flex items-center gap-1 shrink-0">
                       Review
                     </div>
                   </motion.div>
@@ -155,7 +155,7 @@ export function WorkSection() {
                     <div className="bg-white border border-[#EAEAEA] p-1.5 rounded-lg shadow-sm">
                       <div className="flex items-center justify-between mb-0.5">
                         <MessageSquare className="h-3 w-3 text-[#FF7A00]" />
-                        <span className="text-[8px] font-bold text-green-600">+14%</span>
+                        <span className="text-[8px] font-bold text-[color:var(--color-brand-cyan)]">+14%</span>
                       </div>
                       <div className="text-[11px] font-bold text-black">
                         <CountUp value={842} />
@@ -298,7 +298,7 @@ export function WorkSection() {
                       <div className="font-display font-bold text-sm sm:text-base text-black leading-none">
                         <CountUp value={kpi.value} suffix={kpi.suffix} />
                       </div>
-                      <div className="text-[9px] font-bold text-green-600 leading-none mb-0.5">
+                      <div className="text-[9px] font-bold text-[color:var(--color-brand-cyan)] leading-none mb-0.5">
                         {kpi.trend}
                       </div>
                     </div>

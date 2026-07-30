@@ -16,7 +16,7 @@ export function FinanceAccounting() {
       >
         <div className="flex items-center justify-between mb-8 border-b border-gray-200 pb-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[color:var(--color-brand-cyan)] text-[color:var(--color-brand-cyan)]">
               <Calculator className="h-6 w-6" />
             </div>
             <div>

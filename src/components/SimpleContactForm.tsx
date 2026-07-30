@@ -94,7 +94,7 @@ export function SimpleContactForm() {
             exit={{ opacity: 0, scale: 0.95 }}
             className="flex flex-col items-center justify-center rounded-[32px] bg-[#FAFAFA] border border-[rgba(0,0,0,0.04)] py-16 px-8 text-center"
           >
-            <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-green-50 text-green-500">
+            <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[color:var(--color-brand-cyan)]/5 text-[color:var(--color-brand-cyan)]">
               <CheckCircle2 className="h-10 w-10" />
             </div>
             <h3 className="mb-2 font-display text-3xl font-medium tracking-tight text-foreground">Message Sent</h3>

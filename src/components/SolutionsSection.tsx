@@ -107,7 +107,7 @@ export function SolutionsSection() {
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute left-[5%] bottom-[10%] z-20 flex items-center gap-3 rounded-full bg-[#111827] px-4 py-2 text-white shadow-xl"
               >
-                <div className="h-2 w-2 rounded-full bg-green-400" />
+                <div className="h-2 w-2 rounded-full bg-[color:var(--color-brand-cyan)]" />
                 <span className="text-xs font-medium tracking-wide">Primary Button</span>
               </motion.div>
 
@@ -163,9 +163,9 @@ export function SolutionsSection() {
                           <svg className="w-3 h-3 text-black/40" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
                           <span className="text-[10px] font-medium text-black/50">Acme Corp / Analytics</span>
                        </div>
-                       <div className="hidden sm:flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-green-500/10 border border-green-500/20">
-                         <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
-                         <span className="text-[8px] font-medium text-green-600">Active</span>
+                       <div className="hidden sm:flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[color:var(--color-brand-cyan)]/10 border border-[color:var(--color-brand-cyan)]/20">
+                         <div className="w-1.5 h-1.5 rounded-full bg-[color:var(--color-brand-cyan)] animate-pulse"></div>
+                         <span className="text-[8px] font-medium text-[color:var(--color-brand-cyan)]">Active</span>
                        </div>
                     </div>
                     {/* Utility Icons & Profile */}
@@ -206,15 +206,15 @@ export function SolutionsSection() {
                       {/* Top Cards (4 Grid) */}
                       <div className="grid grid-cols-4 gap-2 sm:gap-3">
                         {[
-                          { title: "Total Visitors", val: "124.5K", change: "+12%", spark: "w-8 bg-green-500/20" },
-                          { title: "Leads", val: "8,240", change: "+8%", spark: "w-6 bg-green-500/20" },
+                          { title: "Total Visitors", val: "124.5K", change: "+12%", spark: "w-8 bg-[color:var(--color-brand-cyan)]/20" },
+                          { title: "Leads", val: "8,240", change: "+8%", spark: "w-6 bg-[color:var(--color-brand-cyan)]/20" },
                           { title: "Conversion", val: "6.4%", change: "+2%", spark: "w-4 bg-[color:var(--color-brand-orange)]/20" },
-                          { title: "Revenue", val: "$42.8K", change: "+15%", spark: "w-10 bg-green-500/20" }
+                          { title: "Revenue", val: "$42.8K", change: "+15%", spark: "w-10 bg-[color:var(--color-brand-cyan)]/20" }
                         ].map((stat, i) => (
                           <div key={i} className="h-16 rounded-xl bg-white border border-black/5 shadow-sm p-2.5 flex flex-col justify-between hover:border-black/10 transition-colors">
                              <div className="flex justify-between items-start">
                                 <span className="text-[8px] font-medium text-black/50">{stat.title}</span>
-                                <div className="text-[7px] font-bold text-green-600 bg-green-500/10 px-1 py-0.5 rounded">{stat.change}</div>
+                                <div className="text-[7px] font-bold text-[color:var(--color-brand-cyan)] bg-[color:var(--color-brand-cyan)]/10 px-1 py-0.5 rounded">{stat.change}</div>
                              </div>
                              <div className="flex items-end justify-between">
                                 <span className="text-sm font-bold text-black/80">{stat.val}</span>
@@ -279,7 +279,7 @@ export function SolutionsSection() {
                         {/* Right Floating Notification */}
                         <div className="absolute right-2 top-[40%] bg-white/95 backdrop-blur-sm p-1.5 rounded-lg shadow-xl border border-black/10 flex flex-col gap-1 z-40 pointer-events-auto origin-right">
                            <div className="flex items-center gap-1 font-semibold text-black/80 text-[7px]">
-                              <svg className="w-2.5 h-2.5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
+                              <svg className="w-2.5 h-2.5 text-[color:var(--color-brand-cyan)]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
                               Campaign Live
                            </div>
                            <div className="flex items-center gap-1 text-[6px] text-black/50 font-medium">
@@ -443,7 +443,7 @@ export function SolutionsSection() {
                     {/* Header */}
                     <div className="absolute top-0 w-full px-2 py-2 flex items-center justify-between border-b border-black/5 bg-white/80 backdrop-blur-md z-20">
                        <div className="flex items-center gap-1.5">
-                         <div className="h-4 w-4 rounded-full bg-gradient-to-tr from-pink-500 to-orange-400 p-[1px]">
+                         <div className="h-4 w-4 rounded-full bg-gradient-to-tr from-[color:var(--color-brand-pink)] to-[color:var(--color-brand-orange)] p-[1px]">
                            <div className="h-full w-full rounded-full bg-white border border-white overflow-hidden">
                              <div className="w-full h-full bg-gray-200" />
                            </div>
@@ -469,7 +469,7 @@ export function SolutionsSection() {
                           />
                         </div>
                         <div className="flex items-center gap-1.5 mt-1.5 px-0.5">
-                           <Heart className="w-3 h-3 text-pink-500" fill="currentColor" />
+                           <Heart className="w-3 h-3 text-[color:var(--color-brand-pink)]" fill="currentColor" />
                            <MessageCircle className="w-3 h-3 text-black/60" />
                            <Share2 className="w-3 h-3 text-black/60" />
                         </div>
@@ -508,7 +508,7 @@ export function SolutionsSection() {
                     <div className="absolute bottom-10 left-3 right-10 z-20">
                       <div className="flex items-center gap-1 mb-1">
                         <span className="text-[9px] font-bold text-white shadow-sm">@brand</span>
-                        <CheckCircle2 className="w-2.5 h-2.5 text-blue-400" fill="currentColor" />
+                        <CheckCircle2 className="w-2.5 h-2.5 text-[color:var(--color-brand-blue)]" fill="currentColor" />
                       </div>
                       <div className="text-[7.5px] text-white/90 leading-snug mb-2 drop-shadow-md">
                         The ultimate guide to scaling your brand in 2024. 🚀 #growth
@@ -528,7 +528,7 @@ export function SolutionsSection() {
                             animate={{ scale: [1, 1.2, 1] }}
                             transition={{ duration: 1.5, repeat: Infinity }}
                           >
-                            <Heart className="h-3 w-3 text-pink-500" fill="currentColor" />
+                            <Heart className="h-3 w-3 text-[color:var(--color-brand-pink)]" fill="currentColor" />
                           </motion.div>
                         </div>
                         <span className="text-[6px] font-medium text-white shadow-sm">
@@ -541,7 +541,7 @@ export function SolutionsSection() {
                            animate={{ y: [0, -20], opacity: [0, 1, 0], scale: [0.5, 1, 0.8] }}
                            transition={{ duration: 2, repeat: Infinity, delay: 1 }}
                         >
-                           <Heart className="w-2.5 h-2.5 text-pink-500" fill="currentColor" />
+                           <Heart className="w-2.5 h-2.5 text-[color:var(--color-brand-pink)]" fill="currentColor" />
                         </motion.div>
                       </div>
                       <div className="flex flex-col items-center gap-0.5">
@@ -587,7 +587,7 @@ export function SolutionsSection() {
                        <div className="relative">
                           <Bell className="w-3 h-3 text-black/50" />
                           <motion.div 
-                            className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 bg-red-500 rounded-full"
+                            className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 bg-[color:var(--color-brand-pink)] rounded-full"
                             animate={{ scale: [1, 1.5, 1], opacity: [1, 0.7, 1] }}
                             transition={{ duration: 2, repeat: Infinity }}
                           />
@@ -620,7 +620,7 @@ export function SolutionsSection() {
                            </div>
                         </motion.div>
                         <motion.div 
-                          className="aspect-[4/5] w-16 flex-shrink-0 rounded-md bg-gradient-to-bl from-[color:var(--color-brand-blue)]/20 to-cyan-400/20 border border-black/5 relative overflow-hidden"
+                          className="aspect-[4/5] w-16 flex-shrink-0 rounded-md bg-gradient-to-bl from-[color:var(--color-brand-blue)]/20 to-[color:var(--color-brand-cyan)]/20 border border-black/5 relative overflow-hidden"
                           animate={{ x: [0, -70, 0] }}
                           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                         >
@@ -633,7 +633,7 @@ export function SolutionsSection() {
                       </div>
 
                       {/* CTA button */}
-                      <div className="w-full py-1 rounded bg-blue-500 text-white text-[7px] font-medium text-center shadow-sm">
+                      <div className="w-full py-1 rounded bg-[color:var(--color-brand-blue)] text-white text-[7px] font-medium text-center shadow-sm">
                         Learn More
                       </div>
 
@@ -665,7 +665,7 @@ export function SolutionsSection() {
                   transition={{ delay: 0.6 }}
                   className="absolute bottom-4 -left-4 z-40 flex items-center gap-2 rounded-full border border-white/50 bg-white px-3 py-2 shadow-xl backdrop-blur-md"
                 >
-                  <div className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-pink-500 to-orange-500 text-white shadow-inner">
+                  <div className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-[color:var(--color-brand-pink)] to-[color:var(--color-brand-orange)] text-white shadow-inner">
                     <Heart className="h-3.5 w-3.5" fill="currentColor" />
                   </div>
                   <span className="text-xs font-bold text-black">Viral Reach</span>
@@ -722,7 +722,7 @@ export function SolutionsSection() {
                       <div className="font-display text-6xl tracking-tight md:text-7xl">
                         +312%
                       </div>
-                      <TrendingUp className="h-6 w-6 text-green-500" />
+                      <TrendingUp className="h-6 w-6 text-[color:var(--color-brand-cyan)]" />
                     </div>
                     <div className="mt-1 text-sm text-foreground/60">
                       Avg. qualified pipeline
@@ -733,8 +733,8 @@ export function SolutionsSection() {
                     {/* Live indicator badge */}
                     <div className="absolute -top-4 right-0 flex items-center gap-2 rounded-full bg-white px-2 py-1 shadow-md border border-black/5">
                       <span className="relative flex h-2 w-2">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[color:var(--color-brand-cyan)] opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-[color:var(--color-brand-cyan)]"></span>
                       </span>
                       <span className="text-[10px] font-medium uppercase tracking-wider text-black">Live ROI</span>
                     </div>
@@ -832,11 +832,11 @@ export function SolutionsSection() {
                       <div className="flex-1 rounded-xl bg-white/10 px-4 py-2.5 backdrop-blur-sm border border-white/5 transition-colors group-hover:bg-white/20">
                         <div className="flex items-center justify-between">
                           <span className="text-sm font-medium opacity-90">Lead Capture</span>
-                          <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-wider opacity-70 text-green-300">
+                          <span className="flex items-center gap-1.5 text-[10px] uppercase tracking-wider opacity-70 text-[color:var(--color-brand-cyan)]">
                             <motion.span
                               animate={{ opacity: [0.3, 1, 0.3] }}
                               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                              className="h-1.5 w-1.5 rounded-full bg-green-400"
+                              className="h-1.5 w-1.5 rounded-full bg-[color:var(--color-brand-cyan)]"
                             />
                             Active
                           </span>

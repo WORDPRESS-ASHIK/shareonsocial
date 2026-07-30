@@ -15,7 +15,7 @@ export function HealthcareWellness() {
         className={cardClass}
       >
         <div className="mb-6 flex items-center gap-4">
-          <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
+          <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[color:var(--color-brand-cyan)] text-[color:var(--color-brand-cyan)]">
             <Activity className="h-7 w-7" />
           </div>
           <div>
@@ -36,24 +36,24 @@ export function HealthcareWellness() {
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.2 + i * 0.1 }}
               className={`flex items-center justify-between rounded-xl border p-3 transition-colors ${
-                item.active ? "border-emerald-200 bg-emerald-50" : "border-gray-100 bg-white"
+                item.active ? "border-[color:var(--color-brand-cyan)] bg-[color:var(--color-brand-cyan)]/5" : "border-gray-100 bg-white"
               }`}
             >
               <div className="flex items-center gap-3">
                 <div className={`flex h-8 w-8 items-center justify-center rounded-lg ${
-                  item.active ? "bg-emerald-200 text-emerald-700" : "bg-gray-50 text-gray-400"
+                  item.active ? "bg-[color:var(--color-brand-cyan)] text-[color:var(--color-brand-cyan)]" : "bg-gray-50 text-gray-400"
                 }`}>
                   <Clock className="h-4 w-4" />
                 </div>
                 <div>
-                  <div className={`text-sm font-semibold ${item.active ? "text-emerald-900" : "text-[#111827]"}`}>
+                  <div className={`text-sm font-semibold ${item.active ? "text-[color:var(--color-brand-cyan)]" : "text-[#111827]"}`}>
                     {item.type}
                   </div>
                   <div className="text-xs font-medium text-[#6B7280]">{item.time}</div>
                 </div>
               </div>
               <div className={`text-xs font-medium px-2 py-1 rounded-md ${
-                item.active ? "bg-emerald-200 text-emerald-800" : "bg-gray-100 text-gray-500"
+                item.active ? "bg-[color:var(--color-brand-cyan)] text-[color:var(--color-brand-cyan)]" : "bg-gray-100 text-gray-500"
               }`}>
                 {item.status}
               </div>
@@ -73,7 +73,7 @@ export function HealthcareWellness() {
             <div className="text-xs font-medium text-[#6B7280]">+12 New Patients</div>
           </div>
           <div className="flex items-center gap-1 text-sm font-bold text-[#111827]">
-            <Star className="h-4 w-4 text-amber-400 fill-current" /> 4.9
+            <Star className="h-4 w-4 text-[color:var(--color-brand-orange)] fill-current" /> 4.9
           </div>
         </div>
       </motion.div>

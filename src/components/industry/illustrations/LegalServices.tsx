@@ -31,8 +31,8 @@ export function LegalServices() {
 
         <div className="space-y-4 mb-6">
           {[
-            { case: "Smith vs. TechCorp", status: "In Review", icon: FileText, color: "text-blue-600", bg: "bg-blue-100" },
-            { case: "Estate Planning: Jones", status: "Drafting", icon: FileText, color: "text-amber-600", bg: "bg-amber-100" }
+            { case: "Smith vs. TechCorp", status: "In Review", icon: FileText, color: "text-[color:var(--color-brand-blue)]", bg: "bg-[color:var(--color-brand-blue)]" },
+            { case: "Estate Planning: Jones", status: "Drafting", icon: FileText, color: "text-[color:var(--color-brand-orange)]", bg: "bg-[color:var(--color-brand-orange)]" }
           ].map((item, i) => (
             <motion.div
               key={i}

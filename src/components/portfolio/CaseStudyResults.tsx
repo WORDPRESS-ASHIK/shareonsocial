@@ -1,31 +1,58 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Project } from "./types";
-import { CaseStudyContent } from "./caseStudyData";
+import { Project, CaseStudyStrategy as StrategyType } from "./types";
 import { 
-  LayoutTemplate, 
-  Search, 
-  Target, 
-  Users
+  CheckCircle2, Globe, Package, Share2, Video, Target, Search, Sparkles, 
+  Palette, FileText, Users, Zap, BarChart3, Mail, UserPlus, MapPin, 
+  ShoppingCart, Layout, Activity
 } from "lucide-react";
 
-const frameworkCards = [
-  { icon: LayoutTemplate, title: "Website Experience", description: "Frictionless UI/UX designed to seamlessly convert traffic into highly qualified leads." },
-  { icon: Search, title: "SEO & AEO", description: "Targeted dominance across traditional organic search and modern AI discovery engines." },
-  { icon: Target, title: "Paid Advertising", description: "High-ROI performance campaigns targeting local and commercial intent precisely." },
-  { icon: Users, title: "CRM & Automation", description: "Automated nurturing pipelines to engage prospects and close deals significantly faster." }
-];
-
-
+const getIconsForInitiatives = (initiatives: {title: string}[]) => {
+  const usedIcons = new Set();
+  
+  return initiatives.map(init => {
+    const t = init.title.toLowerCase();
+    let icon = CheckCircle2;
+    
+    if ((t.includes('website') || t.includes('web') || t.includes('booking')) && !usedIcons.has(Globe)) icon = Globe;
+    else if ((t.includes('inventory') || t.includes('stock')) && !usedIcons.has(Package)) icon = Package;
+    else if ((t.includes('social') || t.includes('community')) && !usedIcons.has(Share2)) icon = Share2;
+    else if ((t.includes('reel') || t.includes('video') || t.includes('media')) && !usedIcons.has(Video)) icon = Video;
+    else if ((t.includes('ad') || t.includes('advertising') || t.includes('campaign') || t.includes('paid')) && !usedIcons.has(Target)) icon = Target;
+    else if (t.includes('local seo') && !usedIcons.has(MapPin)) icon = MapPin;
+    else if ((t.includes('seo') || t.includes('search engine')) && !usedIcons.has(Search)) icon = Search;
+    else if ((t.includes('aeo') || t.includes('ai') || t.includes('generative')) && !usedIcons.has(Sparkles)) icon = Sparkles;
+    else if ((t.includes('brand') || t.includes('identity')) && !usedIcons.has(Palette)) icon = Palette;
+    else if ((t.includes('content') || t.includes('copy')) && !usedIcons.has(FileText)) icon = FileText;
+    else if ((t.includes('crm') || t.includes('patient') || t.includes('customer')) && !usedIcons.has(Users)) icon = Users;
+    else if ((t.includes('automation') || t.includes('workflow') || t.includes('system')) && !usedIcons.has(Zap)) icon = Zap;
+    else if ((t.includes('analytic') || t.includes('report') || t.includes('data')) && !usedIcons.has(BarChart3)) icon = BarChart3;
+    else if ((t.includes('email') || t.includes('newsletter')) && !usedIcons.has(Mail)) icon = Mail;
+    else if ((t.includes('lead') || t.includes('acquisition') || t.includes('prospect')) && !usedIcons.has(UserPlus)) icon = UserPlus;
+    else if ((t.includes('local') || t.includes('map')) && !usedIcons.has(MapPin)) icon = MapPin;
+    else if ((t.includes('e-commerce') || t.includes('ecommerce') || t.includes('store') || t.includes('shop')) && !usedIcons.has(ShoppingCart)) icon = ShoppingCart;
+    else if ((t.includes('ui/ux') || t.includes('design') || t.includes('interface')) && !usedIcons.has(Layout)) icon = Layout;
+    else if ((t.includes('performance') || t.includes('optimisation') || t.includes('optimization') || t.includes('speed')) && !usedIcons.has(Activity)) icon = Activity;
+    else {
+      const fallbacks = [Zap, Target, BarChart3, Activity, Sparkles, Layout, FileText, Globe, Package, CheckCircle2];
+      icon = fallbacks.find(f => !usedIcons.has(f)) || CheckCircle2;
+    }
+    
+    usedIcons.add(icon);
+    return icon;
+  });
+};
 
 export function CaseStudyResults({ 
   project, 
   content 
 }: { 
   project: Project, 
-  content: CaseStudyContent['strategy'] 
+  content: StrategyType 
 }) {
+  const initiativeIcons = getIconsForInitiatives(content.initiatives);
+
   return (
     <section 
       className="py-24 md:py-32 relative overflow-hidden text-white"
@@ -53,45 +80,45 @@ export function CaseStudyResults({
             transition={{ duration: 0.6 }}
           >
             <div className="text-xs uppercase tracking-[0.25em] text-[rgba(255,255,255,0.55)] mb-6">
-              01. Strategy Overview
+              01. What We Did
             </div>
-            <h2 className="font-display text-[clamp(3rem,6vw,5.5rem)] leading-[1.05] tracking-tight mb-8 text-white">
-              A blueprint for growth.
+            <h2 className="font-display text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] tracking-tight mb-8 text-white text-balance">
+              {content.heading}
             </h2>
             <p className="text-xl md:text-2xl text-[rgba(255,255,255,0.78)] font-light leading-relaxed">
-              {content.implementation}
+              {content.overview}
             </p>
           </motion.div>
         </div>
 
         <hr className="border-[rgba(255,255,255,0.06)] my-12 md:my-16" />
 
-        {/* 02. Growth Framework */}
+        {/* 02. Growth Framework (What We Did) */}
         <div>
-          <div className="text-xs uppercase tracking-[0.25em] text-[rgba(255,255,255,0.55)] mb-10 text-center">
-            02. Growth Framework
-          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            {frameworkCards.map((card, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative bg-[#1A1D24] border border-[rgba(255,255,255,0.08)] rounded-[24px] p-10 overflow-hidden transition-all duration-500 shadow-md hover:shadow-[0_0_30px_rgba(255,255,255,0.04)] hover:-translate-y-2 hover:border-[rgba(255,255,255,0.15)]"
-              >
-                <div 
-                  className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 mix-blend-overlay"
-                  style={{ backgroundColor: project.color }}
-                ></div>
-                <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white/5 border border-white/10 text-white mb-8 group-hover:scale-110 group-hover:bg-white/10 transition-all duration-500 shadow-inner">
-                  <card.icon className="h-7 w-7" />
-                </div>
-                <h3 className="font-display text-2xl mb-4 text-white group-hover:text-[rgba(255,255,255,0.95)] transition-colors">{card.title}</h3>
-                <p className="text-[rgba(255,255,255,0.78)] leading-relaxed text-lg">{card.description}</p>
-              </motion.div>
-            ))}
+            {content.initiatives.map((initiative, index) => {
+              const Icon = initiativeIcons[index];
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="group relative bg-[#1A1D24] border border-[rgba(255,255,255,0.08)] rounded-[24px] p-10 overflow-hidden transition-all duration-500 shadow-md hover:shadow-[0_0_30px_rgba(255,255,255,0.04)] hover:-translate-y-2 hover:border-[rgba(255,255,255,0.15)]"
+                >
+                  <div 
+                    className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 mix-blend-overlay"
+                    style={{ backgroundColor: project.color }}
+                  ></div>
+                  <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white/5 border border-white/10 text-white mb-8 group-hover:scale-110 group-hover:bg-white/10 transition-all duration-500 shadow-inner">
+                    <Icon className="h-7 w-7" />
+                  </div>
+                  <h3 className="font-display text-2xl mb-4 text-white group-hover:text-[rgba(255,255,255,0.95)] transition-colors">{initiative.title}</h3>
+                  <p className="text-[rgba(255,255,255,0.78)] leading-relaxed text-lg">{initiative.description}</p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
 
@@ -102,7 +129,7 @@ export function CaseStudyResults({
         {/* 03. Growth Results */}
         <div>
           <div className="text-xs uppercase tracking-[0.25em] text-[rgba(255,255,255,0.55)] mb-10 text-center">
-            03. Growth Results
+            02. Results
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {project.outcomes.map((outcome, index) => (

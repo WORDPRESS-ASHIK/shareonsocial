@@ -26,7 +26,7 @@ export function IndustryNext({ currentSlug }: { currentSlug: string }) {
 
   return (
     <section className="mx-auto my-20 max-w-[1400px] px-6 md:px-10 border-t border-foreground/10 pt-16">
-      <div className="grid grid-cols-2 gap-6 md:gap-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-12">
         <Link href={`/industries/${prevSlug}`} className="group flex flex-col items-start gap-4 text-left transition-opacity hover:opacity-70">
           <div className="flex h-12 w-12 items-center justify-center rounded-full border border-foreground/10 bg-foreground/[0.02] transition-colors group-hover:bg-foreground/[0.05]">
             <ArrowLeft className="h-5 w-5" />

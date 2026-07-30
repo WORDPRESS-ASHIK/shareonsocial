@@ -41,7 +41,7 @@ export function Automotive() {
             whileHover={{ scale: 1.02 }}
             className="bg-white border border-gray-100 rounded-xl p-3 shadow-sm flex items-center gap-3"
           >
-             <div className="rounded-lg bg-emerald-100 p-2 text-emerald-600">
+             <div className="rounded-lg bg-[color:var(--color-brand-cyan)] p-2 text-[color:var(--color-brand-cyan)]">
                <CheckCircle2 className="h-4 w-4" />
              </div>
              <div>
@@ -72,7 +72,7 @@ export function Automotive() {
                   initial={{ width: 0 }}
                   animate={{ width: item.percent }}
                   transition={{ duration: 1, delay: i * 0.2 }}
-                  className={`h-full ${item.status === 'In Progress' ? 'bg-[color:var(--color-brand-blue)]' : 'bg-amber-400'}`}
+                  className={`h-full ${item.status === 'In Progress' ? 'bg-[color:var(--color-brand-blue)]' : 'bg-[color:var(--color-brand-orange)]'}`}
                 />
               </div>
             </div>
