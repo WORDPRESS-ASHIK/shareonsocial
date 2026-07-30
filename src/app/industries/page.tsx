@@ -32,9 +32,9 @@ export default function IndustriesPage() {
               <div className="text-xs uppercase tracking-[0.25em] text-foreground/50">
                 INDUSTRIES WE SERVE
               </div>
-              <h1 className="mt-6 max-w-4xl font-display text-[clamp(2.75rem,8vw,8rem)] leading-[0.9] tracking-[-0.04em] text-balance">
+              <h1 className="mt-6 max-w-5xl font-display text-[clamp(2.75rem,5vw,5rem)] leading-[0.9] tracking-[-0.02em]">
                 Built Around Your Industry.
-                <span className="block mt-4 text-[clamp(2rem,6vw,6rem)] text-foreground/80">Focused on Your Growth.</span>
+                <span className="block mt-4 text-[clamp(2rem,4.5vw,5rem)] text-foreground/80">Focused on Your Growth.</span>
               </h1>
               <p className="mt-8 max-w-2xl text-lg text-foreground/70 md:text-xl">
                 Every industry has different customers, challenges and opportunities. We combine strategy, creative, technology and marketing systems to help your business attract attention, generate enquiries and grow with confidence.
@@ -57,7 +57,7 @@ export default function IndustriesPage() {
           </div>
         </section>
 
-        <section id="industries" className="mx-auto mt-24 max-w-[1400px] px-6 md:mt-32 md:px-10 pb-32">
+        <section id="industries" className="mx-auto mt-24 max-w-[1400px] px-6 md:mt-32 md:px-10 pb-[72px]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
               <IndustryCard key={industry.slug} industry={industry} index={index} />
@@ -65,15 +65,14 @@ export default function IndustriesPage() {
           </div>
         </section>
 
-        <div className="pb-32">
-          <CtaSection 
-            heading="Don’t See Your Industry?"
-            description="Every business has a different customer journey, operational structure and growth challenge. We build strategies around how your organisation works rather than forcing it into a standard package."
-            primaryBtnText="Discuss Your Business"
-            secondaryBtnText="Book a Call"
-            smallHeading={true}
-          />
-        </div>
+        <CtaSection 
+          heading="Don’t See Your Industry?"
+          description="Every business has a different customer journey, operational structure and growth challenge. We build strategies around how your organisation works rather than forcing it into a standard package."
+          primaryBtnText="Discuss Your Business"
+          secondaryBtnText="Book a Call"
+          smallHeading={true}
+          className="mx-auto max-w-[1400px] px-6 md:px-10 -mb-[56px]"
+        />
       </main>
       <Footer />
     </div>

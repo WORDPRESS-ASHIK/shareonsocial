@@ -7,9 +7,10 @@ type Props = {
   primaryBtnText?: string;
   secondaryBtnText?: string;
   smallHeading?: boolean;
+  className?: string;
 };
 
-export function CtaSection({ heading, description, primaryBtnText = "Let's grow", secondaryBtnText = "WhatsApp us", smallHeading = false }: Props) {
+export function CtaSection({ heading, description, primaryBtnText = "Let's grow", secondaryBtnText = "WhatsApp us", smallHeading = false, className }: Props) {
   const defaultHeading = (
     <>
       Your next stage of growth{" "}
@@ -21,7 +22,7 @@ export function CtaSection({ heading, description, primaryBtnText = "Let's grow"
   );
 
   return (
-    <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
+    <section className={className || "mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10"}>
       <div className="grain relative overflow-hidden rounded-[2.5rem] bg-foreground p-10 text-background md:p-20">
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
           <div
