@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import * as motion from "framer-motion/client";
-import { ContactForm } from "@/components/ContactForm";
+import { SimpleContactForm } from "@/components/SimpleContactForm";
 import { FaqSection } from "@/components/FaqSection";
 import { CtaSection } from "@/components/CtaSection";
 import { MessageSquare, Users, Shield, Phone, Mail, MapPin, Clock } from "lucide-react";
@@ -75,7 +75,7 @@ export default function ContactPage() {
                  transition={{ duration: 0.5, delay: 0.2 }}
                  className="pt-0 pb-0 px-0 h-full flex flex-col"
                >
-                  <ContactForm title="Send us a message" />
+                  <SimpleContactForm />
                </motion.div>
             </div>
           </div>

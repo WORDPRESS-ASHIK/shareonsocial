@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JourneySection } from "@/components/JourneySection";
 import { ClientVoicesSection } from "@/components/ClientVoicesSection";
+import { WhyChooseUs } from "@/components/about/WhyChooseUs";
 import * as motion from "framer-motion/client";
 import Image from "next/image";
 
@@ -78,6 +79,8 @@ export default function AboutPage() {
         </section>
 
         <JourneySection />
+        
+        <WhyChooseUs />
         
         <ClientVoicesSection />
 
