@@ -39,8 +39,6 @@ export function KeepReading({ insights }: KeepReadingProps) {
             </div>
             <div className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-white/80 mb-4">
               <span className="font-medium">{insight.category}</span>
-              <span>·</span>
-              <span>{insight.readTime}</span>
             </div>
             <h3 className="font-display text-3xl md:text-4xl leading-[1.1] tracking-tight text-white text-balance">
               <Link href={`/insights/${insight.slug}`} className="before:absolute before:inset-0 z-10">

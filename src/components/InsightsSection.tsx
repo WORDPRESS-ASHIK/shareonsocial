@@ -51,8 +51,6 @@ export function InsightsSection({ insightsData = insights }: { insightsData?: In
             </div>
             <div className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-white/80">
               <span>{insight.category}</span>
-              <span>·</span>
-              <span>{insight.readTime}</span>
             </div>
             <h3 className="mt-3 font-display text-2xl leading-tight tracking-tight text-white md:text-[26px]">
               <Link href={`/insights/${insight.slug}`} className="before:absolute before:inset-0 z-10">

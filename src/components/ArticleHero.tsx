@@ -6,12 +6,11 @@ import Image from "next/image";
 interface ArticleHeroProps {
   title: string;
   category: string;
-  readTime: string;
   introduction: string;
   image: string;
 }
 
-export function ArticleHero({ title, category, readTime, introduction, image }: ArticleHeroProps) {
+export function ArticleHero({ title, category, introduction, image }: ArticleHeroProps) {
   // Use a generic date for the "Published" field as it's not in our data model
   const publishedDate = "Aug 28, 2026"; 
 
@@ -31,8 +30,6 @@ export function ArticleHero({ title, category, readTime, introduction, image }: 
           >
             <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/60 mb-8">
               <span className="font-semibold text-foreground">{category}</span>
-              <span className="opacity-50">·</span> 
-              <span>{readTime}</span>
             </div>
             
             <h1 className="font-display text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] tracking-tight text-balance">
@@ -85,10 +82,6 @@ export function ArticleHero({ title, category, readTime, introduction, image }: 
           <div className="flex gap-2">
             <span className="font-medium text-foreground/40">Category</span>
             <span className="text-foreground/80">{category}</span>
-          </div>
-          <div className="flex gap-2">
-            <span className="font-medium text-foreground/40">Reading Time</span>
-            <span className="text-foreground/80">{readTime}</span>
           </div>
         </motion.div>
 

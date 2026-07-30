@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
+    <section className="mx-auto mt-20 max-w-[1400px] px-6 md:mt-32 md:px-10">
       <div className="grid gap-10 md:grid-cols-12">
         <div className="md:col-span-5 flex flex-col">
           <div className="mb-12 text-xs uppercase tracking-[0.25em] text-foreground/50">
@@ -32,17 +34,21 @@ export function AboutSection() {
           </h2>
           <div className="mt-10 grid gap-8 text-lg text-foreground/75 md:grid-cols-2">
             <p>
-              We sit at the intersection of strategy, design, and technology.
-              One team, one plan, every lever you need to move — from your first
-              customer to your <span className="whitespace-nowrap">Hundreds And Thousands .</span>
+              We bring strategy, design, and technology together to help businesses grow. From your first campaign to long-term success, our team works with you every step of the way.
             </p>
             <p>
-              We're not just another service provider. We're the team businesses
-              call when they want a dedicated partner who cares as much about
-              their long-term success as the daily details.
+              We're more than a service provider—we're your growth partner. We focus on building stronger brands, generating better results, and helping your business grow with confidence.
             </p>
           </div>
-
+          <div className="mt-10">
+            <Link
+              href="/about"
+              className="group inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-background px-6 py-3 text-sm font-medium text-foreground transition-all duration-300 hover:bg-foreground hover:text-background"
+            >
+              Learn More
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

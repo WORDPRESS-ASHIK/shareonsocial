@@ -65,7 +65,7 @@ export function Header() {
             href="/"
             onClick={() => setIsMenuOpen(false)}
           >
-            <Image src="/logo.png" alt="ShareOnSocial Logo" width={180} height={45} className="h-8 md:h-9 w-auto" priority />
+            <Image src="/logo.png" alt="ShareOnSocial Logo" width={225} height={56} className="h-10 md:h-11 w-auto" priority />
           </Link>
 
           <nav className="hidden items-center gap-4 lg:flex">
@@ -73,7 +73,7 @@ export function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`rounded-full px-4 py-2 text-sm font-medium transition-all duration-200 hover:bg-foreground/5 hover:text-foreground active:scale-95 ${
+                className={`rounded-full px-4 py-2 text-base font-bold transition-all duration-200 hover:bg-foreground/5 hover:text-foreground active:scale-95 ${
                   pathname.startsWith(link.href) ? "text-foreground bg-foreground/5" : "text-foreground/70"
                 }`}
               >
@@ -124,7 +124,7 @@ export function Header() {
                     key={link.name}
                     href={link.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`text-2xl font-display tracking-tight hover:text-[color:var(--color-brand-orange)] transition-colors hover:translate-x-1 transform duration-200 ${
+                    className={`text-2xl font-display font-bold tracking-tight hover:text-[color:var(--color-brand-orange)] transition-colors hover:translate-x-1 transform duration-200 ${
                       pathname.startsWith(link.href) ? "text-[color:var(--color-brand-orange)]" : "text-foreground/80"
                     }`}
                   >

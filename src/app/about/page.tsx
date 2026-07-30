@@ -67,10 +67,10 @@ export default function AboutPage() {
               </h2>
               <div className="mt-10 grid gap-8 text-lg text-foreground/75 md:grid-cols-2">
                 <p>
-                  We sit at the intersection of strategy, design, and technology. One team, one plan, every lever you need to move — from your first customer to your Hundreds And Thousands .
+                  We bring strategy, design, and technology together to help businesses grow. From your first campaign to long-term success, our team works with you every step of the way.
                 </p>
                 <p>
-                  We&#x27;re not a checklist agency. We&#x27;re the people businesses call when they want a partner who cares about their P&amp;L as much as their pixel grid.
+                  We're more than a service provider—we're your growth partner. We focus on building stronger brands, generating better results, and helping your business grow with confidence.
                 </p>
               </div>
 

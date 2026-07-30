@@ -99,7 +99,7 @@ function NetworkNode({
         transition={{ delay: delay, duration: 0.5, type: "spring" }}
       >
         <motion.div
-          className="flex items-center gap-2 rounded-2xl bg-background px-4 py-3 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.2)] backdrop-blur cursor-default border border-transparent"
+          className="flex items-center gap-3 rounded-2xl bg-background px-5 py-3 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.2)] backdrop-blur cursor-default border border-transparent"
           onMouseEnter={onHover}
           onMouseLeave={onLeave}
           onClick={() => isActive ? onLeave() : onHover()}
@@ -117,7 +117,7 @@ function NetworkNode({
             className="h-2.5 w-2.5 rounded-full"
             style={{ background: color }}
           ></span>
-          <span className="text-sm font-medium">{label}</span>
+          <span className="text-base font-semibold">{label}</span>
         </motion.div>
       </motion.div>
     </>

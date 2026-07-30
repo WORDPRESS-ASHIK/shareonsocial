@@ -1,21 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Activity, Bot, CheckCircle2, Heart, MessageCircle, Share2, TrendingUp, Users, MoreHorizontal, Music, Bookmark, Play, Bell } from "lucide-react";
+import { Activity, Bot, CheckCircle2, Heart, MessageCircle, Share2, TrendingUp, Users, MoreHorizontal, Music, Bookmark, Play, Bell, ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { TechnologyEcosystem } from "./TechnologyEcosystem";
 import { MarketingEcosystem } from "./MarketingEcosystem";
 
 export function SolutionsSection() {
   return (
-    <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
-      <div className="max-w-3xl">
-        <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/50">
-          <span className="inline-block h-px w-8 bg-foreground/40"></span>
-          Growth Solutions
+    <section className="mx-auto mt-20 max-w-[1400px] px-6 md:mt-32 md:px-10">
+      <div className="w-full flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+        <div className="max-w-3xl">
+          <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/50">
+            <span className="inline-block h-px w-8 bg-foreground/40"></span>
+            Growth Solutions
+          </div>
+          <h2 className="mt-6 font-display text-[clamp(2.25rem,5.5vw,5rem)] leading-[0.95] tracking-[-0.03em] text-balance">
+            Five practices. One outcome.
+          </h2>
         </div>
-        <h2 className="mt-6 font-display text-[clamp(2.25rem,5.5vw,5rem)] leading-[0.95] tracking-[-0.03em] text-balance">
-          Five practices. One outcome.
-        </h2>
+        <div>
+          <Link
+            href="/solutions"
+            className="group inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-background px-6 py-3 text-sm font-medium text-foreground transition-all duration-300 hover:bg-foreground hover:text-background"
+          >
+            Explore Our Process
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
+        </div>
       </div>
       <div className="mt-16 space-y-6">
         <motion.article

@@ -47,7 +47,6 @@ export default async function InsightPage({ params }: { params: Promise<{ slug: 
         <ArticleHero 
           title={insight.title}
           category={insight.category}
-          readTime={insight.readTime}
           introduction={insight.introduction}
           image={insight.image}
         />
