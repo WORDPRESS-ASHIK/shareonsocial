@@ -3,11 +3,13 @@ import Link from "next/link";
 
 type Props = {
   heading?: React.ReactNode;
+  description?: React.ReactNode;
   primaryBtnText?: string;
+  secondaryBtnText?: string;
   smallHeading?: boolean;
 };
 
-export function CtaSection({ heading, primaryBtnText = "Let's grow", smallHeading = false }: Props) {
+export function CtaSection({ heading, description, primaryBtnText = "Let's grow", secondaryBtnText = "WhatsApp us", smallHeading = false }: Props) {
   const defaultHeading = (
     <>
       Your next stage of growth{" "}
@@ -53,6 +55,11 @@ export function CtaSection({ heading, primaryBtnText = "Let's grow", smallHeadin
           >
             {heading || defaultHeading}
           </h2>
+          {description && (
+            <p className="mt-4 max-w-3xl text-lg text-background/80 md:text-xl">
+              {description}
+            </p>
+          )}
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <Link
               href="/book"
@@ -65,7 +72,7 @@ export function CtaSection({ heading, primaryBtnText = "Let's grow", smallHeadin
               href="https://wa.me/"
               className="inline-flex items-center gap-2 rounded-full border border-background/25 px-7 py-4 text-sm font-medium hover:bg-background/10"
             >
-              WhatsApp us
+              {secondaryBtnText}
             </a>
           </div>
         </div>

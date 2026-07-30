@@ -1,11 +1,9 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import * as motion from "framer-motion/client";
-import { IndustryData } from "@/data/industries";
+import { IndustryCardData } from "@/data/industriesCardsData";
 
 const industryImages: Record<string, string> = {
   'restaurants-cafes': 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80',
@@ -35,14 +33,14 @@ const industryImages: Record<string, string> = {
 };
 
 interface IndustryCardProps {
-  industry: IndustryData;
+  industry: IndustryCardData;
   index: number;
 }
 
 export const IndustryCard = React.memo(({ industry, index }: IndustryCardProps) => {
   const isPriority = index < 6;
   const imageSrc = industryImages[industry.slug] || 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80';
-  const shortSubheadline = industry.hero.subheadline.replace('For ', '').replace('.', '');
+  const shortSubheadline = industry.title;
 
   return (
     <motion.div
@@ -51,15 +49,14 @@ export const IndustryCard = React.memo(({ industry, index }: IndustryCardProps) 
       viewport={{ once: true, margin: "100px" }}
       transition={{ duration: 0.5, delay: index * 0.05 }}
     >
-      <Link
-        href={`/industries/${industry.slug}`}
-        className="group relative flex flex-col h-full bg-white border border-[rgba(0,0,0,0.08)] rounded-[28px] px-8 pt-8 pb-7 shadow-sm transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl hover:border-[#FF8A00] will-change-transform will-change-opacity"
+      <div
+        className="group relative flex flex-col h-full bg-white border border-[rgba(0,0,0,0.08)] rounded-[28px] px-8 pt-8 pb-7 shadow-sm transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl hover:border-[#FF8A00] will-change-transform will-change-opacity cursor-default"
       >
         <div>
           <div className="relative w-full h-[250px] mb-6 overflow-hidden rounded-[20px] shadow-sm transform-gpu will-change-transform">
             <Image
               src={imageSrc}
-              alt={industry.hero.headline}
+              alt={industry.title}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               priority={isPriority}
@@ -80,20 +77,21 @@ export const IndustryCard = React.memo(({ industry, index }: IndustryCardProps) 
               {shortSubheadline}
             </span>
           </h3>
-          <div className="flex justify-between items-center gap-4 mt-3">
-            <p className="text-sm text-foreground/60 leading-relaxed flex-1 m-0">
-              {industry.hero.headline}
+          <div className="mt-3 w-full">
+            <p className="text-sm font-medium text-foreground/90 mb-1">
+              {industry.supportingLine}
             </p>
-            <div className="relative flex items-center justify-center w-[44px] h-[44px] shrink-0 rounded-full border border-[rgba(0,0,0,.12)] bg-white transition-all duration-200 ease-out group-hover:-translate-y-[2px] group-hover:border-transparent overflow-hidden will-change-transform">
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,#FF8A00_0%,#FF5E62_35%,#D946EF_70%,#38BDF8_100%)] opacity-0 transition-opacity duration-200 ease-out group-hover:opacity-100 z-0 will-change-opacity"></div>
-              <ArrowUpRight
-                className="h-5 w-5 text-foreground/40 transition-colors duration-200 ease-out group-hover:text-white relative z-10"
-                aria-hidden="true"
-              />
-            </div>
+            <p className="text-sm text-foreground/60 leading-relaxed m-0">
+              {industry.howWeHelp}
+            </p>
+          </div>
+          <div className="mt-6 pt-5 border-t border-foreground/5">
+            <span className="text-sm font-semibold text-brand-orange group-hover:text-brand-pink transition-colors duration-200">
+              {industry.ctaText} &rarr;
+            </span>
           </div>
         </div>
-      </Link>
+      </div>
     </motion.div>
   );
 });

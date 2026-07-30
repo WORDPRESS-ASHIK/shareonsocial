@@ -2,8 +2,9 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CtaSection } from "@/components/CtaSection";
 import * as motion from "framer-motion/client";
-import { industries24Data } from "@/data/industries24";
+import { industriesCards } from "@/data/industriesCardsData";
 import { IndustryCard } from "@/components/industry/IndustryCard";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   description: "Explore our specialized digital marketing services across 24 unique industries. We build bespoke growth engines for your specific market.",
 };
 export default function IndustriesPage() {
-  const industries = Object.values(industries24Data);
+  const industries = industriesCards;
 
   return (
     <div className="min-h-dvh">
@@ -29,19 +30,34 @@ export default function IndustriesPage() {
               transition={{ duration: 0.5 }}
             >
               <div className="text-xs uppercase tracking-[0.25em] text-foreground/50">
-                Industries
+                INDUSTRIES WE SERVE
               </div>
-              <h1 className="mt-6 max-w-[16ch] font-display text-[clamp(2.75rem,8vw,8rem)] leading-[0.9] tracking-[-0.04em] text-balance">
-                Specialized in <em className="italic text-[color:var(--brand-pink)]">your</em> category.
+              <h1 className="mt-6 max-w-4xl font-display text-[clamp(2.75rem,8vw,8rem)] leading-[0.9] tracking-[-0.04em] text-balance">
+                Built Around Your Industry.
+                <span className="block mt-4 text-[clamp(2rem,6vw,6rem)] text-foreground/80">Focused on Your Growth.</span>
               </h1>
               <p className="mt-8 max-w-2xl text-lg text-foreground/70 md:text-xl">
-                We build bespoke growth engines across 24 distinct industries, tuning strategy to how your customer actually decides.
+                Every industry has different customers, challenges and opportunities. We combine strategy, creative, technology and marketing systems to help your business attract attention, generate enquiries and grow with confidence.
               </p>
+              <div className="mt-10 flex flex-wrap gap-4">
+                <Link
+                  href="#industries"
+                  className="inline-flex h-14 items-center justify-center rounded-full bg-foreground px-8 text-sm font-medium text-background transition-transform hover:scale-105"
+                >
+                  Explore Industries
+                </Link>
+                <Link
+                  href="/book"
+                  className="inline-flex h-14 items-center justify-center rounded-full border border-foreground/10 bg-white/50 px-8 text-sm font-medium text-foreground backdrop-blur-sm transition-all hover:border-foreground/20 hover:bg-white"
+                >
+                  Book a Call
+                </Link>
+              </div>
             </motion.div>
           </div>
         </section>
 
-        <section className="mx-auto mt-24 max-w-[1400px] px-6 md:mt-32 md:px-10 pb-32">
+        <section id="industries" className="mx-auto mt-24 max-w-[1400px] px-6 md:mt-32 md:px-10 pb-32">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
               <IndustryCard key={industry.slug} industry={industry} index={index} />
@@ -51,8 +67,10 @@ export default function IndustriesPage() {
 
         <div className="pb-32">
           <CtaSection 
-            heading={<>Every business is different. Our strategy is tailored to your goals, customers and stage of growth regardless of industry.</>}
-            primaryBtnText="Discuss Your Industry"
+            heading="Don’t See Your Industry?"
+            description="Every business has a different customer journey, operational structure and growth challenge. We build strategies around how your organisation works rather than forcing it into a standard package."
+            primaryBtnText="Discuss Your Business"
+            secondaryBtnText="Book a Call"
             smallHeading={true}
           />
         </div>

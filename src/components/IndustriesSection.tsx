@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
+
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 
 const industries = [
   {
@@ -105,7 +106,7 @@ export function IndustriesSection() {
       </div>
       <div className="mt-14 divide-y divide-foreground/10 border-y border-foreground/10">
         {industries.map((industry, index) => (
-          <Link href={`/industries/${industry.slug}`} key={industry.num} className="block">
+          <Link href="/industries" key={industry.num} className="block cursor-pointer">
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
