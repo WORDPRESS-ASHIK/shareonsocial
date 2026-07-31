@@ -68,40 +68,36 @@ export function Footer() {
             </div>
             <ul className="mt-6 space-y-4">
               <li>
-                <Link
-                  href="/case-studies"
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
+                <span
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
                 >
                   Case Studies
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </Link>
+                </span>
               </li>
               <li>
-                <Link
-                  href="/insights"
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
+                <span
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
                 >
                   Blog
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </Link>
+                </span>
               </li>
               <li>
-                <Link
-                  href="/faqs"
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
+                <span
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
                 >
                   FAQs
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </Link>
+                </span>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
+                <span
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
                 >
                   Contact
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </Link>
+                </span>
               </li>
             </ul>
           </div>
@@ -113,31 +109,28 @@ export function Footer() {
             </div>
             <ul className="mt-6 space-y-4">
               <li>
-                <Link
-                  href="/privacy"
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
+                <span
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
                 >
                   Privacy
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </Link>
+                </span>
               </li>
               <li>
-                <Link
-                  href="/terms"
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
+                <span
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
                 >
                   Terms
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </Link>
+                </span>
               </li>
               <li>
-                <Link
-                  href="/cookies"
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
+                <span
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
                 >
                   Cookies
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </Link>
+                </span>
               </li>
             </ul>
           </div>
