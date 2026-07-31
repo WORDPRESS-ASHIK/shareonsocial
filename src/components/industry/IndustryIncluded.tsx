@@ -8,7 +8,7 @@ const gridIcons = [Box, Layers, Zap, Shield, Sparkles, CheckCircle2];
 
 export function IndustryIncluded({ data }: { data: IndustryData['included'] }) {
   return (
-    <section className="relative overflow-hidden bg-foreground py-24 text-background lg:py-32">
+    <section className="relative overflow-hidden bg-foreground py-16 md:py-24 text-background lg:py-32">
       {/* Abstract dotted background pattern */}
       <svg className="absolute inset-0 h-full w-full opacity-10" aria-hidden="true">
         <defs>
@@ -38,7 +38,7 @@ export function IndustryIncluded({ data }: { data: IndustryData['included'] }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ delay: 0.1 }}
-            className="mx-auto max-w-[20ch] font-display text-[clamp(28px,4vw,48px)] leading-[1.1] tracking-[-0.02em] text-balance text-background"
+            className="mx-auto max-w-[20ch] font-display text-4xl sm:text-5xl md:text-6xl leading-[1.1] tracking-[-0.02em] text-balance text-background"
           >
             {data.headline}
           </motion.h2>

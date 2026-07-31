@@ -28,7 +28,7 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-24 md:py-32">
+    <section className="mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-32">
       <div className="grid gap-12 lg:grid-cols-[1fr_2fr] items-start">
         {/* Left: Heading and Intro */}
         <div className="lg:sticky lg:top-32">

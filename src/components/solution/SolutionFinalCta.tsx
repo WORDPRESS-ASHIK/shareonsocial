@@ -7,11 +7,11 @@ import { SolutionData } from "@/data/solutions";
 
 export function SolutionFinalCta({ data }: { data: SolutionData['cta'] }) {
   return (
-    <section className="py-24 md:py-32 bg-background relative overflow-hidden">
+    <section className="py-16 md:py-32 bg-background relative overflow-hidden">
       
       {/* Container Background */}
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
-        <div className="relative rounded-[40px] overflow-hidden bg-[#0B1018] text-white py-24 px-8 md:px-24 text-center shadow-2xl flex flex-col items-center justify-center">
+        <div className="relative rounded-[40px] overflow-hidden bg-[#0B1018] text-white py-16 px-6 md:py-24 md:px-24 text-center shadow-2xl flex flex-col items-center justify-center">
           
           {/* Decorative Gradients */}
           <div className="absolute inset-0 pointer-events-none opacity-60 mix-blend-screen">

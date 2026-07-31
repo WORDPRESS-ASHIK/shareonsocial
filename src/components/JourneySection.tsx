@@ -48,15 +48,15 @@ const stages = [
 
 export function JourneySection({ className = "" }: JourneySectionProps) {
   return (
-    <section className={`mx-auto max-w-[1400px] px-6 md:px-10 py-32 md:py-48 ${className}`}>
+    <section className={`mx-auto max-w-[1400px] px-6 md:px-10 py-16 md:py-32 ${className}`}>
       
       {/* Top-left aligned headers */}
-      <div className="w-full mb-32">
+      <div className="w-full mb-16 md:mb-32">
         <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/50">
           <span className="inline-block h-px w-8 bg-foreground/40"></span>
           Growth Journey
         </div>
-        <h2 className="mt-6 font-display text-[clamp(3rem,6vw,5rem)] leading-[1] tracking-[-0.03em] text-balance">
+        <h2 className="mt-6 font-display text-[clamp(2.5rem,6vw,5rem)] leading-[1] tracking-[-0.03em] text-balance">
           Four stages.<br />One trajectory.
         </h2>
       </div>

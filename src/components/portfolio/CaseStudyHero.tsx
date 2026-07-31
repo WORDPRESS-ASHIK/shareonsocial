@@ -79,7 +79,7 @@ export function CaseStudyHero({ project }: { project: Project }) {
             </div>
             
             {/* KPI Cards Overlay */}
-            <div className="absolute -bottom-8 -left-8 right-8 grid grid-cols-2 gap-4 z-20">
+            <div className="relative mt-6 md:mt-0 md:absolute md:-bottom-8 md:-left-8 md:right-8 grid grid-cols-2 gap-4 z-20">
               {project.outcomes.map((outcome, i) => (
                 <motion.div
                   key={i}

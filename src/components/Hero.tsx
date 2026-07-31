@@ -59,9 +59,6 @@ function NetworkNode({
     };
   }, [y, x, delay, prefersReducedMotion]);
 
-  const x2 = useMotionTemplate`calc(${left} + ${x}px)`;
-  const y2 = useMotionTemplate`calc(${top} + ${y}px)`;
-
   const isActive = isHovered;
   const isOthersHovered = hoveredNode !== null && !isActive;
 
@@ -74,8 +71,8 @@ function NetworkNode({
         <motion.line
           x1="50%"
           y1="50%"
-          x2={x2}
-          y2={y2}
+          x2={left}
+          y2={top}
           stroke="currentColor"
           initial={{ pathLength: 0, strokeOpacity: 0 }}
           animate={{

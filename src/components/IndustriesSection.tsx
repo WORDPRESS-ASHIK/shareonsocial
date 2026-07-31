@@ -94,7 +94,7 @@ const industries = [
 
 export function IndustriesSection() {
   return (
-    <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
+    <section className="mx-auto mt-16 max-w-[1400px] px-6 md:mt-48 md:px-10">
       <div className="max-w-5xl">
         <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/50">
           <span className="inline-block h-px w-8 bg-foreground/40"></span>

@@ -12,7 +12,7 @@ export function IndustryCta({ data }: { data: any }) {
   const gradientText = words.slice(-highlightCount).join(" ");
 
   return (
-    <section className="mx-auto my-32 max-w-[1400px] px-6 md:my-48 md:px-10">
+    <section className="mx-auto my-16 max-w-[1400px] px-6 md:my-32 md:px-10">
       <div className="grain relative overflow-hidden rounded-[2.5rem] bg-foreground p-10 text-background md:p-20">
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
           <div
@@ -45,7 +45,7 @@ export function IndustryCta({ data }: { data: any }) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-4 max-w-[20ch] font-display text-[36px] md:text-[48px] lg:text-[60px] leading-[1.1] tracking-[-0.03em] text-balance pb-4"
+            className="mt-4 max-w-[20ch] font-display text-4xl sm:text-5xl md:text-6xl leading-[1.1] tracking-[-0.03em] text-balance pb-4"
           >
             {plainText}
             <span className="bg-gradient-to-r from-[color:var(--brand-orange)] via-[color:var(--brand-pink)] to-[color:var(--brand-cyan)] bg-clip-text text-transparent">

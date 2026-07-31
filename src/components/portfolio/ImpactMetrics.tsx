@@ -10,8 +10,8 @@ const metrics = [
 
 export function ImpactMetrics() {
   return (
-    <section className="mx-auto max-w-[1400px] px-6 md:px-10 mb-24 md:mb-32">
-      <div className="relative overflow-hidden rounded-[2.5rem] bg-[#F5F3EE] text-foreground p-10 md:p-20 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.05)]">
+    <section className="mx-auto max-w-[1400px] px-6 md:px-10 mb-16 md:mb-32">
+      <div className="relative overflow-hidden rounded-[2.5rem] bg-[#F5F3EE] text-foreground p-8 md:p-20 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.05)]">
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
           <div
             className="absolute -left-20 -top-20 h-96 w-96 rounded-full opacity-10 blur-3xl"

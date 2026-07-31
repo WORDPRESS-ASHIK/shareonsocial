@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function SolutionTextSplit({ data }: { data: { heading: string; description: string } }) {
   return (
-    <section className="py-24 md:py-32 bg-background relative overflow-hidden">
+    <section className="py-16 md:py-32 bg-background relative overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
           

@@ -21,7 +21,7 @@ export function PortfolioContent() {
   return (
     <>
       <MarqueeSection items={marqueeItems} />
-      <div className="mt-20 md:mt-24">
+      <div className="mt-16 md:mt-24">
         <ProjectGrid projects={PORTFOLIO_PROJECTS} />
       </div>
     </>

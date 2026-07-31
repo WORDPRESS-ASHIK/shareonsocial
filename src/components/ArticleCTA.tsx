@@ -6,13 +6,13 @@ import { ArrowRight } from "lucide-react";
 
 export function ArticleCTA() {
   return (
-    <section className="mx-auto max-w-[1400px] px-6 mt-16 mb-24 md:mt-32 md:mb-40 md:px-10">
+    <section className="mx-auto max-w-[1400px] px-6 mt-12 mb-16 md:mt-32 md:mb-40 md:px-10">
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "0px 0px -100px 0px" }}
         transition={{ duration: 0.8 }}
-        className="grain relative overflow-hidden rounded-[2.5rem] bg-foreground p-10 text-background md:p-24 shadow-2xl flex flex-col items-center justify-center text-center"
+        className="grain relative overflow-hidden rounded-[2.5rem] bg-foreground p-8 text-background md:p-24 shadow-2xl flex flex-col items-center justify-center text-center"
       >
         {/* Glow Effects from Home Page CTA */}
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
@@ -40,7 +40,7 @@ export function ArticleCTA() {
         </div>
 
         <div className="relative z-10 w-full max-w-5xl">
-          <h2 className="font-display text-[2.5rem] md:text-6xl lg:text-[5rem] tracking-tight text-balance leading-[1.05]">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] tracking-tight text-balance leading-[1.05]">
             Turn what you learned into<br className="hidden md:block" />{" "}
             <span className="bg-gradient-to-r from-[color:var(--brand-orange)] via-[color:var(--brand-pink)] to-[color:var(--brand-cyan)] bg-clip-text text-transparent">
               measurable growth

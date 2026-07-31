@@ -57,7 +57,7 @@ export default function IndustriesPage() {
           </div>
         </section>
 
-        <section id="industries" className="mx-auto mt-24 max-w-[1400px] px-6 md:mt-32 md:px-10 pb-[72px]">
+        <section id="industries" className="mx-auto mt-16 md:mt-32 max-w-[1400px] px-6 md:px-10 pb-16 md:pb-[72px]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
               <IndustryCard key={industry.slug} industry={industry} index={index} />

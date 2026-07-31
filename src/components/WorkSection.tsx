@@ -64,7 +64,7 @@ export function WorkSection() {
               SOCIAL
             </div>
             
-            <div className="mt-auto md:mt-24 pt-8 relative z-10">
+            <div className="mt-auto mb-[260px] md:mb-0 md:mt-24 pt-8 relative z-10">
               <div className="font-display text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.03em] mb-4">
                 Social Media<br />Management
               </div>
@@ -72,13 +72,8 @@ export function WorkSection() {
                 Build a consistent social presence with strategic content, smart scheduling, and ongoing management.
               </p>
               
-              <div className="mt-6 flex items-end justify-between">
-                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
-                  Strategy • Content • Scheduling
-                </div>
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
-                </div>
+              <div className="mt-6 text-[11px] font-medium uppercase tracking-[0.1em] opacity-90 w-full">
+                Strategy • Content • Scheduling
               </div>
             </div>
 
@@ -198,13 +193,8 @@ export function WorkSection() {
                 Creative, on-brand content designed to capture attention, engage audiences, and keep your brand memorable.
               </p>
               
-              <div className="mt-6 flex items-end justify-between">
-                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
-                  Copywriting • Graphics • Engagement
-                </div>
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
-                </div>
+              <div className="mt-6 text-[11px] font-medium uppercase tracking-[0.1em] opacity-90 w-full">
+                Copywriting • Graphics • Engagement
               </div>
             </div>
           </div>
@@ -231,13 +221,8 @@ export function WorkSection() {
                 Targeted campaigns built to reach the right audience, generate quality leads, and drive more conversions.
               </p>
               
-              <div className="mt-6 flex items-end justify-between">
-                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
-                  Targeting • Campaigns • Optimization
-                </div>
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
-                </div>
+              <div className="mt-6 text-[11px] font-medium uppercase tracking-[0.1em] opacity-90 w-full">
+                Targeting • Campaigns • Optimization
               </div>
             </div>
           </div>
@@ -256,7 +241,7 @@ export function WorkSection() {
               GROWTH
             </div>
             
-            <div className="mt-auto md:mt-24 pt-8 relative z-10">
+            <div className="mt-auto mb-[260px] md:mb-0 md:mt-24 pt-8 relative z-10">
               <div className="font-display text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-[-0.03em] mb-4">
                 Social Media<br />Growth
               </div>
@@ -264,13 +249,8 @@ export function WorkSection() {
                 Turn your social presence into a powerful growth channel with strategies focused on reach and engagement.
               </p>
               
-              <div className="mt-6 flex items-end justify-between">
-                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
-                  Strategy • Reach • Engagement
-                </div>
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
-                </div>
+              <div className="mt-6 text-[11px] font-medium uppercase tracking-[0.1em] opacity-90 w-full">
+                Strategy • Reach • Engagement
               </div>
             </div>
 
@@ -393,13 +373,8 @@ export function WorkSection() {
                 Create a stronger and more consistent digital presence that keeps your business visible and recognizable.
               </p>
               
-              <div className="mt-6 flex items-end justify-between">
-                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
-                  Content • Consistency • Visibility
-                </div>
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
-                </div>
+              <div className="mt-6 text-[11px] font-medium uppercase tracking-[0.1em] opacity-90 w-full">
+                Content • Consistency • Visibility
               </div>
             </div>
           </div>
@@ -426,13 +401,8 @@ export function WorkSection() {
                 Reconnect with people who already know your brand and turn their interest into meaningful action.
               </p>
               
-              <div className="mt-6 flex items-end justify-between">
-                <div className="text-[11px] font-medium uppercase tracking-[0.1em] opacity-90">
-                  Audiences • Ads • Conversions
-                </div>
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-current/30 transition group-hover:rotate-45 group-hover:bg-current/10">
-                  <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
-                </div>
+              <div className="mt-6 text-[11px] font-medium uppercase tracking-[0.1em] opacity-90 w-full">
+                Audiences • Ads • Conversions
               </div>
             </div>
           </div>

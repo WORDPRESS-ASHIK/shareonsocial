@@ -22,8 +22,8 @@ export function CtaSection({ heading, description, primaryBtnText = "Let's grow"
   );
 
   return (
-    <section className={className || "mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10"}>
-      <div className="grain relative overflow-hidden rounded-[2.5rem] bg-foreground p-10 text-background md:p-20">
+    <section className={className || "mx-auto mt-16 max-w-[1400px] px-6 md:mt-32 lg:mt-48 md:px-10"}>
+      <div className="grain relative overflow-hidden rounded-[2.5rem] bg-foreground p-8 text-background md:p-20">
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
           <div
             className="absolute -left-20 -top-20 h-96 w-96 rounded-full opacity-60 blur-3xl"
@@ -52,7 +52,7 @@ export function CtaSection({ heading, description, primaryBtnText = "Let's grow"
             The next chapter
           </div>
           <h2 
-            className={`mt-4 ${smallHeading ? 'md:w-[85%] text-[clamp(1.5rem,3.5vw,3.5rem)]' : 'max-w-[16ch] text-[clamp(2.5rem,7.5vw,7.5rem)]'} font-display leading-[1.05] tracking-[-0.04em] text-balance pb-4`}
+            className={`mt-4 ${smallHeading ? 'md:w-[85%] text-[clamp(1.5rem,3.5vw,3.5rem)]' : 'max-w-[16ch] text-4xl sm:text-5xl md:text-[clamp(2.5rem,7.5vw,7.5rem)]'} font-display leading-[1.05] tracking-[-0.04em] text-balance pb-4`}
           >
             {heading || defaultHeading}
           </h2>

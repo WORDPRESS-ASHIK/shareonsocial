@@ -11,7 +11,7 @@ type FieldConfig = {
   subtitle?: string;
   placeholder?: string;
   type: "text" | "textarea" | "searchable-dropdown" | "multi-select" | "multi-field";
-  options?: string[];
+  options?: string[] | ((props?: any) => string[]);
   fields?: { id: string; label: string; type: string; required?: boolean }[];
   optional?: boolean;
 };
@@ -171,7 +171,7 @@ const MultiField = ({ fields, formData, setFormData }: { fields: any[], formData
   )
 }
 
-export function ContactForm({ title = "New enquiry" }: { title?: string }) {
+export function ContactForm({ title = "New enquiry", isBookACall = false }: { title?: string, isBookACall?: boolean }) {
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState<Record<string, any>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -347,14 +347,14 @@ export function ContactForm({ title = "New enquiry" }: { title?: string }) {
                       }
                     />
                   ) : currentField.type === "searchable-dropdown" ? (
-                    <SearchableDropdown 
-                      options={currentField.options || []} 
-                      value={formData[currentField.id] || ""} 
-                      onChange={(v) => setFormData({ ...formData, [currentField.id]: v })} 
-                    />
+                      <SearchableDropdown 
+                        options={(currentField.options as string[])?.concat(isBookACall && currentField.id === 'industry' ? ["Other"] : []) || []} 
+                        value={formData[currentField.id] || ""} 
+                        onChange={(v) => setFormData({ ...formData, [currentField.id]: v })} 
+                      />
                   ) : currentField.type === "multi-select" ? (
                     <MultiSelect 
-                      options={currentField.options || []} 
+                      options={(currentField.options as string[]) || []} 
                       value={formData[currentField.id] || []} 
                       onChange={(v) => setFormData({ ...formData, [currentField.id]: v })} 
                     />

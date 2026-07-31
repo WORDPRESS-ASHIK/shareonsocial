@@ -8,7 +8,7 @@ import { MarketingEcosystem } from "./MarketingEcosystem";
 
 export function SolutionsSection() {
   return (
-    <section className="mx-auto mt-20 max-w-[1400px] px-6 md:mt-32 md:px-10">
+    <section className="mx-auto mt-16 max-w-[1400px] px-6 md:mt-32 md:px-10">
       <div className="w-full flex flex-col md:flex-row md:items-end md:justify-between gap-8">
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/50">
@@ -36,11 +36,11 @@ export function SolutionsSection() {
           viewport={{ once: true, margin: "0px 0px -50px 0px" }}
           style={{ willChange: "transform, opacity" }}
           transition={{ duration: 0.5 }}
-          className="grain group relative overflow-hidden rounded-[2rem] bg-[color:var(--color-brand-orange)] text-[oklch(0.18_0.02_260)] md:min-h-[520px] p-8 md:p-12"
+          className="grain group relative overflow-hidden rounded-[2rem] bg-[color:var(--color-brand-orange)] text-[oklch(0.18_0.02_260)] md:min-h-[520px] pt-8 px-0 pb-0 md:p-12"
         >
-          <div className="font-mono text-xs opacity-40 mb-6 md:mb-8">01</div>
+          <div className="font-mono text-xs opacity-40 mb-6 md:mb-8 px-6 md:px-0">01</div>
           <div className="grid gap-8 lg:grid-cols-2">
-            <div className="flex flex-col justify-end">
+            <div className="flex flex-col justify-end px-6 md:px-0">
               <div>
                 <h3 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
                   Branding
@@ -61,11 +61,11 @@ export function SolutionsSection() {
                 </ul>
               </div>
             </div>
-            <div className="relative min-h-[280px] w-full flex items-center justify-center mt-4">
+            <div className="relative min-h-[280px] w-full flex items-center justify-center mt-8 md:mt-4 px-6 md:px-0 pb-6 md:pb-0">
               {/* Main Brand Book / Guidelines Card */}
               <motion.div 
                 whileHover={{ y: -5 }}
-                className="relative z-10 w-[85%] max-w-[300px] rounded-2xl bg-white/20 p-6 shadow-xl backdrop-blur-md border border-white/30"
+                className="relative z-10 w-full sm:w-[85%] max-w-[300px] rounded-2xl bg-white/20 p-6 shadow-xl backdrop-blur-md border border-white/30"
               >
                 <div className="mb-5 flex items-center justify-between border-b border-current/10 pb-4">
                   <div className="font-display text-2xl tracking-tight">Brand Identity</div>
@@ -122,11 +122,11 @@ export function SolutionsSection() {
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             style={{ willChange: "transform, opacity" }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="grain group relative overflow-hidden rounded-[2rem] bg-[oklch(0.14_0.02_260)] text-background md:min-h-[440px] p-8 md:p-12"
+            className="grain group relative overflow-hidden rounded-[2rem] bg-[oklch(0.14_0.02_260)] text-background md:min-h-[440px] pt-8 px-0 pb-0 md:p-12"
           >
-            <div className="font-mono text-xs opacity-40 mb-6 md:mb-8">02</div>
+            <div className="font-mono text-xs opacity-40 mb-6 md:mb-8 px-6 md:px-0">02</div>
             <div className="grid gap-8">
-              <div className="flex flex-col justify-end">
+              <div className="flex flex-col justify-end px-6 md:px-0">
                 <div>
                   <h3 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
                     Digital
@@ -147,7 +147,7 @@ export function SolutionsSection() {
                   </ul>
                 </div>
               </div>
-              <div className="relative w-full mt-8 md:mt-10 origin-top scale-[0.85] -mb-12 sm:-mb-16">
+              <div className="relative w-full mt-8 md:mt-10 px-6 md:px-0 pb-6 md:pb-0 flex justify-center">
                 {/* Main Dashboard Window */}
                 <div className="relative z-10 w-full overflow-hidden rounded-2xl border border-white/40 bg-white/95 backdrop-blur-md shadow-2xl flex flex-col">
                   {/* Browser/OS Header */}
@@ -213,12 +213,13 @@ export function SolutionsSection() {
                         ].map((stat, i) => (
                           <div key={i} className="h-16 rounded-xl bg-white border border-black/5 shadow-sm p-2.5 flex flex-col justify-between hover:border-black/10 transition-colors">
                              <div className="flex justify-between items-start">
-                                <span className="text-[8px] font-medium text-black/50">{stat.title}</span>
-                                <div className="text-[7px] font-bold text-[color:var(--color-brand-cyan)] bg-[color:var(--color-brand-cyan)]/10 px-1 py-0.5 rounded">{stat.change}</div>
+                                <span className="text-[8px] font-medium text-black/50 hidden sm:inline-block">{stat.title}</span>
+                                <span className="text-[8px] font-medium text-black/50 sm:hidden">{stat.title.split(' ')[0]}</span>
+                                <div className="text-[7px] font-bold text-[color:var(--color-brand-cyan)] bg-[color:var(--color-brand-cyan)]/10 px-1 py-0.5 rounded hidden sm:inline-block">{stat.change}</div>
                              </div>
                              <div className="flex items-end justify-between">
                                 <span className="text-sm font-bold text-black/80">{stat.val}</span>
-                                <div className={`h-2 ${stat.spark} rounded-sm`}></div>
+                                <div className={`h-2 ${stat.spark} rounded-sm hidden sm:block`}></div>
                              </div>
                           </div>
                         ))}
@@ -231,7 +232,7 @@ export function SolutionsSection() {
                         <div className="absolute top-2 left-3 right-3 flex justify-between items-start z-20 pointer-events-none">
                            <div className="flex flex-col gap-1">
                               <div className="flex gap-4 items-center">
-                                 <span className="text-[9px] font-bold text-black/70">Performance</span>
+                                 <span className="text-[9px] font-bold text-black/70 hidden sm:inline-block">Performance</span>
                                  <div className="flex gap-2">
                                     <div className="flex items-center gap-1">
                                        <div className="w-2 h-0.5 bg-[color:var(--color-brand-orange)]"></div>
@@ -245,7 +246,7 @@ export function SolutionsSection() {
                               </div>
                            </div>
                            <div className="flex items-center gap-1.5 pointer-events-auto">
-                              <div className="h-5 px-2 rounded bg-white border border-black/10 text-[7px] font-medium text-black/60 flex items-center gap-1 shadow-sm cursor-pointer hover:bg-black/5 transition-colors">
+                              <div className="h-5 px-2 rounded bg-white border border-black/10 text-[7px] font-medium text-black/60 flex items-center gap-1 shadow-sm cursor-pointer hover:bg-black/5 transition-colors hidden sm:flex">
                                  Last 6 Months
                                  <svg className="w-2 h-2 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
                               </div>
@@ -268,7 +269,7 @@ export function SolutionsSection() {
                         <div className="absolute right-[15%] top-9 bottom-12 w-px border-r border-dashed border-[color:var(--color-brand-orange)]/30 z-0 pointer-events-none"></div>
 
                         {/* Floating Tooltip (Attached to right side of graph) */}
-                        <div className="absolute right-[12%] top-[25%] bg-[#111827] text-white px-2 py-1 rounded shadow-lg text-[7px] font-medium flex flex-col gap-0.5 z-30 pointer-events-none">
+                        <div className="absolute right-[12%] top-[25%] bg-[#111827] text-white px-2 py-1 rounded shadow-lg text-[7px] font-medium hidden sm:flex flex-col gap-0.5 z-30 pointer-events-none">
                            <div className="flex items-center gap-1">
                              <div className="w-1 h-1 rounded-full bg-[color:var(--color-brand-orange)]"></div>
                              Rev: $42.8K
@@ -277,7 +278,7 @@ export function SolutionsSection() {
                         </div>
 
                         {/* Right Floating Notification */}
-                        <div className="absolute right-2 top-[40%] bg-white/95 backdrop-blur-sm p-1.5 rounded-lg shadow-xl border border-black/10 flex flex-col gap-1 z-40 pointer-events-auto origin-right">
+                        <div className="absolute right-2 top-[40%] bg-white/95 backdrop-blur-sm p-1.5 rounded-lg shadow-xl border border-black/10 hidden sm:flex flex-col gap-1 z-40 pointer-events-auto origin-right">
                            <div className="flex items-center gap-1 font-semibold text-black/80 text-[7px]">
                               <svg className="w-2.5 h-2.5 text-[color:var(--color-brand-cyan)]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
                               Campaign Live
@@ -372,9 +373,9 @@ export function SolutionsSection() {
                            {/* X-Axis Labels */}
                            <div className="absolute bottom-9 inset-x-3 border-t border-black/10 pt-1 flex justify-between text-[6px] text-black/30 font-mono z-10 pointer-events-none">
                               <span>JAN</span>
-                              <span>FEB</span>
+                              <span className="hidden sm:inline-block">FEB</span>
                               <span>MAR</span>
-                              <span>APR</span>
+                              <span className="hidden sm:inline-block">APR</span>
                               <span className="text-[color:var(--color-brand-orange)] font-bold">MAY</span>
                               <span>JUN</span>
                            </div>
@@ -388,7 +389,7 @@ export function SolutionsSection() {
                                 { title: "Bounce Rate", val: "24%" }
                               ].map((card, idx) => (
                                 <div key={idx} className="bg-white border border-gray-100 rounded-[4px] p-1 flex flex-col items-center justify-center shadow-sm">
-                                   <span className="text-[5px] text-gray-400 font-mono uppercase leading-tight">{card.title}</span>
+                                   <span className="text-[5px] text-gray-400 font-mono uppercase leading-tight hidden sm:block">{card.title}</span>
                                    <span className="text-[8px] font-bold text-gray-800 leading-tight">{card.val}</span>
                                 </div>
                               ))}
@@ -406,11 +407,11 @@ export function SolutionsSection() {
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             style={{ willChange: "transform, opacity" }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="grain group relative overflow-hidden rounded-[2rem] bg-[color:var(--color-brand-pink)] text-[oklch(0.18_0.02_260)] md:min-h-[440px] p-8 md:p-12"
+            className="grain group relative overflow-hidden rounded-[2rem] bg-[color:var(--color-brand-pink)] text-[oklch(0.18_0.02_260)] md:min-h-[440px] pt-8 px-0 pb-0 md:p-12"
           >
-            <div className="font-mono text-xs opacity-40 mb-6 md:mb-8">03</div>
+            <div className="font-mono text-xs opacity-40 mb-6 md:mb-8 px-6 md:px-0">03</div>
             <div className="grid gap-8">
-              <div className="flex flex-col justify-end">
+              <div className="flex flex-col justify-end px-6 md:px-0">
                 <div>
                   <h3 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
                     Content
@@ -431,7 +432,7 @@ export function SolutionsSection() {
                   </ul>
                 </div>
               </div>
-              <div className="relative min-h-[300px] w-full flex items-center justify-center mt-4">
+              <div className="relative min-h-[300px] w-full flex items-center justify-center mt-8 md:mt-4 px-6 md:px-0 pb-6 md:pb-0">
                 <div className="relative flex items-center justify-center w-full max-w-[340px]">
                   {/* Phone 1 (Left - Background) */}
                   <motion.div
@@ -663,7 +664,7 @@ export function SolutionsSection() {
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.6 }}
-                  className="absolute bottom-4 -left-4 z-40 flex items-center gap-2 rounded-full border border-white/50 bg-white px-3 py-2 shadow-xl backdrop-blur-md"
+                  className="absolute bottom-4 -left-4 z-40 flex items-center gap-2 rounded-full border border-white/50 bg-white px-3 py-2 shadow-xl backdrop-blur-md hidden md:flex"
                 >
                   <div className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-[color:var(--color-brand-pink)] to-[color:var(--color-brand-orange)] text-white shadow-inner">
                     <Heart className="h-3.5 w-3.5" fill="currentColor" />
@@ -681,11 +682,11 @@ export function SolutionsSection() {
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             style={{ willChange: "transform, opacity" }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="grain group relative overflow-hidden rounded-[2rem] bg-[oklch(0.96_0.01_90)] text-foreground md:min-h-[340px] p-8 md:p-12"
+            className="grain group relative overflow-hidden rounded-[2rem] bg-[oklch(0.96_0.01_90)] text-foreground md:min-h-[340px] pt-8 px-0 pb-0 md:p-12"
           >
-            <div className="font-mono text-xs opacity-40 mb-6 md:mb-8">04</div>
+            <div className="font-mono text-xs opacity-40 mb-6 md:mb-8 px-6 md:px-0">04</div>
             <div className="grid gap-8">
-              <div className="flex flex-col justify-end">
+              <div className="flex flex-col justify-end px-6 md:px-0">
                 <div>
                   <h3 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
                     Marketing
@@ -709,7 +710,7 @@ export function SolutionsSection() {
                   </ul>
                 </div>
               </div>
-              <div className="relative min-h-[250px] mt-4 flex flex-col justify-end">
+              <div className="relative min-h-[250px] mt-8 md:mt-4 flex flex-col justify-end px-6 md:px-0 pb-6 md:pb-0">
                 {/* Background ambient glow for the chart */}
                 <div className="absolute bottom-0 right-0 h-48 w-48 rounded-full bg-[color:var(--color-brand-orange)]/10 blur-[40px]"></div>
                 
@@ -789,11 +790,11 @@ export function SolutionsSection() {
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             style={{ willChange: "transform, opacity" }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="grain group relative overflow-hidden rounded-[2rem] bg-[color:var(--color-brand-blue)] text-background md:min-h-[440px] p-8 md:p-12"
+            className="grain group relative overflow-hidden rounded-[2rem] bg-[color:var(--color-brand-blue)] text-background md:min-h-[440px] pt-8 px-0 pb-0 md:p-12"
           >
-            <div className="font-mono text-xs opacity-40 mb-6 md:mb-8">05</div>
+            <div className="font-mono text-xs opacity-40 mb-6 md:mb-8 px-6 md:px-0">05</div>
             <div className="grid gap-8">
-              <div className="flex flex-col justify-end">
+              <div className="flex flex-col justify-end px-6 md:px-0">
                 <div>
                   <h3 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-[-0.03em]">
                     Technology
@@ -817,7 +818,7 @@ export function SolutionsSection() {
                   </ul>
                 </div>
               </div>
-              <div className="relative min-h-[250px] w-full mt-4 flex items-center">
+              <div className="relative min-h-[250px] w-full mt-8 md:mt-4 flex items-center px-6 md:px-0 pb-6 md:pb-0">
                 {/* Automated Pipeline Visual */}
                 <div className="relative w-full rounded-2xl bg-black/10 p-5 backdrop-blur-sm border border-white/10 shadow-inner">
                   {/* Connection Line */}

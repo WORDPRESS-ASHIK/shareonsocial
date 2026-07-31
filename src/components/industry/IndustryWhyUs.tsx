@@ -10,7 +10,7 @@ import { IndustryWhyUsIllustration } from "./IndustryWhyUsIllustration";
 
 export function IndustryWhyUs({ data, slug }: { data: IndustryData['whyUs'], slug: string }) {
   return (
-    <section className="relative overflow-hidden bg-background py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-background py-16 md:py-24 lg:py-32">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid gap-16 lg:grid-cols-2">
           
@@ -21,7 +21,7 @@ export function IndustryWhyUs({ data, slug }: { data: IndustryData['whyUs'], slu
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="max-w-[15ch] font-display text-[clamp(28px,4vw,48px)] leading-[1.1] tracking-[-0.02em] text-balance"
+                className="max-w-[15ch] font-display text-4xl sm:text-5xl md:text-6xl leading-[1.1] tracking-[-0.02em] text-balance"
               >
                 {data.headline}
               </motion.h2>

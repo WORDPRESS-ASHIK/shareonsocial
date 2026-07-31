@@ -74,7 +74,7 @@ export function ClientVoicesSection() {
   }, [isPaused, scroll]);
 
   return (
-    <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
+    <section className="mx-auto mt-16 max-w-[1400px] px-6 md:mt-48 md:px-10">
       <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/50">

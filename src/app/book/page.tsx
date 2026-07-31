@@ -33,7 +33,7 @@ export default function BookPage() {
         </section>
 
         <section className="mx-auto mt-16 max-w-3xl px-6 md:px-10 pb-32">
-          <ContactForm title="Book a consultation" />
+          <ContactForm title="Book a consultation" isBookACall={true} />
         </section>
       </main>
       <Footer />

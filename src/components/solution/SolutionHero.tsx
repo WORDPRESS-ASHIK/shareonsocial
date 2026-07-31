@@ -25,7 +25,7 @@ export function SolutionHero({ data }: { data: SolutionData['hero'] }) {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight text-foreground mb-6">
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight text-foreground mb-6">
                 {data.headline}
               </h1>
               <p className="text-lg md:text-xl text-foreground/70 leading-relaxed mb-10 max-w-xl">
