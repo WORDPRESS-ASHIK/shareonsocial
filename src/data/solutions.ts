@@ -60,7 +60,7 @@ export const solutionsData: Record<string, SolutionData> = {
     "slug": "social-media-management",
     "title": "Social Media Management",
     "shortDescription": "Build a Stronger Presence. Stay Consistent. Turn Attention Into Growth.",
-    "featuredImage": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1000&auto=format&fit=crop",
     "category": "Social \u2022 ShareOnSocial",
     "tags": [
       "Strategy",
@@ -283,7 +283,7 @@ export const solutionsData: Record<string, SolutionData> = {
     "slug": "branding",
     "title": "Branding",
     "shortDescription": "Build a Brand People Recognise, Remember and Trust.",
-    "featuredImage": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1000&auto=format&fit=crop",
     "category": "Branding \u2022 ShareOnSocial",
     "tags": [
       "Identity",
@@ -496,7 +496,7 @@ export const solutionsData: Record<string, SolutionData> = {
     "slug": "website-development",
     "title": "Website Development",
     "shortDescription": "Build a Website That Looks Professional and Helps Your Business Grow.",
-    "featuredImage": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1000&auto=format&fit=crop",
     "category": "Technology \u2022 ShareOnSocial",
     "tags": [
       "Design",
@@ -719,7 +719,7 @@ export const solutionsData: Record<string, SolutionData> = {
     "slug": "seo-aeo",
     "title": "SEO & AEO",
     "shortDescription": "Help More People Find Your Business\u2014Across Search Engines and AI Platforms.",
-    "featuredImage": "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
     "category": "Digital \u2022 ShareOnSocial",
     "tags": [
       "SEO",
@@ -942,7 +942,7 @@ export const solutionsData: Record<string, SolutionData> = {
     "slug": "paid-advertising",
     "title": "Paid Advertising",
     "shortDescription": "Reach the Right Audience. Generate Better Leads. Grow With Clearer Data.",
-    "featuredImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1000&auto=format&fit=crop",
     "category": "Marketing \u2022 ShareOnSocial",
     "tags": [
       "Google Ads",
@@ -1165,7 +1165,7 @@ export const solutionsData: Record<string, SolutionData> = {
     "slug": "content-creation",
     "title": "Content Creation",
     "shortDescription": "Create Content That Looks Strong, Sounds Clear and Moves People to Act.",
-    "featuredImage": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1000&auto=format&fit=crop",
     "category": "Content \u2022 ShareOnSocial",
     "tags": [
       "Copywriting",
@@ -1388,7 +1388,7 @@ export const solutionsData: Record<string, SolutionData> = {
     "slug": "crm-automation",
     "title": "CRM & Automation",
     "shortDescription": "Organise Every Lead. Automate Repetitive Work. Create a Smoother Customer Journey.",
-    "featuredImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=1000&auto=format&fit=crop",
     "category": "Technology \u2022 ShareOnSocial",
     "tags": [
       "CRM",
@@ -1611,7 +1611,7 @@ export const solutionsData: Record<string, SolutionData> = {
     "slug": "ai-business-solutions",
     "title": "AI Business Solutions",
     "shortDescription": "Use AI to Work Smarter, Respond Faster and Scale More Efficiently.",
-    "featuredImage": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop",
     "category": "Technology \u2022 ShareOnSocial",
     "tags": [
       "AI",
@@ -1834,7 +1834,7 @@ export const solutionsData: Record<string, SolutionData> = {
     "slug": "outdoor-marketing",
     "title": "Outdoor Marketing",
     "shortDescription": "Put Your Brand Where People Can See, Remember and Act on It.",
-    "featuredImage": "https://images.unsplash.com/photo-1542204165-65bf26472b9b?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1498623116890-37e912163d5d?q=80&w=1000&auto=format&fit=crop",
     "category": "Marketing \u2022 ShareOnSocial",
     "tags": [
       "Billboards",

@@ -187,7 +187,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Build a Stronger Presence. Stay Consistent. Turn Attention Into Growth.",
-    "featuredImage": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1000&auto=format&fit=crop",
     "category": "Social • ShareOnSocial",
     "tags": [
       "Strategy",
@@ -357,7 +357,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Build a Brand People Recognise, Remember and Trust.",
-    "featuredImage": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1000&auto=format&fit=crop",
     "category": "Branding • ShareOnSocial",
     "tags": [
       "Identity",
@@ -605,7 +605,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Build a Website That Looks Professional and Helps Your Business Grow.",
-    "featuredImage": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1000&auto=format&fit=crop",
     "category": "Technology • ShareOnSocial",
     "tags": [
       "Design",
@@ -885,7 +885,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Help More People Find Your Business—Across Search Engines and AI Platforms.",
-    "featuredImage": "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=1000&auto=format&fit=crop",
     "category": "Digital • ShareOnSocial",
     "tags": [
       "SEO",
@@ -1176,7 +1176,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Reach the Right People. Generate Leads. Measure the Results.",
-    "featuredImage": "https://images.unsplash.com/photo-1533750516457-a7f992034fec?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1000&auto=format&fit=crop",
     "category": "Advertising • ShareOnSocial",
     "tags": [
       "Google Ads",
@@ -1458,7 +1458,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Tell Your Story with High-Quality Video, Photography and Copywriting.",
-    "featuredImage": "https://images.unsplash.com/photo-1626908029514-eb4fc0bfc3db?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1000&auto=format&fit=crop",
     "category": "Content • ShareOnSocial",
     "tags": [
       "Video",
@@ -1778,7 +1778,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Organise Every Lead. Automate Repetitive Work. Create a Smoother Customer Journey.",
-    "featuredImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=1000&auto=format&fit=crop",
     "category": "Technology • ShareOnSocial",
     "tags": [
       "CRM",
@@ -2090,7 +2090,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Use AI to Work Smarter, Respond Faster and Scale More Efficiently.",
-    "featuredImage": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop",
     "category": "Technology • ShareOnSocial",
     "tags": [
       "Artificial Intelligence",
@@ -2334,7 +2334,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Put Your Brand Where People Can See, Remember and Act on It.",
-    "featuredImage": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "https://images.unsplash.com/photo-1498623116890-37e912163d5d?q=80&w=1000&auto=format&fit=crop",
     "category": "Marketing • ShareOnSocial",
     "tags": [
       "Billboards",

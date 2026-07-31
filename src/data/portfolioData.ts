@@ -70,7 +70,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "/portfolio-hospitality-udaipur.png",
+    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#18BFD3"
   },
   {
@@ -143,7 +143,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "/portfolio-hospitality-mountabu.png",
+    "image": "/images/optimized/industry_hotels.png",
     "color": "#FF8A00"
   },
   {
@@ -214,7 +214,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "/portfolio-hospitality-bali.png",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#E84FA5"
   },
   {
@@ -286,7 +286,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "/portfolio-ecommerce-fashion.png",
+    "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#1F73D8"
   },
   {
@@ -364,7 +364,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "/portfolio-ecommerce-saree.png",
+    "image": "https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#18BFD3"
   },
   {
@@ -441,7 +441,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "/portfolio-realestate-ahmedabad.png",
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#FF8A00"
   },
   {
@@ -517,7 +517,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "/portfolio-realestate-delhi.png",
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#E84FA5"
   },
   {
@@ -593,7 +593,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#1F73D8"
   },
   {
@@ -670,7 +670,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2940&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#18BFD3"
   },
   {
@@ -747,7 +747,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#FF8A00"
   },
   {
@@ -824,7 +824,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1541888086903-efdc749f53df?q=80&w=2874&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#E84FA5"
   },
   {
@@ -900,7 +900,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#1F73D8"
   },
   {
@@ -984,7 +984,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2874&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#18BFD3"
   },
   {
@@ -1068,7 +1068,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2930&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#FF8A00"
   },
   {
@@ -1152,7 +1152,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2940&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#E84FA5"
   },
   {
@@ -1228,7 +1228,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32d7?q=80&w=2832&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#1F73D8"
   },
   {
@@ -1303,7 +1303,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2940&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#18BFD3"
   },
   {
@@ -1380,7 +1380,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2938&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#FF8A00"
   },
   {
@@ -1458,7 +1458,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2940&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#E84FA5"
   },
   {
@@ -1535,7 +1535,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2874&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#1F73D8"
   },
   {
@@ -1612,7 +1612,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2938&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#18BFD3"
   },
   {
@@ -1689,7 +1689,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1595476108010-b4d1f10d5e43?q=80&w=2787&auto=format&fit=crop",
+    "image": "/images/optimized/industry_portfolio.png",
     "color": "#FF8A00"
   },
   {
@@ -1764,7 +1764,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2940&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#E84FA5"
   },
   {
@@ -1840,7 +1840,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2948&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#1F73D8"
   },
   {
@@ -1916,7 +1916,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2940&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=800&q=75&auto=format&fit=crop",
     "color": "#18BFD3"
   }
 ];

@@ -6,30 +6,30 @@ import * as motion from "framer-motion/client";
 import { IndustryCardData } from "@/data/industriesCardsData";
 
 const industryImages: Record<string, string> = {
-  'restaurants-cafes': 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80',
-  'hotels-hospitality': 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80',
-  'healthcare-wellness': 'https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&q=80',
-  'dental-medical-clinics': 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80',
-  'retail-ecommerce': 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80',
-  'education-training': 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80',
-  'real-estate-property': 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80',
-  'construction-trades': 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80',
-  'home-services': 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80',
-  'professional-services': 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80',
-  'finance-accounting': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80',
-  'legal-services': 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80',
-  'beauty-personal-care': 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80',
-  'fitness-sports': 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80',
-  'automotive': 'https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&q=80',
-  'travel-tourism': 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80',
-  'events-entertainment': 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80',
-  'nonprofits-community': 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80',
-  'manufacturing-wholesale': 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80',
-  'logistics-transport': 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80',
-  'technology-saas': 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80',
-  'startups': 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80',
-  'agriculture-food-production': 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80',
-  'e-learning-creators': 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80',
+  'restaurants-cafes': '/images/optimized/industry_restaurants.png',
+  'hotels-hospitality': 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&q=75&w=800',
+  'healthcare-wellness': '/images/optimized/industry_healthcare.png',
+  'dental-medical-clinics': '/images/optimized/industry_dental_clinic.png',
+  'retail-ecommerce': 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=75&w=800',
+  'education-training': 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=75&w=800',
+  'real-estate-property': 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=75&w=800',
+  'construction-trades': 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=75&w=800',
+  'home-services': 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=75&w=800',
+  'professional-services': 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=75&w=800',
+  'finance-accounting': 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=75&w=800',
+  'legal-services': 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=75&w=800',
+  'beauty-personal-care': 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=75&w=800',
+  'fitness-sports': 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=75&w=800',
+  'automotive': 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=75&w=800',
+  'travel-tourism': 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=75&w=800',
+  'events-entertainment': 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=75&w=800',
+  'nonprofits-community': 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=75&w=800',
+  'manufacturing-wholesale': '/images/optimized/industry_manufacturing_factory.png',
+  'logistics-transport': 'https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&q=75&w=800',
+  'technology-saas': 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=75&w=800',
+  'startups': '/images/optimized/industry_startups_office.png',
+  'agriculture-food-production': 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=75&w=800',
+  'e-learning-creators': 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=75&w=800',
 };
 
 interface IndustryCardProps {
@@ -38,8 +38,8 @@ interface IndustryCardProps {
 }
 
 export const IndustryCard = React.memo(({ industry, index }: IndustryCardProps) => {
-  const isPriority = index < 6;
-  const imageSrc = industryImages[industry.slug] || 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80';
+  const isPriority = index < 3;
+  const imageSrc = industryImages[industry.slug] || 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=75&w=800';
   const shortSubheadline = industry.title;
 
   return (
