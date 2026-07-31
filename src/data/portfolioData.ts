@@ -70,7 +70,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2906&auto=format&fit=crop",
+    "image": "/portfolio-hospitality-udaipur.png",
     "color": "#18BFD3"
   },
   {
@@ -143,7 +143,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1542314831-c6a4d14d8c53?q=80&w=2940&auto=format&fit=crop",
+    "image": "/portfolio-hospitality-mountabu.png",
     "color": "#FF8A00"
   },
   {
@@ -214,7 +214,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2940&auto=format&fit=crop",
+    "image": "/portfolio-hospitality-bali.png",
     "color": "#E84FA5"
   },
   {
@@ -286,7 +286,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=2940&auto=format&fit=crop",
+    "image": "/portfolio-ecommerce-fashion.png",
     "color": "#1F73D8"
   },
   {
@@ -364,7 +364,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2940&auto=format&fit=crop",
+    "image": "/portfolio-ecommerce-saree.png",
     "color": "#18BFD3"
   },
   {
@@ -441,7 +441,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1610030469983-98e550d615ef?q=80&w=2836&auto=format&fit=crop",
+    "image": "/portfolio-realestate-ahmedabad.png",
     "color": "#FF8A00"
   },
   {
@@ -517,7 +517,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2873&auto=format&fit=crop",
+    "image": "/portfolio-realestate-delhi.png",
     "color": "#E84FA5"
   },
   {
