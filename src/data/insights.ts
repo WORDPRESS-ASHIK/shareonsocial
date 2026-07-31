@@ -17,7 +17,7 @@ export const insights: Insight[] = [
     category: "Search",
     readTime: "6 min",
     title: "Why AEO is the new SEO — and what to do this quarter.",
-    image: "/insights-aeo-editorial.png",
+    image: "/images/optimized/insight_aeo.png",
     bgColor: "bg-[color:var(--color-brand-blue)] text-background",
     introduction:
       "Search is evolving rapidly. With AI-generated summaries pushing traditional blue links further down the page, traditional Search Engine Optimization (SEO) is no longer enough. Enter Answer Engine Optimization (AEO).",
@@ -114,7 +114,7 @@ export const insights: Insight[] = [
     category: "Advertising",
     readTime: "8 min",
     title: "Ad creative that converts: the four-hook framework.",
-    image: "/insights-ad-creative-editorial.png",
+    image: "/images/optimized/insight_ad_creative.png",
     bgColor: "bg-[color:var(--color-brand-orange)] text-[oklch(0.18_0.02_260)]",
     introduction:
       "In a crowded feed, you have less than three seconds to capture attention. If your ad creative doesn't hook the user immediately, your targeting and bidding strategies are irrelevant. We use the four-hook framework to guarantee performance.",
@@ -210,7 +210,7 @@ export const insights: Insight[] = [
     category: "Ecommerce",
     readTime: "12 min",
     title: "Ecom growth loops: from first click to lifetime value.",
-    image: "/insights-ecommerce-growth-editorial.png",
+    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=75&w=800",
     bgColor: "bg-[color:var(--color-brand-cyan)] text-[oklch(0.18_0.02_260)]",
     introduction:
       "Traditional ecommerce funnels are linear: you pay for traffic, convert a percentage, and hope they come back. A growth loop, however, is a closed system where the inputs generate outputs that can be reinvested to acquire more users automatically.",
