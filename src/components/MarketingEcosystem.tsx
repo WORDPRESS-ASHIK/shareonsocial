@@ -45,7 +45,7 @@ const platforms = [
 
 export function MarketingEcosystem() {
   return (
-    <div className="relative w-full mt-4 flex flex-col items-center justify-center">
+    <div className="relative w-full flex flex-col items-center justify-center">
       {/* Background radial glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[150px] bg-gradient-to-r from-[color:var(--color-brand-blue)]/5 via-[color:var(--color-brand-purple)]/5 to-[color:var(--color-brand-orange)]/5 blur-[30px] rounded-full pointer-events-none z-0"></div>
       

@@ -5,6 +5,7 @@ import { Activity, Bot, CheckCircle2, Heart, MessageCircle, Share2, TrendingUp, 
 import Link from "next/link";
 import { TechnologyEcosystem } from "./TechnologyEcosystem";
 import { MarketingEcosystem } from "./MarketingEcosystem";
+import { MarketingDashboard } from "./MarketingDashboard";
 
 export function SolutionsSection() {
   return (
@@ -710,7 +711,7 @@ export function SolutionsSection() {
                   </ul>
                 </div>
               </div>
-              <div className="relative min-h-[250px] mt-8 md:mt-4 flex flex-col justify-end px-6 md:px-0 pb-6 md:pb-0">
+              <div className="relative min-h-[250px] mt-8 md:mt-4 flex flex-col justify-end px-6 md:px-0">
                 {/* Background ambient glow for the chart */}
                 <div className="absolute bottom-0 right-0 h-48 w-48 rounded-full bg-[color:var(--color-brand-orange)]/10 blur-[40px]"></div>
                 
@@ -781,8 +782,8 @@ export function SolutionsSection() {
                   </div>
                 </div>
               </div>
-              <MarketingEcosystem />
             </div>
+            <MarketingDashboard />
           </motion.article>
           <motion.article
             initial={{ opacity: 0, y: 40 }}
@@ -913,6 +914,9 @@ export function SolutionsSection() {
             </div>
           </motion.article>
         </div>
+      </div>
+      <div className="mt-10 mb-10 w-full flex justify-center px-6 md:px-0">
+        <MarketingEcosystem />
       </div>
     </section>
   );
