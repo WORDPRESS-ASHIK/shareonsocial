@@ -137,6 +137,21 @@ export function IndustriesSection() {
           </Link>
         ))}
       </div>
+      <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row md:gap-5">
+        <Link
+          href="/book"
+          className="group inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-8 py-4 text-sm font-medium text-background transition-all hover:bg-foreground/85 hover:-translate-y-0.5 hover:shadow-lg w-full sm:w-auto"
+        >
+          Start Your Project
+          <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
+        </Link>
+        <Link
+          href="/contact"
+          className="group inline-flex items-center justify-center gap-2 rounded-full border border-foreground px-8 py-4 text-sm font-medium text-foreground transition-all hover:-translate-y-0.5 hover:bg-foreground/5 hover:shadow-lg w-full sm:w-auto"
+        >
+          Connect Now
+        </Link>
+      </div>
     </section>
   );
 }

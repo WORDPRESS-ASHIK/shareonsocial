@@ -35,7 +35,7 @@ export function WorkSection() {
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/50">
             <span className="inline-block h-px w-8 bg-foreground/40"></span>
-            Selected Work
+            OUR SOLUTIONS
           </div>
           <h2 className="mt-6 font-display text-[clamp(2.25rem,5.5vw,5rem)] leading-[0.95] tracking-[-0.03em] text-balance">
             Made to{" "}

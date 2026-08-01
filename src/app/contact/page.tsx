@@ -2,7 +2,6 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import * as motion from "framer-motion/client";
 import { SimpleContactForm } from "@/components/SimpleContactForm";
-import { FaqSection } from "@/components/FaqSection";
 import { CtaSection } from "@/components/CtaSection";
 import { MessageSquare, Users, Shield, Phone, Mail, MapPin, Clock } from "lucide-react";
 
@@ -133,7 +132,7 @@ export default function ContactPage() {
                           </div>
                           <div>
                              <h4 className="font-medium text-sm text-foreground/90">Business Hours</h4>
-                             <p className="text-foreground/70 text-sm mt-0.5">Mon – Fri, 9:00 AM – 6:00 PM AEST</p>
+                             <p className="text-foreground/70 text-sm mt-0.5 max-w-[280px]">We Work 24/7 365 Days so your business has support every second</p>
                           </div>
                        </div>
                     </div>
@@ -172,10 +171,7 @@ export default function ContactPage() {
            </div>
         </section>
         
-        {/* 3. FAQ Section */}
-        <FaqSection />
-        
-        {/* 4. CTA Section */}
+        {/* 3. CTA Section */}
         <div className="pb-16 md:pb-24">
            <CtaSection />
         </div>

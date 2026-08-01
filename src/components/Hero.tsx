@@ -217,7 +217,7 @@ export function Hero() {
         </h1>
         <div className="mt-10 grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-end">
           <p className="max-w-xl text-lg text-foreground/70 md:text-xl">
-            We combine strategy, creativity, marketing and technology so
+            We Combine Strategy, Creativity, Marketing and Technology so
             businesses don't just look good — they actually grow.
           </p>
           <div className="flex flex-wrap items-center gap-3 md:justify-end">

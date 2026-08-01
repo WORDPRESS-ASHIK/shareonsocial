@@ -187,7 +187,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Build a Stronger Presence. Stay Consistent. Turn Attention Into Growth.",
-    "featuredImage": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "/images/social-media-management.png",
     "category": "Social • ShareOnSocial",
     "tags": [
       "Strategy",
@@ -357,7 +357,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Build a Brand People Recognise, Remember and Trust.",
-    "featuredImage": "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "/images/branding.jpg",
     "category": "Branding • ShareOnSocial",
     "tags": [
       "Identity",
@@ -605,7 +605,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Build a Website That Looks Professional and Helps Your Business Grow.",
-    "featuredImage": "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "/images/website-development.jpg",
     "category": "Technology • ShareOnSocial",
     "tags": [
       "Design",
@@ -623,7 +623,7 @@ export const solutionsData: SolutionData[] = [
     "blocks": [
       {
         "type": "hero",
-        "heading": "Help More People Find Your Business—Across Search Engines and AI Platforms",
+        "heading": "Help More People Find Your Business Across Search Engines and AI Platforms",
         "description": "Search is changing. Customers now discover businesses through Google, maps, voice search, featured answers, and AI-powered platforms.\n\nShareOnSocial helps your website become easier to find, understand, and recommend through a connected approach to Search Engine Optimisation and Answer Engine Optimisation.",
         "primaryCta": "Improve Your Visibility",
         "secondaryCta": "Book a Call"
@@ -884,8 +884,8 @@ export const solutionsData: SolutionData[] = [
         "secondaryCta": "Book a Call"
       }
     ],
-    "shortDescription": "Help More People Find Your Business—Across Search Engines and AI Platforms.",
-    "featuredImage": "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=1000&auto=format&fit=crop",
+    "shortDescription": "Help More People Find Your Business Across Search Engines and AI Platforms.",
+    "featuredImage": "/images/seo-aeo.jpg",
     "category": "Digital • ShareOnSocial",
     "tags": [
       "SEO",
@@ -894,7 +894,7 @@ export const solutionsData: SolutionData[] = [
     ],
     "seo": {
       "title": "SEO & AEO | Share On Social",
-      "description": "Help More People Find Your Business—Across Search Engines and AI Platforms."
+      "description": "Help More People Find Your Business Across Search Engines and AI Platforms."
     }
   },
   {
@@ -1176,7 +1176,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Reach the Right People. Generate Leads. Measure the Results.",
-    "featuredImage": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "/images/paid-advertising.jpg",
     "category": "Advertising • ShareOnSocial",
     "tags": [
       "Google Ads",
@@ -1778,7 +1778,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Organise Every Lead. Automate Repetitive Work. Create a Smoother Customer Journey.",
-    "featuredImage": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "/images/crm-automation.jpg",
     "category": "Technology • ShareOnSocial",
     "tags": [
       "CRM",
@@ -1804,7 +1804,7 @@ export const solutionsData: SolutionData[] = [
       {
         "type": "list",
         "heading": "AI Built Around Real Business Needs",
-        "description": "AI should solve a clear problem—not become another complicated tool your team does not use.\n\nWe begin by identifying where your business is losing time, missing opportunities or relying too heavily on manual work.\n\nAI solutions can help you:",
+        "description": "AI should solve a clear problem not become another complicated tool your team does not use.\n\nWe begin by identifying where your business is losing time, missing opportunities or relying too heavily on manual work.\n\nAI solutions can help you:",
         "items": [
           "Respond to enquiries faster",
           "Qualify and route leads",
@@ -2090,7 +2090,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Use AI to Work Smarter, Respond Faster and Scale More Efficiently.",
-    "featuredImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "/images/ai-business-solutions.jpg",
     "category": "Technology • ShareOnSocial",
     "tags": [
       "Artificial Intelligence",
@@ -2109,7 +2109,7 @@ export const solutionsData: SolutionData[] = [
       {
         "type": "hero",
         "heading": "Put Your Brand Where People Can See, Remember and Act on It",
-        "description": "Outdoor marketing helps your business reach people in the real world—on the road, in neighbourhoods, near stores, around events and across high-traffic locations.\n\nShareOnSocial plans and creates outdoor campaigns that connect strong messaging, clear design and strategic placement. From billboards and vehicle advertising to signage and local activations, every campaign is built to improve visibility and support your wider marketing goals.",
+        "description": "Outdoor marketing helps your business reach people in the real world on the road, in neighbourhoods, near stores, around events and across high-traffic locations.\n\nShareOnSocial plans and creates outdoor campaigns that connect strong messaging, clear design and strategic placement. From billboards and vehicle advertising to signage and local activations, every campaign is built to improve visibility and support your wider marketing goals.",
         "primaryCta": "Plan Your Campaign",
         "secondaryCta": "Book a Call"
       },
@@ -2334,7 +2334,7 @@ export const solutionsData: SolutionData[] = [
       }
     ],
     "shortDescription": "Put Your Brand Where People Can See, Remember and Act on It.",
-    "featuredImage": "https://images.unsplash.com/photo-1498623116890-37e912163d5d?q=80&w=1000&auto=format&fit=crop",
+    "featuredImage": "/images/outdoor-marketing.jpg",
     "category": "Marketing • ShareOnSocial",
     "tags": [
       "Billboards",

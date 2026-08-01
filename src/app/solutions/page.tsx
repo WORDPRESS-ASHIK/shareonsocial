@@ -4,6 +4,7 @@ import * as motion from "framer-motion/client";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { solutionsData } from "@/data/solutions_data";
+import Image from "next/image";
 
 const colors = [
   'oklch(0.72 0.18 55)',   // Orange/Red
@@ -50,7 +51,7 @@ export default function SolutionsPage() {
                 Every lever, <em className="italic text-[color:var(--brand-blue)]">pulled together</em>.
               </h1>
               <p className="mt-8 max-w-2xl text-lg text-foreground/70 md:text-xl">
-                We combine strategy, creativity, marketing and technology into one integrated growth engine — no silos, no handoffs, no dead ends.
+                We combine strategy, creativity, marketing and technology into one integrated growth engine no silos, no handoffs, no dead ends.
               </p>
             </motion.div>
           </div>
@@ -76,10 +77,13 @@ export default function SolutionsPage() {
                         className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 mix-blend-overlay z-10"
                         style={{ backgroundColor: color }}
                       ></div>
-                      <img
+                      <Image
                         src={solution.featuredImage}
                         alt={solution.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        fill
+                        className={`object-cover transition-transform duration-700 group-hover:scale-105 ${
+                          solution.slug === 'branding' ? 'object-bottom' : 'object-center'
+                        }`}
                       />
                     </div>
                     

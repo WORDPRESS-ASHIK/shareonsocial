@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 
 const metrics = [
-  { value: "$45M+", label: "Client Revenue Generated", description: "Across our portfolio in the last 12 months" },
-  { value: "3.2M", label: "Qualified Leads Delivered", description: "Through targeted paid & organic campaigns" },
-  { value: "98%", label: "Client Retention Rate", description: "Long-term partnerships built on results" },
+  { value: "550+", label: "Businesses Served", description: "Across multiple industries in India" },
+  { value: "5K+", label: "Projects Delivered", description: "Websites, branding, marketing & automation" },
+  { value: "98%", label: "Client Satisfaction", description: "Built on long-term relationships" },
 ];
 
 export function ImpactMetrics() {

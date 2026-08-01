@@ -26,7 +26,7 @@ export default function BookPage() {
                 Let&#x27;s map your <em className="italic text-[color:var(--brand-orange)]">next move</em>.
               </h1>
               <p className="mt-8 max-w-2xl text-lg text-foreground/70 md:text-xl">
-                A 30-minute call, tailored to your business. No decks, no pitch — just a real conversation.
+                A 30-minute call, tailored to your business. No decks, no pitch just a real conversation.
               </p>
             </motion.div>
           </div>

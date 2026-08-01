@@ -33,7 +33,7 @@ export default function InsightsPage() {
           </div>
         </section>
 
-        <InsightsSection insightsData={allInsights} />
+        <InsightsSection insightsData={allInsights} hideIntro={true} />
       </main>
       <Footer />
     </div>

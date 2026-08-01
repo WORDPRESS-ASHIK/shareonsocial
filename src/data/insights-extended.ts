@@ -204,7 +204,7 @@ const newInsights: Insight[] = [
     content: `
       <section class="editorial-intro">
         <div class="intro-statement">
-          "Firms that adopt AI will not replace firms that don't—but accountants who use AI will replace those who refuse."
+          "Firms that adopt AI will not replace firms that don't but accountants who use AI will replace those who refuse."
         </div>
         <div class="intro-body">
           <p>For decades, accountants spent 80% of their time compiling data and 20% analyzing it. The advent of LLMs, automated categorization, and intelligent OCR (Optical Character Recognition) has flipped this ratio entirely.</p>
@@ -398,7 +398,7 @@ const newInsights: Insight[] = [
         </div>
         <div class="intro-body">
           <p>Real estate lead generation has fundamentally changed. Billboards and bus benches create awareness, but they don't capture intent. Today's buyer and seller journey begins online, usually months before they reach out to an agent.</p>
-          <p>The agents winning today are those who capture this early-stage intent by offering hyper-local value—such as off-market property lists, detailed neighborhood guides, and automated home valuation funnels.</p>
+          <p>The agents winning today are those who capture this early-stage intent by offering hyper-local value such as off-market property lists, detailed neighborhood guides, and automated home valuation funnels.</p>
         </div>
       </section>
 
@@ -492,7 +492,7 @@ const newInsights: Insight[] = [
           "Parents choose a school based on outcomes, but students advocate based on culture and belonging."
         </div>
         <div class="intro-body">
-          <p>The modern prospective student—and their millennial parents—research schools heavily on Instagram, TikTok, and YouTube before ever visiting a campus or downloading a prospectus.</p>
+          <p>The modern prospective student and their millennial parents research schools heavily on Instagram, TikTok, and YouTube before ever visiting a campus or downloading a prospectus.</p>
           <p>They aren't looking for text-heavy academic philosophy. They want to see what a day in the life looks like, hear authentic testimonials from current students, and feel the energy of the campus environment.</p>
         </div>
       </section>
@@ -587,7 +587,7 @@ const newInsights: Insight[] = [
           "A beautiful website that doesn't convert is just an expensive piece of digital art."
         </div>
         <div class="intro-body">
-          <p>Most small business owners evaluate their website based entirely on aesthetics. "Does it look good?" they ask. But users aren't evaluating your design—they are trying to solve a problem quickly.</p>
+          <p>Most small business owners evaluate their website based entirely on aesthetics. "Does it look good?" they ask. But users aren't evaluating your design they are trying to solve a problem quickly.</p>
           <p>If your site loads slowly, lacks clear calls-to-action (CTAs), or hides contact information, users will simply bounce to a competitor whose site provides immediate clarity and ease of use.</p>
         </div>
       </section>
@@ -682,7 +682,7 @@ const newInsights: Insight[] = [
           "If your follow-up process relies on you remembering to do it, you are losing money every single day."
         </div>
         <div class="intro-body">
-          <p>Service businesses—from plumbers and electricians to B2B consultants—die by the leaky bucket syndrome. You spend thousands on ads to make the phone ring, but leads slip through the cracks because the team is too busy on-site to respond promptly.</p>
+          <p>Service businesses from plumbers and electricians to B2B consultants die by the leaky bucket syndrome. You spend thousands on ads to make the phone ring, but leads slip through the cracks because the team is too busy on-site to respond promptly.</p>
           <p>A properly configured CRM (Customer Relationship Management) system acts as an invisible administrative assistant, ensuring every lead is instantly engaged, every quote is followed up on, and every past customer is reactivated for repeat business.</p>
         </div>
       </section>

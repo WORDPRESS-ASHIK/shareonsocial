@@ -16,7 +16,7 @@ export const insights: Insight[] = [
     slug: "why-aeo-is-the-new-seo",
     category: "Search",
     readTime: "6 min",
-    title: "Why AEO is the new SEO — and what to do this quarter.",
+    title: "Why AEO is the new SEO and what to do this quarter.",
     image: "/images/optimized/insight_aeo.png",
     bgColor: "bg-[color:var(--color-brand-blue)] text-background",
     introduction:

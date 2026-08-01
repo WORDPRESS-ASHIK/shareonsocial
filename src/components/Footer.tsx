@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MessageCircle, ArrowRight } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 
 export function Footer() {
   return (
@@ -14,12 +14,12 @@ export function Footer() {
               <Image src="/logo.png" alt="ShareOnSocial Logo" width={200} height={50} className="h-10 w-auto" />
             </div>
             <p className="mt-6 max-w-sm font-display text-2xl leading-[1.1] tracking-tight md:text-4xl">
-              Your partner in{" "}
-              <em className="text-[color:var(--brand-orange)]">business growth</em>.
+              Your Partner in{" "}
+              <em className="bg-gradient-to-r from-[color:var(--color-brand-blue)] via-[color:var(--color-brand-pink)] to-[color:var(--color-brand-orange)] bg-clip-text text-transparent not-italic">Business Growth.</em>
             </p>
             <Link
               href="/book"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm text-background transition-transform hover:scale-105 active:scale-95"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-4 text-sm font-medium text-background transition-all hover:-translate-y-0.5 hover:bg-foreground/85 hover:shadow-lg"
             >
               Start Your Growth Plan <ArrowRight className="h-4 w-4" />
             </Link>
@@ -68,36 +68,40 @@ export function Footer() {
             </div>
             <ul className="mt-6 space-y-4">
               <li>
-                <span
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
+                <Link
+                  href="/portfolio"
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
                 >
                   Case Studies
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </span>
+                </Link>
               </li>
               <li>
-                <span
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
+                <Link
+                  href="/insights"
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
                 >
                   Blog
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </span>
+                </Link>
               </li>
               <li>
-                <span
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
+                <Link
+                  href="/faqs"
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
                 >
                   FAQs
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </span>
+                </Link>
               </li>
               <li>
-                <span
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
+                <Link
+                  href="/contact"
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
                 >
                   Contact
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </span>
+                </Link>
               </li>
             </ul>
           </div>
@@ -109,28 +113,31 @@ export function Footer() {
             </div>
             <ul className="mt-6 space-y-4">
               <li>
-                <span
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
+                <Link
+                  href="#"
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
                 >
                   Privacy
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </span>
+                </Link>
               </li>
               <li>
-                <span
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
+                <Link
+                  href="#"
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
                 >
                   Terms
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </span>
+                </Link>
               </li>
               <li>
-                <span
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground cursor-default"
+                <Link
+                  href="#"
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
                 >
                   Cookies
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </span>
+                </Link>
               </li>
             </ul>
           </div>
@@ -143,11 +150,11 @@ export function Footer() {
             <ul className="mt-6 space-y-4">
               <li>
                 <a
-                  href="mailto:hello@shareonsocial.in"
+                  href="mailto:hello@shareonsocial.agency"
                   className="group flex items-center gap-3 text-[15px] text-foreground/80 transition-colors hover:text-foreground"
                 >
                   <Mail className="h-4 w-4 opacity-70 group-hover:opacity-100" />
-                  hello@shareonsocial.in
+                  hello@shareonsocial.agency
                 </a>
               </li>
               <li className="flex items-center gap-5 pt-2">
@@ -184,17 +191,60 @@ export function Footer() {
                     <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
                   </svg>
                 </a>
-
               </li>
             </ul>
           </div>
 
         </div>
 
+        {/* Presence Section */}
+        <div className="mt-20 border-t border-foreground/10 pt-16">
+          <div className="text-center">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-foreground/50">
+              Our Presence
+            </h3>
+          </div>
+          
+          <div className="mt-12 flex flex-col items-center gap-12 text-center md:gap-16">
+            
+            {/* INDIA */}
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-background px-4 py-1.5 text-sm font-medium shadow-sm">
+                <span>🇮🇳</span> INDIA
+              </div>
+              <div className="mt-6 text-[15px]">
+                <p className="font-medium text-foreground">
+                  Head Office: <span className="font-normal text-foreground/70">Gandhinagar, Gujarat</span>
+                </p>
+                <p className="mt-3 font-medium text-foreground">
+                  Cities: <span className="font-normal text-foreground/70">Ahmedabad • Vadodara • Jaipur • Mount Abu • Delhi • Mumbai</span>
+                </p>
+              </div>
+            </div>
+
+            {/* GLOBAL */}
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-background px-4 py-1.5 text-sm font-medium shadow-sm">
+                <span>🌍</span> GLOBAL
+              </div>
+              <div className="mt-6 flex flex-wrap justify-center gap-x-4 gap-y-2 text-[15px] font-medium text-foreground/70 md:gap-x-6">
+                <span>🇺🇸 California, USA</span>
+                <span className="hidden md:inline text-foreground/30">•</span>
+                <span>🇬🇧 London, UK</span>
+                <span className="hidden md:inline text-foreground/30">•</span>
+                <span>🇨🇦 Ontario, Canada</span>
+                <span className="hidden md:inline text-foreground/30">•</span>
+                <span>🇳🇿 Auckland, New Zealand</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-foreground/10 py-8 text-sm text-foreground/60 md:flex-row">
-          <span>Powered by Techtorix Technologies</span>
-          <span>© 2026 ShareOnSocial. All rights reserved.</span>
+        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-foreground/10 py-8 text-sm text-foreground/60 md:flex-row">
+          <span>© 2026 ShareOnSocial. All Rights Reserved.</span>
+          <span>Built in India. Growing Brands Worldwide.</span>
         </div>
       </div>
     </footer>

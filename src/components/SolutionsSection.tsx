@@ -425,10 +425,13 @@ export function SolutionsSection() {
                       Storyboarding
                     </li>
                     <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
-                      Video editing
+                      Video Editing
                     </li>
                     <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
-                      AI reels
+                      AI Content
+                    </li>
+                    <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
+                      Graphics Designing
                     </li>
                   </ul>
                 </div>
@@ -708,6 +711,12 @@ export function SolutionsSection() {
                     <li className="rounded-full px-3 py-1 text-xs bg-[#EC4899] text-white transition-all duration-[250ms] hover:-translate-y-0.5 hover:brightness-90 cursor-default shadow-sm hover:shadow-md">
                       Social Media Management
                     </li>
+                    <li className="rounded-full px-3 py-1 text-xs bg-[#0EA5E9] text-white transition-all duration-[250ms] hover:-translate-y-0.5 hover:brightness-90 cursor-default shadow-sm hover:shadow-md">
+                      Email Marketing
+                    </li>
+                    <li className="rounded-full px-3 py-1 text-xs bg-[#F43F5E] text-white transition-all duration-[250ms] hover:-translate-y-0.5 hover:brightness-90 cursor-default shadow-sm hover:shadow-md">
+                      Lead Generation
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -805,16 +814,16 @@ export function SolutionsSection() {
                       CRM
                     </li>
                     <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
-                      Business automation
+                      AI Agents
                     </li>
                     <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
-                      AI
+                      Workflow Automation
                     </li>
                     <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
-                      WhatsApp
+                      Integrations
                     </li>
                     <li className="rounded-full border border-current/20 px-3 py-1 text-xs backdrop-blur">
-                      Email
+                      Customer Portals
                     </li>
                   </ul>
                 </div>

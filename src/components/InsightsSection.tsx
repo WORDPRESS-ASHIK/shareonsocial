@@ -6,11 +6,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { insights, Insight } from "@/data/insights";
 
-export function InsightsSection({ insightsData = insights }: { insightsData?: Insight[] }) {
+export function InsightsSection({ insightsData = insights, hideIntro = false }: { insightsData?: Insight[], hideIntro?: boolean }) {
   return (
-    <section className="mx-auto mt-16 max-w-[1400px] px-6 md:mt-32 md:px-10">
-      <div className="flex items-end justify-between gap-6">
-        <div className="max-w-3xl">
+    <section className={`mx-auto max-w-[1400px] px-6 md:px-10 ${hideIntro ? 'mt-8 md:mt-12' : 'mt-16 md:mt-32'}`}>
+      <div className={`flex items-end ${hideIntro ? 'justify-end' : 'justify-between'} gap-6`}>
+        {!hideIntro && (
+          <div className="max-w-3xl">
           <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-foreground/50">
             <span className="inline-block h-px w-8 bg-foreground/40"></span>
             Insights
@@ -22,6 +23,7 @@ export function InsightsSection({ insightsData = insights }: { insightsData?: In
             Actionable insights, proven marketing tips, and practical growth strategies to help business owners scale smarter.
           </p>
         </div>
+        )}
         <Link
           href="/insights"
           className="hidden shrink-0 rounded-full border border-foreground/15 px-5 py-3 text-sm hover:bg-foreground/5 md:inline-flex"
@@ -29,7 +31,7 @@ export function InsightsSection({ insightsData = insights }: { insightsData?: In
           All insights →
         </Link>
       </div>
-      <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className={`${hideIntro ? 'mt-6' : 'mt-14'} grid gap-6 md:grid-cols-2 lg:grid-cols-3`}>
         {insightsData.map((insight, index) => (
           <motion.article
             key={index}

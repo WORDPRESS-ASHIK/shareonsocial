@@ -8,7 +8,7 @@ import Link from "next/link";
 const faqs = [
   {
     question: "What types of businesses do you work with?",
-    answer: "We partner with ambitious brands across various industries—from retail and hospitality to B2B SaaS and healthcare—who are ready to scale and dominate their market."
+    answer: "We partner with ambitious brands across various industries from retail and hospitality to B2B SaaS and healthcare who are ready to scale and dominate their market."
   },
   {
     question: "What services do you offer?",

@@ -70,7 +70,7 @@ export default function AboutPage() {
                   We bring strategy, design, and technology together to help businesses grow. From your first campaign to long-term success, our team works with you every step of the way.
                 </p>
                 <p>
-                  We're more than a service provider—we're your growth partner. We focus on building stronger brands, generating better results, and helping your business grow with confidence.
+                  We're more than a service provider we're your growth partner. We focus on building stronger brands, generating better results, and helping your business grow with confidence.
                 </p>
               </div>
 
