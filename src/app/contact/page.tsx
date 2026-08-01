@@ -138,32 +138,29 @@ export default function ContactPage() {
                     </div>
                  </motion.div>
                  
-                 {/* Right Map/Location Card */}
+                 {/* Right Locations Grid */}
                  <motion.div
                    initial={{ opacity: 0, y: 20 }}
                    whileInView={{ opacity: 1, y: 0 }}
                    viewport={{ once: true }}
-                   className="relative bg-[#FAFAFA] rounded-[28px] overflow-hidden border border-[rgba(0,0,0,0.04)] min-h-[520px] h-full w-full flex items-center justify-center group"
+                   className="relative bg-[#FAFAFA] rounded-[32px] p-6 md:p-10 border border-[rgba(0,0,0,0.04)] h-full w-full flex flex-col justify-center"
                  >
-                    {/* Google Maps Embed */}
-                    <iframe 
-                      src="https://maps.google.com/maps?q=Melbourne,%20Victoria,%20Australia&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                      width="100%" 
-                      height="100%" 
-                      style={{ border: 0, position: 'absolute', top: 0, left: 0 }} 
-                      allowFullScreen={false} 
-                      loading="lazy" 
-                      referrerPolicy="no-referrer-when-downgrade"
-                      className="transition-transform duration-1000 ease-in-out group-hover:scale-[1.02]"
-                    ></iframe>
-                    
-                    {/* Location Pin Badge Overlay */}
-                    <div className="relative z-10 bg-white/80 backdrop-blur-xl border border-white/20 rounded-2xl p-6 shadow-2xl flex flex-col items-center text-center max-w-[240px] transition-transform duration-500 group-hover:-translate-y-2 pointer-events-none">
-                       <div className="w-12 h-12 bg-[color:var(--brand-orange)]/10 rounded-full flex items-center justify-center mb-4 shadow-sm">
-                          <MapPin className="h-6 w-6 text-[color:var(--brand-orange)]" />
-                       </div>
-                       <h3 className="font-bold text-lg mb-1 text-foreground/90">Share<span className="text-[color:var(--brand-orange)]">On</span>Social</h3>
-                       <p className="text-sm text-foreground/60">Melbourne, Victoria<br/>Australia</p>
+                    <div className="flex flex-wrap justify-center gap-4 md:gap-6 w-full">
+                      {["INDIA", "USA", "UK", "Canada", "New Zealand"].map((country, i) => (
+                        <motion.div
+                           key={country}
+                           initial={{ opacity: 0, scale: 0.95, y: 10 }}
+                           whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                           viewport={{ once: true }}
+                           transition={{ delay: 0.1 * i, duration: 0.4 }}
+                           className="bg-white rounded-[24px] p-4 flex flex-col items-center justify-center text-center shadow-[0_4px_20px_-10px_rgba(0,0,0,0.08)] border border-[rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_-10px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-300 w-full sm:w-[calc(50%-8px)] md:w-[calc(33.333%-16px)] lg:w-[calc(50%-12px)] xl:w-[calc(33.333%-16px)] aspect-square group"
+                        >
+                           <div className="w-14 h-14 bg-[color:var(--brand-orange)]/10 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-[color:var(--brand-orange)]/20 transition-all duration-300 shadow-sm">
+                              <MapPin className="h-6 w-6 text-[color:var(--brand-orange)]" />
+                           </div>
+                           <h4 className="font-bold text-xl tracking-tight text-foreground/90">{country}</h4>
+                        </motion.div>
+                      ))}
                     </div>
                  </motion.div>
                  
