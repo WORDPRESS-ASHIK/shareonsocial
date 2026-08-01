@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 export async function POST(request: Request) {
   try {
     const data = await request.json();
-    const { location, name, email, company, services, details } = data;
+    const { name, email, ...otherData } = data;
 
     // 1. Configure the SMTP transporter
     const transporter = nodemailer.createTransport({
@@ -13,24 +13,30 @@ export async function POST(request: Request) {
       secure: true, // true for 465, false for other ports
       auth: {
         user: 'info@shareonsocial.agency',
-        pass: 'T#9bM=KRAu',
+        pass: 'aP5HbNN$jL8=',
       },
     });
+
+    // Dynamically build the HTML for all submitted fields
+    const formattedData = Object.entries(otherData)
+      .filter(([key, value]) => value !== undefined && value !== '')
+      .map(([key, value]) => {
+        const formattedKey = key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1');
+        const formattedValue = Array.isArray(value) ? value.join(', ') : value;
+        return `<p><strong>${formattedKey}:</strong> ${formattedValue}</p>`;
+      })
+      .join('');
 
     // 2. Email to the Admin
     const adminMailOptions = {
       from: '"Share On Social Contact Form" <info@shareonsocial.agency>',
       to: 'info@shareonsocial.agency',
-      subject: `New Contact Form Enquiry from ${name}`,
+      subject: `New Enquiry from ${name || 'Website Visitor'}`,
       html: `
         <h2>New Enquiry Received</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Company:</strong> ${company || 'N/A'}</p>
-        <p><strong>Location:</strong> ${location || 'N/A'}</p>
-        <p><strong>Services Needed:</strong> ${services || 'N/A'}</p>
-        <p><strong>Additional Details:</strong></p>
-        <p>${details || 'N/A'}</p>
+        <p><strong>Name:</strong> ${name || 'N/A'}</p>
+        <p><strong>Email:</strong> ${email || 'N/A'}</p>
+        ${formattedData}
       `,
     };
 
@@ -40,9 +46,9 @@ export async function POST(request: Request) {
       to: email,
       subject: 'Thank you for reaching out to Share On Social!',
       html: `
-        <h2>Hi ${name},</h2>
-        <p>Thank you for getting in touch with us! We have received your enquiry regarding <strong>${services || 'our services'}</strong>.</p>
-        <p>Our team will review your details and get back to you within one business day.</p>
+        <h2>Hi ${name || 'there'},</h2>
+        <p>Thank you for getting in touch with us! We have received your enquiry.</p>
+        <p>Our team will review your details and get back to you as soon as possible.</p>
         <br/>
         <p>Best regards,</p>
         <p><strong>The Share On Social Team</strong></p>
@@ -51,7 +57,9 @@ export async function POST(request: Request) {
 
     // 4. Send both emails
     await transporter.sendMail(adminMailOptions);
-    await transporter.sendMail(visitorMailOptions);
+    if (email) {
+      await transporter.sendMail(visitorMailOptions);
+    }
 
     return NextResponse.json(
       { message: 'Emails sent successfully!' },

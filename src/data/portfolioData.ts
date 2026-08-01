@@ -517,7 +517,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-real-estate.jpg",
     "color": "#E84FA5"
   },
   {
@@ -593,7 +593,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-property-management.jpg",
     "color": "#1F73D8"
   },
   {
@@ -747,7 +747,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-coaching-rajasthan.jpg",
     "color": "#FF8A00"
   },
   {
@@ -1152,7 +1152,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-cleaning.jpg",
     "color": "#E84FA5"
   },
   {
