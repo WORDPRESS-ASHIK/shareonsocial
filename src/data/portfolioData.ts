@@ -70,7 +70,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-hospital.jpg",
     "color": "#18BFD3"
   },
   {
@@ -143,7 +143,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "/images/optimized/industry_hotels.png",
+    "image": "/images/portfolio-hotel.jpg",
     "color": "#FF8A00"
   },
   {
@@ -214,7 +214,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-mount-abu.jpg",
     "color": "#E84FA5"
   },
   {
@@ -441,7 +441,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-saree.jpg",
     "color": "#FF8A00"
   },
   {
@@ -670,7 +670,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-school.jpg",
     "color": "#18BFD3"
   },
   {
@@ -824,7 +824,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-construction.jpg",
     "color": "#E84FA5"
   },
   {
@@ -900,7 +900,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-construction-sg.jpg",
     "color": "#1F73D8"
   },
   {
@@ -1380,7 +1380,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-electrician.jpg",
     "color": "#FF8A00"
   },
   {
@@ -1458,7 +1458,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-ro.jpg",
     "color": "#E84FA5"
   },
   {
@@ -1535,7 +1535,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-salon.jpg",
     "color": "#1F73D8"
   },
   {
@@ -1612,7 +1612,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-salon-mumbai.jpg",
     "color": "#18BFD3"
   },
   {
@@ -1689,7 +1689,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "/images/optimized/industry_portfolio.png",
+    "image": "/images/portfolio-salon-bengaluru.jpg",
     "color": "#FF8A00"
   },
   {
@@ -1840,7 +1840,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-ticket-booking.jpg",
     "color": "#1F73D8"
   },
   {
@@ -1916,7 +1916,7 @@ export const PORTFOLIO_PROJECTS: Project[] = [
       "primaryBtn": "Book a Call",
       "secondaryBtn": "Start Your Project"
     },
-    "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=800&q=75&auto=format&fit=crop",
+    "image": "/images/portfolio-travel-ahmedabad.jpg",
     "color": "#18BFD3"
   }
 ];
