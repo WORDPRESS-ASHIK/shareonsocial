@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import * as motion from "framer-motion/client";
 import { IndustryCardData } from "@/data/industriesCardsData";
+import Link from "next/link";
 
 const industryImages: Record<string, string> = {
   'restaurants-cafes': '/images/optimized/industry_restaurants.png',
@@ -49,8 +50,9 @@ export const IndustryCard = React.memo(({ industry, index }: IndustryCardProps) 
       viewport={{ once: true, margin: "100px" }}
       transition={{ duration: 0.5, delay: index * 0.05 }}
     >
-      <div
-        className="group relative flex flex-col h-full bg-white border border-[rgba(0,0,0,0.08)] rounded-[28px] px-8 pt-8 pb-7 shadow-sm transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl hover:border-[#FF8A00] will-change-transform will-change-opacity cursor-default"
+      <Link
+        href="/book"
+        className="group relative flex flex-col h-full bg-white border border-[rgba(0,0,0,0.08)] rounded-[28px] px-8 pt-8 pb-7 shadow-sm transition-all duration-200 ease-out hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl hover:border-[#FF8A00] will-change-transform will-change-opacity"
       >
         <div>
           <div className="relative w-full h-[250px] mb-6 overflow-hidden rounded-[20px] shadow-sm transform-gpu will-change-transform">
@@ -91,7 +93,7 @@ export const IndustryCard = React.memo(({ industry, index }: IndustryCardProps) 
             </span>
           </div>
         </div>
-      </div>
+      </Link>
     </motion.div>
   );
 });
