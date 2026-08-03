@@ -18,11 +18,48 @@ export function PortfolioContent() {
     "Startups",
   ];
 
+  const indianKeywords = [
+    "jaipur",
+    "udaipur",
+    "mount abu",
+    "surat",
+    "ahmedabad",
+    "delhi",
+    "rajasthan",
+    "vadodara",
+    "mumbai",
+    "bengaluru",
+    "gandhinagar",
+    "gujarat",
+    "india"
+  ];
+
+  const indiaProjects = PORTFOLIO_PROJECTS.filter(project => {
+    const clientLower = project.client.toLowerCase();
+    return indianKeywords.some(keyword => clientLower.includes(keyword));
+  });
+
+  const globalProjects = PORTFOLIO_PROJECTS.filter(project => {
+    const clientLower = project.client.toLowerCase();
+    return !indianKeywords.some(keyword => clientLower.includes(keyword));
+  });
+
   return (
     <>
       <MarqueeSection items={marqueeItems} />
       <div className="mt-16 md:mt-24">
-        <ProjectGrid projects={PORTFOLIO_PROJECTS} />
+        <ProjectGrid 
+          projects={indiaProjects} 
+          title="India Projects"
+          subtitle="Success stories from businesses across India."
+          className="mb-20 md:mb-28"
+        />
+        <ProjectGrid 
+          projects={globalProjects} 
+          title="Global Projects"
+          subtitle="Helping businesses grow across Australia, Singapore, the USA, the UK, Canada, New Zealand and beyond."
+          className="mb-24 md:mb-32"
+        />
       </div>
     </>
   );

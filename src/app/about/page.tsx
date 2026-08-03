@@ -45,7 +45,7 @@ export default function AboutPage() {
               <div className="hidden flex-1 md:block">
                 <div className="relative h-full min-h-[250px] w-full max-w-[450px] overflow-hidden rounded-2xl bg-foreground/5">
                     <Image
-                      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2800&auto=format&fit=crop"
+                      src="/about-growth-3d.png"
                       alt="Business Growth and Collaboration"
                       fill
                       className="object-cover opacity-90 transition-transform duration-700 hover:scale-105"
