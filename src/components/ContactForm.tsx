@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight, CheckCircle2, Check, Search } from "lucide-react";
 import Link from "next/link";
+import { PhoneInput } from "./PhoneInput";
 
 type FieldConfig = {
   id: string;
@@ -67,7 +68,8 @@ const steps: FieldConfig[] = [
       "AI",
       "CRM",
       "Automation",
-      "Sales"
+      "Sales",
+      "Outdoor Marketing"
     ]
   },
   {
@@ -158,13 +160,21 @@ const MultiField = ({ fields, formData, setFormData }: { fields: any[], formData
     <div className="flex flex-col gap-4">
       {fields.map(f => (
         <div key={f.id}>
-          <input
-            type={f.type}
-            placeholder={f.label}
-            className="w-full rounded-2xl border border-foreground/15 bg-background px-5 py-4 text-lg outline-none placeholder:text-foreground/40 focus:border-foreground/40"
-            value={formData[f.id] || ""}
-            onChange={(e) => setFormData({ ...formData, [f.id]: e.target.value })}
-          />
+          {f.id === "phone" && f.type === "tel" ? (
+            <PhoneInput
+              name={f.id}
+              value={formData[f.id] || ""}
+              onChange={(v) => setFormData((prev: any) => ({ ...prev, [f.id]: v }))}
+            />
+          ) : (
+            <input
+              type={f.type}
+              placeholder={f.label}
+              className="w-full rounded-2xl border border-foreground/15 bg-background px-5 py-4 text-lg outline-none placeholder:text-foreground/40 focus:border-foreground/40"
+              value={formData[f.id] || ""}
+              onChange={(e) => setFormData({ ...formData, [f.id]: e.target.value })}
+            />
+          )}
         </div>
       ))}
     </div>

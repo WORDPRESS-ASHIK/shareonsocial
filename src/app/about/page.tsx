@@ -38,11 +38,7 @@ export default function AboutPage() {
         <section className="mx-auto mt-32 max-w-[1400px] px-6 md:mt-48 md:px-10">
           <div className="grid gap-10 md:grid-cols-12 md:items-stretch">
             <div className="md:col-span-5 flex flex-col">
-              <div className="mb-12 text-xs uppercase tracking-[0.25em] text-foreground/50">
-                <span className="mr-3 inline-block h-px w-6 translate-y-[-3px] bg-foreground/40"></span>
-                About
-              </div>
-              <div className="hidden flex-1 md:block">
+            <div className="hidden flex-1 md:block">
                 <div className="relative h-full min-h-[250px] w-full max-w-[450px] overflow-hidden rounded-2xl bg-foreground/5">
                     <Image
                       src="/about-growth-3d.png"

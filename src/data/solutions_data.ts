@@ -498,31 +498,27 @@ export const solutionsData: SolutionData[] = [
         "steps": [
           {
             "title": "1. Discovery",
-            "description": "We learn about your business, audience, competitors, goals, services, and required features."
+            "description": "Understand your business, goals, audience, and project requirements."
           },
           {
             "title": "2. Structure",
-            "description": "We create the sitemap, page hierarchy, user journey, and content plan."
+            "description": "Plan the sitemap, user journey, and content structure."
           },
           {
             "title": "3. Design",
-            "description": "We develop the visual direction, layouts, interface elements, and responsive design."
+            "description": "Create the visual design, layouts, and responsive interface."
           },
           {
             "title": "4. Development",
-            "description": "We build the website, add the required functionality, and connect integrations."
+            "description": "Build the website, features, and required integrations."
           },
           {
-            "title": "5. Content and Testing",
-            "description": "We add approved content and test the website across devices, browsers, forms, and user pathways."
+            "title": "5. Content & Testing",
+            "description": "Add content and test performance across all devices."
           },
           {
-            "title": "6. Launch",
-            "description": "After final approval, the website is prepared for launch and made live."
-          },
-          {
-            "title": "7. Ongoing Support",
-            "description": "We can manage updates, campaigns, content changes, technical maintenance, and future improvements."
+            "title": "6. Launch & Support",
+            "description": "Launch your website and provide ongoing updates and support."
           }
         ]
       },
@@ -798,31 +794,27 @@ export const solutionsData: SolutionData[] = [
         "steps": [
           {
             "title": "1. Audit",
-            "description": "We review your website structure, content, technical setup, local visibility, and current search performance."
+            "description": "Review your website, SEO health, and current search performance."
           },
           {
             "title": "2. Research",
-            "description": "We identify relevant keywords, customer questions, competitor opportunities, and search intent."
+            "description": "Identify keywords, competitors, and search opportunities."
           },
           {
-            "title": "3. Plan",
-            "description": "We create a prioritised strategy covering technical work, page optimisation, content, local visibility, and AEO improvements."
+            "title": "3. Strategy",
+            "description": "Create a clear SEO plan for growth and visibility."
           },
           {
             "title": "4. Optimise",
-            "description": "We update website pages, metadata, headings, internal links, content, and technical elements."
+            "description": "Improve content, technical SEO, and on-page elements."
           },
           {
             "title": "5. Build",
-            "description": "We create new pages and resources where additional search coverage is needed."
+            "description": "Create new pages and content to expand search reach."
           },
           {
-            "title": "6. Monitor",
-            "description": "We track visibility, traffic, enquiries, rankings, and content performance."
-          },
-          {
-            "title": "7. Improve",
-            "description": "We continue refining the strategy based on performance and changing search behaviour."
+            "title": "6. Monitor & Improve",
+            "description": "Track performance and continuously refine the strategy."
           }
         ]
       },
@@ -1710,31 +1702,27 @@ export const solutionsData: SolutionData[] = [
         "steps": [
           {
             "title": "1. Understand",
-            "description": "We review how your business currently receives enquiries, manages customers and completes follow-ups."
+            "description": "Review your business, enquiries, and customer workflow."
           },
           {
             "title": "2. Map",
-            "description": "We document the customer journey, team responsibilities, lead stages and repeated tasks."
+            "description": "Define the customer journey, tasks, and lead stages."
           },
           {
             "title": "3. Design",
-            "description": "We plan the CRM structure, automation workflows, integrations and reporting requirements."
+            "description": "Plan the CRM, automations, and integrations."
           },
           {
             "title": "4. Build",
-            "description": "We configure the system, pipelines, forms, notifications, templates and automation rules."
+            "description": "Set up pipelines, forms, workflows, and automations."
           },
           {
             "title": "5. Test",
-            "description": "We test the customer journey and internal workflows to identify gaps before launch."
+            "description": "Test workflows and fix issues before launch."
           },
           {
-            "title": "6. Implement",
-            "description": "The system is introduced into the business with the required users, processes and integrations."
-          },
-          {
-            "title": "7. Improve",
-            "description": "We can continue refining workflows as your team, services and customer volume grow."
+            "title": "6. Launch & Improve",
+            "description": "Implement the system and continuously optimise it."
           }
         ]
       },
@@ -2013,31 +2001,27 @@ export const solutionsData: SolutionData[] = [
         "steps": [
           {
             "title": "1. Identify",
-            "description": "We review your current processes and identify where AI could save time or improve customer experience."
+            "description": "Review your processes and identify AI opportunities."
           },
           {
             "title": "2. Prioritise",
-            "description": "We focus on practical opportunities with clear business value rather than automating everything at once."
+            "description": "Focus on high-impact automation with real business value."
           },
           {
             "title": "3. Design",
-            "description": "We map the workflow, required information, human approvals, integrations and expected outcomes."
+            "description": "Plan workflows, approvals, and system integrations."
           },
           {
             "title": "4. Build",
-            "description": "We configure the assistant, automation or AI-supported process around your business requirements."
+            "description": "Develop AI solutions tailored to your business."
           },
           {
             "title": "5. Test",
-            "description": "We test accuracy, customer journeys, escalation points and system behaviour before launch."
+            "description": "Validate accuracy, workflows, and user experience."
           },
           {
-            "title": "6. Implement",
-            "description": "The solution is introduced into your business with the appropriate controls and team access."
-          },
-          {
-            "title": "7. Improve",
-            "description": "We refine prompts, workflows and integrations based on real use and changing business needs."
+            "title": "6. Launch & Improve",
+            "description": "Deploy the solution and continuously optimise performance."
           }
         ]
       },
@@ -2271,31 +2255,27 @@ export const solutionsData: SolutionData[] = [
         "steps": [
           {
             "title": "1. Understand",
-            "description": "We learn about your audience, campaign goals, locations, offer and wider marketing activity."
+            "description": "Learn about your audience, goals, and campaign objectives."
           },
           {
             "title": "2. Plan",
-            "description": "We define the campaign message, format, placement direction, call to action and supporting digital journey."
+            "description": "Define the message, strategy, and campaign direction."
           },
           {
             "title": "3. Create",
-            "description": "Our team develops the copy, design and required creative variations."
+            "description": "Design impactful visuals and compelling campaign copy."
           },
           {
             "title": "4. Prepare",
-            "description": "We adapt the artwork to the required dimensions, print specifications and placement formats."
+            "description": "Optimise artwork for print and digital placements."
           },
           {
             "title": "5. Coordinate",
-            "description": "Where included, we support communication with media owners, printers or campaign partners."
+            "description": "Manage production and campaign delivery requirements."
           },
           {
-            "title": "6. Launch",
-            "description": "The campaign is installed, displayed or activated across the selected locations."
-          },
-          {
-            "title": "7. Review",
-            "description": "Where tracking is available, we review enquiries, QR activity, website traffic, campaign codes and digital response."
+            "title": "6. Launch & Review",
+            "description": "Launch the campaign and measure its performance."
           }
         ]
       },

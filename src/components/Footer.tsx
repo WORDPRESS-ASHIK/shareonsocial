@@ -125,11 +125,11 @@ export function Footer() {
             <ul className="mt-6 space-y-4">
               <li>
                 <a
-                  href="mailto:hello@shareonsocial.agency"
+                  href="mailto:info@shareonsocial.agency"
                   className="group flex items-center gap-3 text-[15px] text-foreground/80 transition-colors hover:text-foreground"
                 >
                   <Mail className="h-4 w-4 opacity-70 group-hover:opacity-100" />
-                  hello@shareonsocial.agency
+                  info@shareonsocial.agency
                 </a>
               </li>
               <li className="flex items-center gap-5 pt-2">

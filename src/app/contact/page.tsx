@@ -112,7 +112,7 @@ export default function ContactPage() {
                           </div>
                           <div>
                              <h4 className="font-medium text-sm text-foreground/90">Email</h4>
-                             <p className="text-foreground/70 text-sm mt-0.5">hello@shareonsocial.agency</p>
+                             <p className="text-foreground/70 text-sm mt-0.5">info@shareonsocial.agency</p>
                           </div>
                        </div>
                        

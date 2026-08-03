@@ -4,6 +4,7 @@ import { useState } from "react";
 import { CheckCircle2, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { PhoneInput } from "./PhoneInput";
 
 const industries = [
   "Restaurants & Cafés",
@@ -174,14 +175,10 @@ export function SimpleContactForm() {
                 
                 <div className="flex flex-col gap-2">
                   <label htmlFor="phone" className="text-sm font-medium text-foreground/80">Phone Number</label>
-                  <input
-                    id="phone"
+                  <PhoneInput
                     name="phone"
-                    type="tel"
                     value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full rounded-2xl border border-foreground/15 bg-background px-5 py-4 text-lg outline-none placeholder:text-foreground/40 focus:border-foreground/40 transition-colors"
-                    placeholder="+1 (555) 000-0000"
+                    onChange={(v) => setFormData(prev => ({ ...prev, phone: v }))}
                   />
                 </div>
               </div>

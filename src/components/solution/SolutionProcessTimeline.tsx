@@ -21,7 +21,7 @@ export function SolutionProcessTimeline({ data }: { data: SolutionData['process'
 
         <div className="relative mt-20">
           {/* Horizontal Line Background (Desktop) */}
-          <div className="hidden lg:block absolute top-[28px] left-0 right-0 h-0.5 bg-foreground/10" />
+          <div className="hidden lg:block absolute top-[28px] left-[8.333%] right-[8.333%] h-0.5 bg-foreground/10" />
           
           {/* Animated Horizontal Line (Desktop) */}
           <motion.div 
@@ -29,7 +29,7 @@ export function SolutionProcessTimeline({ data }: { data: SolutionData['process'
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="hidden lg:block absolute top-[28px] left-0 right-0 h-0.5 bg-gradient-to-r from-[color:var(--color-brand-blue)] via-[color:var(--color-brand-purple)] to-[color:var(--color-brand-pink)] origin-left"
+            className="hidden lg:block absolute top-[28px] left-[8.333%] right-[8.333%] h-0.5 bg-gradient-to-r from-[color:var(--color-brand-blue)] via-[color:var(--color-brand-purple)] to-[color:var(--color-brand-pink)] origin-left"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-6 relative z-10">
