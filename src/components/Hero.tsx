@@ -223,9 +223,9 @@ export function Hero() {
             Not another marketing agency.
           </span>
         </motion.div>
-        <h1 className="max-w-[16ch] font-display text-[clamp(3rem,9vw,10rem)] leading-[0.9] tracking-[-0.045em] text-balance">
+        <h1 className="w-full md:max-w-[16ch] font-display text-[clamp(2.25rem,11vw,4rem)] md:text-[clamp(3rem,9vw,10rem)] leading-[0.85] md:leading-[0.9] tracking-[-0.045em] text-balance">
           Your partner in{" "}
-          <span className="relative inline-block">
+          <span className="relative inline-block whitespace-nowrap">
             <span className="bg-gradient-to-r from-[color:var(--color-brand-blue)] via-[color:var(--color-brand-pink)] to-[color:var(--color-brand-orange)] bg-clip-text text-transparent">
               business growth
             </span>
