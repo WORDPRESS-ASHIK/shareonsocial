@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Search, PenTool, Link2, TrendingUp } from "lucide-react";
+import { Search, PenTool, Link2, TrendingUp, ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 interface JourneySectionProps {
   className?: string;
@@ -176,6 +177,29 @@ export function JourneySection({ className = "" }: JourneySectionProps) {
           })}
         </div>
       </div>
+
+      {/* CTA Buttons */}
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="mt-16 md:mt-24 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-5"
+      >
+        <Link
+          href="/book"
+          className="group inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-4 text-sm font-medium text-background transition hover:bg-foreground/85 w-full md:w-auto justify-center"
+        >
+          Start Your Project
+          <ArrowUpRight className="h-4 w-4 transition group-hover:rotate-45" />
+        </Link>
+        <Link
+          href="/contact"
+          className="inline-flex items-center gap-2 rounded-full border border-foreground/15 px-6 py-4 text-sm font-medium hover:bg-foreground/5 w-full md:w-auto justify-center"
+        >
+          Connect Now
+        </Link>
+      </motion.div>
     </section>
   );
 }

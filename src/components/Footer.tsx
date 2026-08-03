@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="mt-16 md:mt-32 border-t border-foreground/10 bg-background">
       <div className="mx-auto max-w-[1400px] px-6 pt-16 md:pt-20 md:px-10">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] lg:gap-8">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-8">
           
           {/* Column 1: Logo & CTA */}
           <div className="lg:pr-12">
@@ -58,6 +58,15 @@ export function Footer() {
                   <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
+                >
+                  About
+                  <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -106,41 +115,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Legal */}
-          <div>
-            <div className="text-xs font-semibold uppercase tracking-[0.2em] text-foreground/50">
-              Legal
-            </div>
-            <ul className="mt-6 space-y-4">
-              <li>
-                <Link
-                  href="#"
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
-                >
-                  Privacy
-                  <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
-                >
-                  Terms
-                  <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="group relative inline-flex items-center text-[15px] text-foreground/80 transition-colors hover:text-foreground"
-                >
-                  Cookies
-                  <ArrowRight className="ml-1 h-3 w-3 -translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
-                </Link>
-              </li>
-            </ul>
-          </div>
+
 
           {/* Column 5: Contact */}
           <div>
@@ -170,7 +145,7 @@ export function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.instagram.com/shareonsocial?igsh=MWs0OWZxbHgwcDlnZg%3D%3D"
+                  href="https://www.instagram.com/shareonsocial_in?igsh=MThwYmhhdzAzdTNnMg%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-md"
@@ -243,8 +218,11 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-foreground/10 py-8 text-sm text-foreground/60 md:flex-row">
-          <span>© 2026 ShareOnSocial. All Rights Reserved.</span>
-          <span>Built in India. Growing Brands Worldwide.</span>
+          <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4 text-center md:text-left">
+            <span>© 2026 ShareOnSocial. All Rights Reserved.</span>
+            <span>Unit of Tethorix Technologies</span>
+          </div>
+          <span className="text-center md:text-right">Built in India. Growing Brands Worldwide.</span>
         </div>
       </div>
     </footer>

@@ -7,7 +7,7 @@ export const solutionsData: SolutionData[] = [
     "blocks": [
       {
         "type": "hero",
-        "heading": "Build a Stronger Presence. Stay Consistent. Turn Attention Into Growth.",
+        "heading": "Build a Stronger Presence. Stay Consistent.",
         "description": "Social media should do more than keep your business active. It should help people discover your brand, understand what you offer, trust your business and take the next step.\n\nShareOnSocial manages your social media from strategy and content planning to publishing, engagement and performance improvement. We create a consistent presence built around your audience, industry and business goals.",
         "primaryCta": "Start Your Project",
         "secondaryCta": "Book a Call"
@@ -186,7 +186,7 @@ export const solutionsData: SolutionData[] = [
         "secondaryCta": "Start Your Project"
       }
     ],
-    "shortDescription": "Build a Stronger Presence. Stay Consistent. Turn Attention Into Growth.",
+    "shortDescription": "Build a Stronger Presence. Stay Consistent.",
     "featuredImage": "/images/social-media-management.png",
     "category": "Social • ShareOnSocial",
     "tags": [
@@ -196,7 +196,7 @@ export const solutionsData: SolutionData[] = [
     ],
     "seo": {
       "title": "Social Media Management | Share On Social",
-      "description": "Build a Stronger Presence. Stay Consistent. Turn Attention Into Growth."
+      "description": "Build a Stronger Presence. Stay Consistent."
     }
   },
   {
@@ -375,7 +375,7 @@ export const solutionsData: SolutionData[] = [
     "blocks": [
       {
         "type": "hero",
-        "heading": "Build a Website That Looks Professional and Helps Your Business Grow",
+        "heading": "Creates a Website That Works",
         "description": "Your website should do more than explain who you are. It should help visitors understand your services, trust your business, and take the next step.\n\nShareOnSocial designs and develops responsive, user-friendly websites built around your audience, business goals, and customer journey. From clear structure and compelling content to lead generation, bookings, e-commerce, and automation, every element is created with purpose.",
         "primaryCta": "Start Your Website",
         "secondaryCta": "Book a Call"
@@ -604,7 +604,7 @@ export const solutionsData: SolutionData[] = [
         "secondaryCta": "Book a Call"
       }
     ],
-    "shortDescription": "Build a Website That Looks Professional and Helps Your Business Grow.",
+    "shortDescription": "Creates a Website That Works.",
     "featuredImage": "/images/website-development.jpg",
     "category": "Technology • ShareOnSocial",
     "tags": [
@@ -614,7 +614,7 @@ export const solutionsData: SolutionData[] = [
     ],
     "seo": {
       "title": "Website Development | Share On Social",
-      "description": "Build a Website That Looks Professional and Helps Your Business Grow."
+      "description": "Creates a Website That Works."
     }
   },
   {
@@ -623,7 +623,7 @@ export const solutionsData: SolutionData[] = [
     "blocks": [
       {
         "type": "hero",
-        "heading": "Help More People Find Your Business Across Search Engines and AI Platforms",
+        "heading": "Find Your Business Across Search Engines and AI Platforms",
         "description": "Search is changing. Customers now discover businesses through Google, maps, voice search, featured answers, and AI-powered platforms.\n\nShareOnSocial helps your website become easier to find, understand, and recommend through a connected approach to Search Engine Optimisation and Answer Engine Optimisation.",
         "primaryCta": "Improve Your Visibility",
         "secondaryCta": "Book a Call"
@@ -884,7 +884,7 @@ export const solutionsData: SolutionData[] = [
         "secondaryCta": "Book a Call"
       }
     ],
-    "shortDescription": "Help More People Find Your Business Across Search Engines and AI Platforms.",
+    "shortDescription": "Find Your Business Across Search Engines and AI Platforms.",
     "featuredImage": "/images/seo-aeo.jpg",
     "category": "Digital • ShareOnSocial",
     "tags": [
@@ -894,7 +894,7 @@ export const solutionsData: SolutionData[] = [
     ],
     "seo": {
       "title": "SEO & AEO | Share On Social",
-      "description": "Help More People Find Your Business Across Search Engines and AI Platforms."
+      "description": "Find Your Business Across Search Engines and AI Platforms."
     }
   },
   {
@@ -903,7 +903,7 @@ export const solutionsData: SolutionData[] = [
     "blocks": [
       {
         "type": "hero",
-        "heading": "Reach the Right Audience. Generate Better Leads. Grow With Clearer Data.",
+        "heading": "Reach the Right Audience. Generate Better Leads.",
         "description": "Paid advertising should do more than increase clicks and impressions. It should connect your business with people who are genuinely interested in your products or services and guide them toward a meaningful action.\n\nShareOnSocial plans, creates, manages, and optimises paid campaigns across Google, Meta, and other relevant platforms. Every campaign is built around your audience, offer, location, customer journey, and business goals.",
         "primaryCta": "Start Your Campaign",
         "secondaryCta": "Book a Call"
@@ -1194,7 +1194,7 @@ export const solutionsData: SolutionData[] = [
     "blocks": [
       {
         "type": "hero",
-        "heading": "Create Content That Looks Strong, Sounds Clear and Moves People to Act",
+        "heading": "Create Content That Looks Strong",
         "description": "Good content does more than fill a social media calendar. It helps people notice your business, understand your value, trust your brand and take the next step.\n\nShareOnSocial creates strategic content for websites, social media, advertising and campaigns. Every piece is shaped around your audience, brand voice, platform and business goals.",
         "primaryCta": "Start Creating",
         "secondaryCta": "Book a Call"
@@ -1476,7 +1476,7 @@ export const solutionsData: SolutionData[] = [
     "blocks": [
       {
         "type": "hero",
-        "heading": "Organise Every Lead. Automate Repetitive Work. Create a Smoother Customer Journey.",
+        "heading": "Automate Your Business.",
         "description": "As your business grows, enquiries, follow-ups, customer details and internal tasks can quickly become difficult to manage.\n\nShareOnSocial helps businesses implement connected CRM and automation systems that capture leads, organise information, improve response times and reduce repetitive manual work.",
         "primaryCta": "Automate Your Business",
         "secondaryCta": "Book a Call"
@@ -1777,7 +1777,7 @@ export const solutionsData: SolutionData[] = [
         "secondaryCta": "Book a Call"
       }
     ],
-    "shortDescription": "Organise Every Lead. Automate Repetitive Work. Create a Smoother Customer Journey.",
+    "shortDescription": "Automate Your Business.",
     "featuredImage": "/images/crm-automation.jpg",
     "category": "Technology • ShareOnSocial",
     "tags": [
@@ -1787,7 +1787,7 @@ export const solutionsData: SolutionData[] = [
     ],
     "seo": {
       "title": "CRM & Automation | Share On Social",
-      "description": "Organise Every Lead. Automate Repetitive Work. Create a Smoother Customer Journey."
+      "description": "Automate Your Business."
     }
   },
   {

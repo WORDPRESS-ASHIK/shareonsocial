@@ -59,7 +59,7 @@ export const solutionsData: Record<string, SolutionData> = {
   "social-media-management": {
     "slug": "social-media-management",
     "title": "Social Media Management",
-    "shortDescription": "Build a Stronger Presence. Stay Consistent. Turn Attention Into Growth.",
+    "shortDescription": "Build a Stronger Presence. Stay Consistent.",
     "featuredImage": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1000&auto=format&fit=crop",
     "category": "Social \u2022 ShareOnSocial",
     "tags": [
@@ -69,11 +69,11 @@ export const solutionsData: Record<string, SolutionData> = {
     ],
     "seo": {
       "title": "Social Media Management | Share On Social",
-      "description": "Build a Stronger Presence. Stay Consistent. Turn Attention Into Growth."
+      "description": "Build a Stronger Presence. Stay Consistent."
     },
     "hero": {
       "headline": "Social Media Management",
-      "valueProp": "Build a Stronger Presence. Stay Consistent. Turn Attention Into Growth. Social media should do more than keep your business active. It should help people discover your brand, understand what you offer, trust your business and take the next step. ShareOnSocial manages your social media from strategy and content planning to publishing, engagement and performance improvement. We create a consistent presence built around your audience, industry and business goals.",
+      "valueProp": "Build a Stronger Presence. Stay Consistent. Social media should do more than keep your business active. It should help people discover your brand, understand what you offer, trust your business and take the next step. ShareOnSocial manages your social media from strategy and content planning to publishing, engagement and performance improvement. We create a consistent presence built around your audience, industry and business goals.",
       "ctaPrimary": "Start Your Project",
       "ctaSecondary": "Book a Call",
       "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
@@ -495,7 +495,7 @@ export const solutionsData: Record<string, SolutionData> = {
   "website-development": {
     "slug": "website-development",
     "title": "Website Development",
-    "shortDescription": "Build a Website That Looks Professional and Helps Your Business Grow.",
+    "shortDescription": "Creates a Website That Works.",
     "featuredImage": "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1000&auto=format&fit=crop",
     "category": "Technology \u2022 ShareOnSocial",
     "tags": [
@@ -505,11 +505,11 @@ export const solutionsData: Record<string, SolutionData> = {
     ],
     "seo": {
       "title": "Website Development | Share On Social",
-      "description": "Build a Website That Looks Professional and Helps Your Business Grow."
+      "description": "Creates a Website That Works."
     },
     "hero": {
       "headline": "Website Development",
-      "valueProp": "Build a Website That Looks Professional and Helps Your Business Grow. Your website should do more than explain who you are. It should help visitors understand your services, trust your business, and take the next step. ShareOnSocial designs and develops responsive, user-friendly websites built around your audience, business goals, and customer journey. From clear structure and compelling content to lead generation, bookings, e-commerce, and automation, every element is created with purpose.",
+      "valueProp": "Creates a Website That Works. Your website should do more than explain who you are. It should help visitors understand your services, trust your business, and take the next step. ShareOnSocial designs and develops responsive, user-friendly websites built around your audience, business goals, and customer journey. From clear structure and compelling content to lead generation, bookings, e-commerce, and automation, every element is created with purpose.",
       "ctaPrimary": "Start Your Website",
       "ctaSecondary": "Book a Call",
       "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1000&auto=format&fit=crop",
@@ -718,7 +718,7 @@ export const solutionsData: Record<string, SolutionData> = {
   "seo-aeo": {
     "slug": "seo-aeo",
     "title": "SEO & AEO",
-    "shortDescription": "Help More People Find Your Business\u2014Across Search Engines and AI Platforms.",
+    "shortDescription": "Find Your Business\u2014Across Search Engines and AI Platforms.",
     "featuredImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
     "category": "Digital \u2022 ShareOnSocial",
     "tags": [
@@ -728,11 +728,11 @@ export const solutionsData: Record<string, SolutionData> = {
     ],
     "seo": {
       "title": "SEO & AEO | Share On Social",
-      "description": "Help More People Find Your Business\u2014Across Search Engines and AI Platforms."
+      "description": "Find Your Business\u2014Across Search Engines and AI Platforms."
     },
     "hero": {
       "headline": "SEO & AEO",
-      "valueProp": "Help More People Find Your Business\u2014Across Search Engines and AI Platforms. Search is changing. Customers now discover businesses through Google, maps, voice search, featured answers, and AI-powered platforms. ShareOnSocial helps your website become easier to find, understand, and recommend through a connected approach to Search Engine Optimisation and Answer Engine Optimisation.",
+      "valueProp": "Find Your Business\u2014Across Search Engines and AI Platforms. Search is changing. Customers now discover businesses through Google, maps, voice search, featured answers, and AI-powered platforms. ShareOnSocial helps your website become easier to find, understand, and recommend through a connected approach to Search Engine Optimisation and Answer Engine Optimisation.",
       "ctaPrimary": "Improve Your Visibility",
       "ctaSecondary": "Book a Call",
       "image": "https://images.unsplash.com/photo-1572177812156-58036aae439c?q=80&w=1000&auto=format&fit=crop",
@@ -941,7 +941,7 @@ export const solutionsData: Record<string, SolutionData> = {
   "paid-advertising": {
     "slug": "paid-advertising",
     "title": "Paid Advertising",
-    "shortDescription": "Reach the Right Audience. Generate Better Leads. Grow With Clearer Data.",
+    "shortDescription": "Reach the Right Audience. Generate Better Leads.",
     "featuredImage": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1000&auto=format&fit=crop",
     "category": "Marketing \u2022 ShareOnSocial",
     "tags": [
@@ -951,11 +951,11 @@ export const solutionsData: Record<string, SolutionData> = {
     ],
     "seo": {
       "title": "Paid Advertising | Share On Social",
-      "description": "Reach the Right Audience. Generate Better Leads. Grow With Clearer Data."
+      "description": "Reach the Right Audience. Generate Better Leads."
     },
     "hero": {
       "headline": "Paid Advertising",
-      "valueProp": "Reach the Right Audience. Generate Better Leads. Grow With Clearer Data. Paid advertising should do more than increase clicks and impressions. It should connect your business with people who are genuinely interested in your products or services and guide them toward a meaningful action. ShareOnSocial plans, creates, manages, and optimises paid campaigns across Google, Meta, and other relevant platforms. Every campaign is built around your audience, offer, location, customer journey, and business goals.",
+      "valueProp": "Reach the Right Audience. Generate Better Leads. Paid advertising should do more than increase clicks and impressions. It should connect your business with people who are genuinely interested in your products or services and guide them toward a meaningful action. ShareOnSocial plans, creates, manages, and optimises paid campaigns across Google, Meta, and other relevant platforms. Every campaign is built around your audience, offer, location, customer journey, and business goals.",
       "ctaPrimary": "Launch Your Campaign",
       "ctaSecondary": "Book a Call",
       "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
@@ -1164,7 +1164,7 @@ export const solutionsData: Record<string, SolutionData> = {
   "content-creation": {
     "slug": "content-creation",
     "title": "Content Creation",
-    "shortDescription": "Create Content That Looks Strong, Sounds Clear and Moves People to Act.",
+    "shortDescription": "Create Content That Looks Strong.",
     "featuredImage": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1000&auto=format&fit=crop",
     "category": "Content \u2022 ShareOnSocial",
     "tags": [
@@ -1174,11 +1174,11 @@ export const solutionsData: Record<string, SolutionData> = {
     ],
     "seo": {
       "title": "Content Creation | Share On Social",
-      "description": "Create Content That Looks Strong, Sounds Clear and Moves People to Act."
+      "description": "Create Content That Looks Strong."
     },
     "hero": {
       "headline": "Content Creation",
-      "valueProp": "Create Content That Looks Strong, Sounds Clear and Moves People to Act. Good content does more than fill a social media calendar. It helps people notice your business, understand your value, trust your brand and take the next step. ShareOnSocial creates strategic content for websites, social media, advertising and campaigns. Every piece is shaped around your audience, brand voice, platform and business goals.",
+      "valueProp": "Create Content That Looks Strong. Good content does more than fill a social media calendar. It helps people notice your business, understand your value, trust your brand and take the next step. ShareOnSocial creates strategic content for websites, social media, advertising and campaigns. Every piece is shaped around your audience, brand voice, platform and business goals.",
       "ctaPrimary": "Start Creating",
       "ctaSecondary": "Book a Call",
       "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1000&auto=format&fit=crop",
@@ -1387,7 +1387,7 @@ export const solutionsData: Record<string, SolutionData> = {
   "crm-automation": {
     "slug": "crm-automation",
     "title": "CRM & Automation",
-    "shortDescription": "Organise Every Lead. Automate Repetitive Work. Create a Smoother Customer Journey.",
+    "shortDescription": "Automate Your Business.",
     "featuredImage": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=1000&auto=format&fit=crop",
     "category": "Technology \u2022 ShareOnSocial",
     "tags": [
@@ -1397,11 +1397,11 @@ export const solutionsData: Record<string, SolutionData> = {
     ],
     "seo": {
       "title": "CRM & Automation | Share On Social",
-      "description": "Organise Every Lead. Automate Repetitive Work. Create a Smoother Customer Journey."
+      "description": "Automate Your Business."
     },
     "hero": {
       "headline": "CRM & Automation",
-      "valueProp": "Organise Every Lead. Automate Repetitive Work. Create a Smoother Customer Journey. As your business grows, enquiries, follow-ups, customer details and internal tasks can quickly become difficult to manage. ShareOnSocial helps businesses implement connected CRM and automation systems that capture leads, organise information, improve response times and reduce repetitive manual work.",
+      "valueProp": "Automate Your Business. As your business grows, enquiries, follow-ups, customer details and internal tasks can quickly become difficult to manage. ShareOnSocial helps businesses implement connected CRM and automation systems that capture leads, organise information, improve response times and reduce repetitive manual work.",
       "ctaPrimary": "Automate Your Business",
       "ctaSecondary": "Book a Call",
       "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop",

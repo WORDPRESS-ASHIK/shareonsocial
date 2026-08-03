@@ -102,7 +102,7 @@ export default function ContactPage() {
                           </div>
                           <div>
                              <h4 className="font-medium text-sm text-foreground/90">Phone & WhatsApp</h4>
-                             <p className="text-foreground/70 text-sm mt-0.5">+61 468 680 237</p>
+                             <p className="text-foreground/70 text-sm mt-0.5">+61 000 000 000</p>
                           </div>
                        </div>
                        
@@ -112,7 +112,7 @@ export default function ContactPage() {
                           </div>
                           <div>
                              <h4 className="font-medium text-sm text-foreground/90">Email</h4>
-                             <p className="text-foreground/70 text-sm mt-0.5">hello@shareonsocial.com.au</p>
+                             <p className="text-foreground/70 text-sm mt-0.5">hello@shareonsocial.agency</p>
                           </div>
                        </div>
                        
@@ -122,7 +122,7 @@ export default function ContactPage() {
                           </div>
                           <div>
                              <h4 className="font-medium text-sm text-foreground/90">Office Location</h4>
-                             <p className="text-foreground/70 text-sm mt-0.5">Melbourne, Victoria, Australia</p>
+                             <p className="text-foreground/70 text-sm mt-0.5">Gandhinagar, Gujarat</p>
                           </div>
                        </div>
                        

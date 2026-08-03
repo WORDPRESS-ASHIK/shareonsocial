@@ -37,20 +37,20 @@ export function SolutionHero({ data }: { data: SolutionData['hero'] }) {
                   href="/book"
                   className="inline-flex h-14 items-center justify-center rounded-full bg-foreground px-8 text-sm font-medium text-background transition-transform hover:scale-105"
                 >
-                  {data.ctaPrimary}
+                  Start Your Project
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
                 <Link 
-                  href="/portfolio"
+                  href="/contact"
                   className="inline-flex h-14 items-center justify-center rounded-full border border-foreground/10 bg-background px-8 text-sm font-medium text-foreground transition-all hover:bg-foreground/5 hover:border-foreground/20"
                 >
-                  {data.ctaSecondary}
+                  Connect Now
                 </Link>
               </div>
             </motion.div>
           </div>
 
-          {/* Right: Image & Floating Stats */}
+          {/* Right: Image */}
           <div className="relative">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -67,26 +67,6 @@ export function SolutionHero({ data }: { data: SolutionData['hero'] }) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             </motion.div>
 
-            {/* Floating Stats */}
-            <div className="absolute -left-6 lg:-left-12 top-1/4 flex flex-col gap-4">
-              {data.stats.map((stat, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.5 + (i * 0.1) }}
-                  className="bg-background/80 backdrop-blur-xl border border-white/20 shadow-xl rounded-2xl p-4 flex flex-col items-center justify-center min-w-[120px]"
-                >
-                  <span className="font-display text-2xl font-bold bg-gradient-to-r from-[color:var(--color-brand-orange)] to-[color:var(--color-brand-pink)] bg-clip-text text-transparent">
-                    {stat.value}
-                  </span>
-                  <span className="text-xs font-medium text-foreground/60 uppercase tracking-wider mt-1 text-center">
-                    {stat.label}
-                  </span>
-                </motion.div>
-              ))}
-            </div>
           </div>
 
         </div>

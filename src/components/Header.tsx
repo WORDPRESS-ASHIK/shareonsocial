@@ -87,7 +87,7 @@ export function Header() {
               href="/book"
               className="hidden rounded-full bg-foreground px-6 py-2.5 text-sm font-medium text-background transition-all duration-200 hover:bg-foreground/85 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 active:scale-95 md:inline-flex"
             >
-              Talk to Our Experts
+              Start Your Project
             </Link>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -137,7 +137,7 @@ export function Header() {
                     onClick={() => setIsMenuOpen(false)}
                     className="inline-flex w-full items-center justify-center rounded-full bg-foreground px-6 py-4 text-base font-medium text-background transition-all hover:bg-foreground/85 active:scale-[0.98]"
                   >
-                    Talk to Our Experts
+                    Start Your Project
                   </Link>
                 </div>
               </nav>

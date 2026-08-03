@@ -35,7 +35,7 @@ export function SolutionMethodology({ data }: { data: SolutionData['ourSolution'
                 className="group relative p-8 md:p-10 rounded-[2rem] bg-card border border-foreground/5 hover:border-foreground/10 transition-all hover:-translate-y-1 hover:shadow-xl overflow-hidden"
               >
                 {/* Large Background Number */}
-                <div className="absolute -top-6 -right-6 text-[120px] font-display font-bold leading-none text-foreground/[0.03] transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-12 pointer-events-none select-none">
+                <div className="absolute top-5 right-5 text-[120px] font-display font-bold leading-none text-foreground/[0.03] transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-12 pointer-events-none select-none">
                   {card.number}
                 </div>
 

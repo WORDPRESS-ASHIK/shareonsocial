@@ -257,14 +257,14 @@ export function Hero() {
               href="/book"
               className="group inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-4 text-sm font-medium text-background transition hover:bg-foreground/85"
             >
-              Build your growth plan
+              Start Your Project
               <ArrowUpRight className="h-4 w-4 transition group-hover:rotate-45" />
             </Link>
             <Link
-              href="/portfolio"
+              href="/contact"
               className="inline-flex items-center gap-2 rounded-full border border-foreground/15 px-6 py-4 text-sm font-medium hover:bg-foreground/5"
             >
-              Our work
+              Connect Now
             </Link>
           </div>
         </div>

@@ -39,13 +39,19 @@ export function PortfolioHero() {
               Explore our portfolio of category-defining work across restaurants, healthcare, retail, and real estate. Real businesses, real results.
             </p>
             
-            <div className="mt-10">
+            <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <Link
+                href="/book"
+                className="group inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-foreground px-7 py-4 text-sm font-medium text-background transition hover:bg-foreground/85"
+              >
+                Start Your Project
+                <ArrowUpRight className="h-4 w-4 transition group-hover:rotate-45" />
+              </Link>
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-2 rounded-full bg-foreground px-7 py-4 text-sm font-medium text-background transition hover:bg-foreground/90"
+                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border border-foreground/15 px-7 py-4 text-sm font-medium hover:bg-foreground/5"
               >
-                Start your project
-                <ArrowUpRight className="h-4 w-4 transition group-hover:rotate-45" />
+                Connect Now
               </Link>
             </div>
           </motion.div>

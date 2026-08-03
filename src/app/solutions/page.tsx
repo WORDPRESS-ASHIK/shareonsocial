@@ -133,10 +133,20 @@ export default function SolutionsPage() {
               );
             })}
           </div>
-          <div className="mt-16 flex justify-center">
-            <a href="/book" className="rounded-full bg-foreground px-7 py-4 text-sm text-background">
-              Build your growth plan →
-            </a>
+          <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/book"
+              className="group inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-full bg-foreground px-7 py-4 text-sm font-medium text-background transition hover:bg-foreground/90"
+            >
+              Start Your Project
+              <ArrowUpRight className="h-4 w-4 transition group-hover:rotate-45" />
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-full border border-foreground/25 px-7 py-4 text-sm font-medium text-foreground transition hover:bg-foreground/5"
+            >
+              Connect Now
+            </Link>
           </div>
         </section>
       </main>

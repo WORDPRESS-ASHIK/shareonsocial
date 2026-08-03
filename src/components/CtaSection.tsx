@@ -66,15 +66,15 @@ export function CtaSection({ heading, description, primaryBtnText = "Let's grow"
               href="/book"
               className="group inline-flex items-center gap-2 rounded-full bg-background px-7 py-4 text-sm font-medium text-foreground transition hover:bg-background/90"
             >
-              {primaryBtnText}
+              Start Your Project
               <ArrowUpRight className="h-4 w-4 transition group-hover:rotate-45" />
             </Link>
-            <a
-              href="https://wa.me/"
-              className="inline-flex items-center gap-2 rounded-full border border-background/25 px-7 py-4 text-sm font-medium hover:bg-background/10"
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 rounded-full border border-background/25 px-7 py-4 text-sm font-medium hover:bg-background/10 text-background"
             >
-              {secondaryBtnText}
-            </a>
+              Connect Now
+            </Link>
           </div>
         </div>
       </div>

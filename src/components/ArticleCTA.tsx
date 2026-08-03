@@ -52,18 +52,20 @@ export function ArticleCTA() {
             Strategy is only the beginning. Let&#x27;s build the system that puts it into action.
           </p>
           
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="mt-14 inline-block"
-          >
+          <div className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+            <Link 
+              href="/book" 
+              className="inline-flex h-16 w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-background px-10 text-base font-medium text-foreground transition-all hover:bg-background/90 hover:scale-105 active:scale-95"
+            >
+              Start Your Project <ArrowRight className="h-5 w-5" />
+            </Link>
             <Link 
               href="/contact" 
-              className="inline-flex h-16 items-center justify-center gap-3 rounded-full bg-background px-10 text-base font-medium text-foreground transition-colors hover:bg-background/90"
+              className="inline-flex h-16 w-full sm:w-auto items-center justify-center gap-3 rounded-full border border-background/25 bg-transparent px-10 text-base font-medium text-background transition-all hover:bg-background/10 hover:scale-105 active:scale-95"
             >
-              Start your growth plan <ArrowRight className="h-5 w-5" />
+              Connect Now
             </Link>
-          </motion.div>
+          </div>
         </div>
       </motion.div>
     </section>

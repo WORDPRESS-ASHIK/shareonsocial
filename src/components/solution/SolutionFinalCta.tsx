@@ -66,14 +66,14 @@ export function SolutionFinalCta({ data }: { data: SolutionData['cta'] }) {
                 href="/book"
                 className="w-full sm:w-auto inline-flex h-14 items-center justify-center rounded-full bg-white px-8 text-sm font-medium text-black transition-transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]"
               >
-                {data.primaryBtnText}
+                Start Your Project
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
               <Link 
                 href="/contact"
                 className="w-full sm:w-auto inline-flex h-14 items-center justify-center rounded-full border border-white/20 bg-transparent px-8 text-sm font-medium text-white transition-all hover:bg-white/10 hover:border-white/40 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)]"
               >
-                {data.secondaryBtnText}
+                Connect Now
               </Link>
             </motion.div>
           </div>
