@@ -63,10 +63,10 @@ export default function AboutPage() {
               </h2>
               <div className="mt-10 grid gap-8 text-lg text-foreground/75 md:grid-cols-2">
                 <p>
-                  We bring strategy, design, and technology together to help businesses grow. From your first campaign to long-term success, our team works with you every step of the way.
+                We bring strategy, branding, content, marketing and technology together under one roof. From your first campaign to long-term growth, every part of your business moves through one connected plan.
                 </p>
                 <p>
-                  We're more than a service provider we're your growth partner. We focus on building stronger brands, generating better results, and helping your business grow with confidence.
+                We work as an extension of your team—building stronger brands, generating better opportunities and creating systems designed for sustainable growth.
                 </p>
               </div>
 
