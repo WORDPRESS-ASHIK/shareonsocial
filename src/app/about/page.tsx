@@ -5,6 +5,7 @@ import { ClientVoicesSection } from "@/components/ClientVoicesSection";
 import { WhyChooseUs } from "@/components/about/WhyChooseUs";
 import * as motion from "framer-motion/client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -17,21 +18,41 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="mx-auto max-w-[1400px] px-6 md:px-10">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="text-xs uppercase tracking-[0.25em] text-foreground/50">
-                About
-              </div>
-              <h1 className="mt-6 max-w-[16ch] font-display text-[clamp(2.75rem,8vw,8rem)] leading-[0.9] tracking-[-0.04em] text-balance">
-                Not another agency. <em className="italic text-[color:var(--brand-blue)]">A partner.</em>
-              </h1>
-              <p className="mt-8 max-w-2xl text-lg text-foreground/70 md:text-xl">
-                One team that cares about your business growth as much as your brand&apos;s design.
-              </p>
-            </motion.div>
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+  >
+    <div className="text-xs uppercase tracking-[0.25em] text-foreground/50">
+      ABOUT SHAREONSOCIAL
+    </div>
+    <h1 className="mt-6 max-w-[16ch] font-display text-[clamp(2.75rem,8vw,8rem)] leading-[0.9] tracking-[-0.04em] text-balance">
+      Built in India.<br />
+      <span className="italic text-[color:var(--brand-blue)]">
+        Growing businesses worldwide.
+      </span>
+    </h1>
+    <p className="mt-8 max-w-2xl text-lg text-foreground/70 md:text-xl">
+      ShareOnSocial is a global growth company bringing strategy,
+      creativity, marketing and technology together to help businesses
+      build stronger brands, attract more customers and grow with
+      confidence.
+    </p>
+    <div className="mt-10 flex flex-col gap-4 md:flex-row">
+      <Link
+        href="/book"
+        className="inline-flex items-center justify-center rounded-full bg-foreground px-8 py-4 text-sm font-medium text-background transition-opacity hover:opacity-90"
+      >
+        Start Your Growth Journey
+      </Link>
+      <Link
+        href="/solutions"
+        className="inline-flex items-center justify-center rounded-full border border-foreground/10 bg-background px-8 py-4 text-sm font-medium text-foreground transition-opacity hover:opacity-90"
+      >
+        Explore Our Solutions
+      </Link>
+    </div>
+  </motion.div>
           </div>
         </section>
         
